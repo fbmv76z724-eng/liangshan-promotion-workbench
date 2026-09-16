@@ -37,7 +37,7 @@
           司机查询
         </button>
         <button id="tab-orders" class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="panel-orders" data-tab="orders" tabindex="-1">
-          工单查询
+          转单查询
         </button>
       </nav>
 
@@ -59,9 +59,35 @@
 
             <div id="team-options" class="team-grid" role="group" aria-label="选择队伍"></div>
 
+            <div class="team-controls" aria-label="司机筛选与排序">
+              <label>
+                <span>完成状态</span>
+                <select id="team-completion-filter">
+                  <option value="all">全部司机</option>
+                  <option value="completed">本月已完成</option>
+                  <option value="unfinished">本月未完成</option>
+                </select>
+              </label>
+              <label>
+                <span>排序字段</span>
+                <select id="team-sort-by">
+                  <option value="realTransfers">真实转单</option>
+                  <option value="outDays">出车天数</option>
+                  <option value="promotionCount">推广次数</option>
+                  <option value="promotionDelta">推广差值</option>
+                </select>
+              </label>
+              <button id="team-sort-direction" class="sort-direction" type="button" aria-pressed="false">
+                降序
+              </button>
+            </div>
+
             <div class="list-heading">
               <h3 id="team-title">一大队</h3>
-              <span id="team-count" class="count-label"></span>
+              <div class="list-heading-meta">
+                <span id="team-count" class="count-label"></span>
+                <span id="team-updated" class="count-label"></span>
+              </div>
             </div>
             <div id="team-drivers" class="driver-list"></div>
           </section>
@@ -72,7 +98,7 @@
                 <p class="section-kicker">本月累计</p>
                 <h2>司机数据查询</h2>
               </div>
-              <p>输入姓名进行包含查询，输入纯数字工号进行精确查询。</p>
+              <p>输入姓名进行包含查询，输入纯数字工号进行精确查询，并查看本月推广完成状态。</p>
             </div>
 
             <form id="driver-search-form" class="search-form" role="search">
@@ -91,9 +117,9 @@
             <div class="section-intro">
               <div>
                 <p class="section-kicker">本月明细</p>
-                <h2>推广工单查询</h2>
+                <h2>推广转单查询</h2>
               </div>
-              <p>按推荐司机工号查询全部匹配订单及五个判定标记。</p>
+              <p>按推荐司机工号查询全部转单及五个判定标记。</p>
             </div>
 
             <form id="order-search-form" class="search-form">
@@ -122,7 +148,7 @@
       </button>
       <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="panel-orders" data-tab="orders" tabindex="-1">
         <span class="tab-icon" aria-hidden="true">单</span>
-        <span>工单查询</span>
+        <span>转单查询</span>
       </button>
     </nav>
   </body>

@@ -1,12 +1,13 @@
 import {
   TEAMS,
-  compareDrivers,
+  filterAndSortDrivers,
   formatFlag,
   flagTitle,
   formatNumber,
   normalizeId,
   ordersForEmployee,
   searchDrivers,
+  summarizeTransfers,
 } from "./logic.mjs";
 
 const TAB_NAMES = new Set(["teams", "drivers", "orders"]);
@@ -32,13 +33,20 @@ const elements = {
   periodLabel: document.querySelector("#period-label"),
   syncLabel: document.querySelector("#sync-label"),
   teamCount: document.querySelector("#team-count"),
+  teamCompletionFilter: document.querySelector("#team-completion-filter"),
   teamDrivers: document.querySelector("#team-drivers"),
   teamOptions: document.querySelector("#team-options"),
+  teamSortBy: document.querySelector("#team-sort-by"),
+  teamSortDirection: document.querySelector("#team-sort-direction"),
   teamTitle: document.querySelector("#team-title"),
+  teamUpdated: document.querySelector("#team-updated"),
 };
 
 let snapshot = null;
 let selectedTeam = TEAMS[0];
+let teamCompletionFilter = "all";
+let teamSortBy = "realTransfers";
+let teamSortDirection = "desc";
 
 function tabFromHash() {
   const candidate = window.location.hash.replace(/^#/, "");
@@ -94,7 +102,7 @@ function createMetric(label, value, tone = "") {
 
 function createDriverCard(driver) {
   const card = document.createElement("article");
-  card.className = "driver-card";
+  card.className = `driver-card ${driver.promotionCompleted ? "is-completed" : "is-unfinished"}`;
 
   const identity = document.createElement("div");
   identity.className = "driver-identity";
@@ -103,6 +111,11 @@ function createDriverCard(driver) {
   nameLine.append(
     createTextElement("strong", "driver-name", driver.name),
     createTextElement("span", "team-badge", driver.team),
+    createTextElement(
+      "span",
+      `completion-badge ${driver.promotionCompleted ? "is-complete" : "is-incomplete"}`,
+      driver.promotionCompleted ? "本月已完成" : "本月未完成",
+    ),
   );
   identity.append(
     nameLine,
@@ -114,6 +127,11 @@ function createDriverCard(driver) {
   metrics.append(
     createMetric("出车天数", formatNumber(driver.outDays)),
     createMetric("真实转单", formatNumber(driver.realTransfers), "metric-positive"),
+    createMetric(
+      "推广次数",
+      formatNumber(driver.promotionCount),
+      "metric-accent",
+    ),
     createMetric(
       "推广差值",
       formatNumber(driver.promotionDelta),
@@ -131,8 +149,7 @@ function renderDriverCollection(container, drivers, emptyTitle, emptyDetail) {
     container.append(createStateMessage(emptyTitle, emptyDetail));
     return;
   }
-  const sortedDrivers = [...drivers].sort(compareDrivers);
-  container.append(...sortedDrivers.map(createDriverCard));
+  container.append(...drivers.map(createDriverCard));
 }
 
 function renderTeamOptions() {
@@ -153,11 +170,16 @@ function renderTeamOptions() {
 }
 
 function renderSelectedTeam() {
-  const drivers = snapshot.drivers.filter(
+  const teamDrivers = snapshot.drivers.filter(
     (driver) => driver.team === selectedTeam,
   );
+  const drivers = filterAndSortDrivers(teamDrivers, {
+    completion: teamCompletionFilter,
+    sortBy: teamSortBy,
+    direction: teamSortDirection,
+  });
   elements.teamTitle.textContent = selectedTeam;
-  elements.teamCount.textContent = `${drivers.length} 人`;
+  elements.teamCount.textContent = `${drivers.length} / ${teamDrivers.length} 人`;
   renderDriverCollection(
     elements.teamDrivers,
     drivers,
@@ -186,7 +208,7 @@ function renderDriverSearch() {
 
 function createOrderFlagRow(field, value) {
   const row = document.createElement("div");
-  row.className = "flag-row";
+  row.className = `flag-row ${Number(value) === 1 ? "is-one" : ""}`.trim();
   row.append(
     createTextElement("dt", "", flagTitle(field)),
     createTextElement("dd", "", formatFlag(field, value)),
@@ -196,12 +218,17 @@ function createOrderFlagRow(field, value) {
 
 function createOrderCard(order) {
   const card = document.createElement("article");
-  card.className = "order-card";
+  card.className = `order-card ${order.isReal ? "is-real" : "is-not-real"}`;
   const heading = document.createElement("div");
   heading.className = "order-card-heading";
   heading.append(
     createTextElement("strong", "", order.date),
     createTextElement("span", "", `工号 ${normalizeId(order.employeeId)}`),
+    createTextElement(
+      "span",
+      `transfer-status ${order.isReal ? "is-real" : "is-not-real"}`,
+      order.isReal ? "真实推广" : "非真实推广",
+    ),
   );
   const flags = document.createElement("dl");
   flags.className = "flag-list";
@@ -232,7 +259,11 @@ function createOrderTable(orders) {
       createTextElement("td", "", normalizeId(order.employeeId)),
       createTextElement("td", "", order.date),
       ...ORDER_FLAGS.map((field) =>
-        createTextElement("td", "", formatFlag(field, order[field])),
+        createTextElement(
+          "td",
+          Number(order[field]) === 1 ? "is-one" : "",
+          formatFlag(field, order[field]),
+        ),
       ),
     );
     tbody.append(row);
@@ -240,6 +271,25 @@ function createOrderTable(orders) {
 
   table.append(thead, tbody);
   wrapper.append(table);
+  return wrapper;
+}
+
+function createTransferSummary(summary) {
+  const wrapper = document.createElement("div");
+  wrapper.className = "transfer-summary";
+  [
+    ["总计转单", summary.total, "total"],
+    ["真实转单", summary.real, "real"],
+    ["不真实转单", summary.notReal, "not-real"],
+  ].forEach(([label, value, tone]) => {
+    const item = document.createElement("div");
+    item.className = `transfer-summary-item ${tone}`;
+    item.append(
+      createTextElement("span", "", label),
+      createTextElement("strong", "", String(value)),
+    );
+    wrapper.append(item);
+  });
   return wrapper;
 }
 
@@ -271,7 +321,11 @@ function renderOrders() {
   const mobileList = document.createElement("div");
   mobileList.className = "order-card-list";
   mobileList.append(...orders.map(createOrderCard));
-  elements.orderResults.append(createOrderTable(orders), mobileList);
+  elements.orderResults.append(
+    createTransferSummary(summarizeTransfers(orders)),
+    createOrderTable(orders),
+    mobileList,
+  );
 }
 
 function formatDateRange(meta) {
@@ -301,6 +355,7 @@ function formatSyncTime(value) {
 function renderMeta() {
   elements.syncLabel.textContent = `最近同步 ${formatSyncTime(snapshot.meta.syncedAt)}`;
   elements.periodLabel.textContent = `统计范围 ${formatDateRange(snapshot.meta)}`;
+  elements.teamUpdated.textContent = `数据更新时间 ${formatSyncTime(snapshot.meta.syncedAt)}`;
 }
 
 function bindTabNavigation() {
@@ -342,6 +397,27 @@ function bindForms() {
   });
 }
 
+function bindTeamControls() {
+  elements.teamCompletionFilter.addEventListener("change", () => {
+    teamCompletionFilter = elements.teamCompletionFilter.value;
+    renderSelectedTeam();
+  });
+  elements.teamSortBy.addEventListener("change", () => {
+    teamSortBy = elements.teamSortBy.value;
+    renderSelectedTeam();
+  });
+  elements.teamSortDirection.addEventListener("click", () => {
+    teamSortDirection = teamSortDirection === "desc" ? "asc" : "desc";
+    elements.teamSortDirection.textContent =
+      teamSortDirection === "desc" ? "降序" : "升序";
+    elements.teamSortDirection.setAttribute(
+      "aria-pressed",
+      String(teamSortDirection === "asc"),
+    );
+    renderSelectedTeam();
+  });
+}
+
 async function loadSnapshot() {
   const response = await fetch("./data/snapshot.json", { cache: "no-store" });
   if (!response.ok) {
@@ -362,6 +438,7 @@ async function start() {
     renderSelectedTeam();
     bindTabNavigation();
     bindForms();
+    bindTeamControls();
     elements.loadState.hidden = true;
     elements.appContent.hidden = false;
     setActiveTab(tabFromHash(), false);
@@ -379,4 +456,3 @@ async function start() {
 }
 
 start();
-

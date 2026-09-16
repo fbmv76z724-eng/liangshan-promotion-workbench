@@ -67,8 +67,28 @@ class DriverMetricTests(unittest.TestCase):
                 "team": "一大队",
                 "outDays": 3,
                 "realTransfers": 4,
+                "promotionCount": 2,
+                "promotionCompleted": True,
                 "promotionDelta": -3,
             },
+        )
+
+    def test_promotion_completion_requires_two_real_transfers(self):
+        drivers = sync.build_driver_rows(
+            [
+                {"employeeId": "1", "name": "未完成", "team": "一大队"},
+                {"employeeId": "2", "name": "已完成", "team": "一大队"},
+            ],
+            {
+                "1": {"outDays": 2, "misses": 0},
+                "2": {"outDays": 2, "misses": 0},
+            },
+            {"未完成": 4, "已完成": 1},
+            {"1": 1, "2": 2},
+        )
+        self.assertEqual(
+            [driver["promotionCompleted"] for driver in drivers],
+            [False, True],
         )
 
 
@@ -153,11 +173,13 @@ class PromoRowTests(unittest.TestCase):
         )
         self.assertEqual(transfer_counts["11281385"], 1)
         self.assertEqual([order["date"] for order in orders], ["2026-09-02", "2026-09-01"])
+        self.assertEqual([order["isReal"] for order in orders], [False, True])
         self.assertEqual(
             orders[0],
             {
                 "employeeId": "11281385",
                 "date": "2026-09-02",
+                "isReal": False,
                 "nonOffline": 1,
                 "abnormalScan": 0,
                 "burner": 0,
@@ -169,4 +191,3 @@ class PromoRowTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-

@@ -45,6 +45,38 @@ export function compareDrivers(left, right) {
     : normalizeId(left.employeeId).localeCompare(normalizeId(right.employeeId));
 }
 
+const DRIVER_SORT_FIELDS = Object.freeze({
+  outDays: "outDays",
+  realTransfers: "realTransfers",
+  promotionCount: "promotionCount",
+  promotionDelta: "promotionDelta",
+});
+
+export function filterAndSortDrivers(
+  drivers,
+  { completion = "all", sortBy = "realTransfers", direction = "desc" } = {},
+) {
+  const filtered = drivers.filter((driver) => {
+    if (completion === "completed") {
+      return driver.promotionCompleted === true;
+    }
+    if (completion === "unfinished") {
+      return driver.promotionCompleted !== true;
+    }
+    return true;
+  });
+  const field = DRIVER_SORT_FIELDS[sortBy] ?? "realTransfers";
+  const multiplier = direction === "asc" ? 1 : -1;
+
+  return [...filtered].sort((left, right) => {
+    const difference = Number(left[field] ?? 0) - Number(right[field] ?? 0);
+    if (difference !== 0) {
+      return difference * multiplier;
+    }
+    return compareDrivers(left, right);
+  });
+}
+
 export function searchDrivers(drivers, query) {
   const normalizedQuery = String(query ?? "").trim();
   if (!normalizedQuery) {
@@ -83,6 +115,15 @@ export function ordersForEmployee(orders, employeeId) {
     });
 }
 
+export function summarizeTransfers(orders) {
+  const real = orders.filter((order) => order.isReal === true).length;
+  return {
+    total: orders.length,
+    real,
+    notReal: orders.length - real,
+  };
+}
+
 export function formatFlag(field, value) {
   const numericValue = Number(value);
   const label = FLAG_LABELS[field]?.[numericValue];
@@ -100,4 +141,3 @@ export function formatNumber(value) {
   const numericValue = Number(value);
   return Number.isFinite(numericValue) ? String(numericValue) : "0";
 }
-

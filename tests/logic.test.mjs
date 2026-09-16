@@ -2,10 +2,12 @@ import assert from "node:assert/strict";
 import test from "node:test";
 
 import {
+  filterAndSortDrivers,
   formatFlag,
   normalizeId,
   ordersForEmployee,
   searchDrivers,
+  summarizeTransfers,
 } from "../docs/logic.mjs";
 
 const drivers = [
@@ -74,3 +76,43 @@ test("formats flags with text instead of color alone", () => {
   assert.equal(formatFlag("cheating", 0), "0 · 非作弊单");
 });
 
+test("filters completed drivers and sorts by real transfers descending", () => {
+  const results = filterAndSortDrivers(
+    [
+      { ...drivers[0], promotionCompleted: false },
+      { ...drivers[1], promotionCompleted: true },
+      { ...drivers[2], promotionCompleted: true },
+    ],
+    { completion: "completed", sortBy: "realTransfers", direction: "desc" },
+  );
+  assert.deepEqual(
+    results.map((driver) => driver.employeeId),
+    ["11281385", "11273471"],
+  );
+});
+
+test("sorts unfinished drivers by out days ascending", () => {
+  const results = filterAndSortDrivers(
+    [
+      { ...drivers[0], promotionCompleted: false, outDays: 8 },
+      { ...drivers[1], promotionCompleted: false, outDays: 3 },
+      { ...drivers[2], promotionCompleted: true, outDays: 1 },
+    ],
+    { completion: "unfinished", sortBy: "outDays", direction: "asc" },
+  );
+  assert.deepEqual(
+    results.map((driver) => driver.outDays),
+    [3, 8],
+  );
+});
+
+test("summarizes real and non-real transfers", () => {
+  assert.deepEqual(
+    summarizeTransfers([
+      { isReal: true },
+      { isReal: false },
+      { isReal: true },
+    ]),
+    { total: 3, real: 2, notReal: 1 },
+  );
+});

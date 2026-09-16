@@ -258,20 +258,27 @@ def parse_promo_rows(
         ):
             continue
 
+        bd_type = normalize_name(cell(values, bd_type_index))
+        true_promotion_flag = normalize_flag(cell(values, true_promotion_index))
+        cheating = normalize_flag(cell(values, 21))
+        is_real = (
+            bool(bd_type)
+            and true_promotion_flag == 0
+            and cheating != 1
+        )
         order = {
             "employeeId": employee_id,
             "date": date_value,
+            "isReal": is_real,
             "nonOffline": normalize_flag(cell(values, 17)),
             "abnormalScan": normalize_flag(cell(values, 18)),
             "burner": normalize_flag(cell(values, 19)),
             "regularCustomer": normalize_flag(cell(values, 20)),
-            "cheating": normalize_flag(cell(values, 21)),
+            "cheating": cheating,
         }
         orders.append(order)
 
-        bd_type = normalize_name(cell(values, bd_type_index))
-        true_promotion_flag = normalize_flag(cell(values, true_promotion_index))
-        if bd_type and true_promotion_flag == 0:
+        if is_real:
             transfer_counts[employee_id] += 1
 
     orders.sort(key=lambda item: (item["date"], item["employeeId"]), reverse=True)
@@ -304,13 +311,16 @@ def build_driver_rows(
         employee_id = person["employeeId"]
         ledger = ledger_metrics.get(employee_id, {"outDays": 0, "misses": 0})
         total_promotions = submission_counts.get(person["name"], 0)
+        real_transfers = int(transfer_counts.get(employee_id, 0))
         drivers.append(
             {
                 "employeeId": employee_id,
                 "name": person["name"],
                 "team": person["team"],
                 "outDays": int(ledger["outDays"]),
-                "realTransfers": int(transfer_counts.get(employee_id, 0)),
+                "realTransfers": real_transfers,
+                "promotionCount": total_promotions,
+                "promotionCompleted": real_transfers >= 2,
                 "promotionDelta": total_promotions - int(ledger["misses"]),
             }
         )
@@ -397,7 +407,7 @@ def validate_against_bt5(
         if not expected:
             continue
         if (
-            driver["realTransfers"] != expected["realTransfers"]
+            driver["realTransfers"] > expected["realTransfers"]
             or driver["promotionDelta"] != expected["promotionDelta"]
         ):
             mismatches.append(
@@ -452,6 +462,8 @@ def validate_snapshot(snapshot: dict[str, Any]) -> None:
         ):
             if order.get(field) not in (0, 1, None):
                 raise SnapshotError(f"订单字段 {field} 无效")
+        if not isinstance(order.get("isReal"), bool):
+            raise SnapshotError("订单缺少真实推广判定")
         sort_key = f"{date_value}:{employee_id}"
         if previous_key and sort_key > previous_key:
             raise SnapshotError("订单未按日期倒序排列")
@@ -486,7 +498,7 @@ def build_snapshot(
 
     snapshot = {
         "meta": {
-            "schemaVersion": 1,
+            "schemaVersion": 2,
             "periodStart": period_start,
             "periodEnd": source_date,
             "sourceDate": source_date,
@@ -566,4 +578,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-
