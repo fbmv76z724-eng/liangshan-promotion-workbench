@@ -132,7 +132,7 @@ export function filterTodayDrivers(drivers, { team = "", query = "" } = {}) {
 
   return [...matches].sort((left, right) => {
     const completionOrder =
-      Number(left.completed === true) - Number(right.completed === true);
+      Number(right.completed === true) - Number(left.completed === true);
     return completionOrder !== 0
       ? completionOrder
       : compareDrivers(left, right);

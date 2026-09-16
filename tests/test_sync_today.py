@@ -36,9 +36,24 @@ class TodaySnapshotTests(unittest.TestCase):
             business_date="2026-09-16",
             synced_at="2026-09-16T19:00:00+08:00",
             drivers=[
-                {"employeeId": "1", "name": "宾二龙", "team": "二大队"},
-                {"employeeId": "2", "name": "黄子仁", "team": "五大队"},
-                {"employeeId": "3", "name": "黄子仁", "team": "一大队"},
+                {
+                    "employeeId": "1",
+                    "name": "宾二龙",
+                    "team": "二大队",
+                    "promotionCompleted": False,
+                },
+                {
+                    "employeeId": "2",
+                    "name": "黄子仁",
+                    "team": "五大队",
+                    "promotionCompleted": False,
+                },
+                {
+                    "employeeId": "3",
+                    "name": "黄子仁",
+                    "team": "一大队",
+                    "promotionCompleted": False,
+                },
             ],
             submitted=[("宾二龙", "二大队")],
         )
@@ -54,12 +69,49 @@ class TodaySnapshotTests(unittest.TestCase):
             business_date="2026-09-16",
             synced_at="2026-09-16T19:00:00+08:00",
             drivers=[
-                {"employeeId": "1", "name": "刘鹏", "team": "二大队"},
-                {"employeeId": "2", "name": "刘鹏", "team": "二大队"},
+                {
+                    "employeeId": "1",
+                    "name": "刘鹏",
+                    "team": "二大队",
+                    "promotionCompleted": False,
+                },
+                {
+                    "employeeId": "2",
+                    "name": "刘鹏",
+                    "team": "二大队",
+                    "promotionCompleted": False,
+                },
             ],
             submitted=[("刘鹏", "二大队")],
         )
         self.assertTrue(all(driver["completed"] for driver in snapshot["drivers"]))
+
+    def test_excludes_drivers_who_reached_two_real_transfers(self):
+        snapshot = today.build_today_snapshot(
+            business_date="2026-09-16",
+            synced_at="2026-09-16T19:00:00+08:00",
+            drivers=[
+                {
+                    "employeeId": "1",
+                    "name": "未完成",
+                    "team": "一大队",
+                    "promotionCompleted": False,
+                },
+                {
+                    "employeeId": "2",
+                    "name": "已完成",
+                    "team": "一大队",
+                    "promotionCompleted": True,
+                },
+            ],
+            submitted=[("已完成", "一大队")],
+        )
+        self.assertEqual(
+            [driver["employeeId"] for driver in snapshot["drivers"]],
+            ["1"],
+        )
+        self.assertEqual(snapshot["meta"]["driverCount"], 1)
+        self.assertEqual(snapshot["meta"]["completedCount"], 0)
 
     def test_status_signature_ignores_sync_time(self):
         before = {
@@ -77,6 +129,23 @@ class TodaySnapshotTests(unittest.TestCase):
             ],
         }
         self.assertEqual(
+            today.status_signature(before),
+            today.status_signature(after),
+        )
+
+    def test_status_signature_changes_when_included_driver_set_changes(self):
+        before = {
+            "meta": {"businessDate": "2026-09-16"},
+            "drivers": [{"employeeId": "1", "completed": False}],
+        }
+        after = {
+            "meta": {"businessDate": "2026-09-16"},
+            "drivers": [
+                {"employeeId": "1", "completed": False},
+                {"employeeId": "2", "completed": False},
+            ],
+        }
+        self.assertNotEqual(
             today.status_signature(before),
             today.status_signature(after),
         )

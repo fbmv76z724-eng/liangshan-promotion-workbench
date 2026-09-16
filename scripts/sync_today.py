@@ -75,6 +75,8 @@ def build_today_snapshot(
     submitted_set = set(submitted)
     rows = []
     for person in drivers:
+        if person.get("promotionCompleted") is True:
+            continue
         name = str(person.get("name") or "").strip()
         team = str(person.get("team") or "").strip()
         rows.append(
@@ -103,12 +105,16 @@ def build_today_snapshot(
 def status_signature(snapshot: dict[str, Any] | None) -> tuple[str, tuple[str, ...]]:
     snapshot = snapshot or {}
     meta = snapshot.get("meta") or {}
-    completed = sorted(
-        str(row.get("employeeId") or "")
-        for row in snapshot.get("drivers", [])
-        if row.get("completed") is True
+    drivers = sorted(
+        (
+            f"{row.get('employeeId') or ''}:{int(row.get('completed') is True)}"
+            for row in snapshot.get("drivers", [])
+        )
     )
-    return str(meta.get("businessDate") or ""), tuple(completed)
+    return (
+        str(meta.get("businessDate") or ""),
+        tuple(drivers),
+    )
 
 
 def load_snapshot(path: Path) -> dict[str, Any]:

@@ -119,7 +119,7 @@ test("summarizes real and non-real transfers", () => {
   );
 });
 
-test("shows unfinished today drivers before completed drivers", () => {
+test("shows today completed drivers before unfinished drivers", () => {
   const results = filterTodayDrivers(
     [
       { employeeId: "1", name: "已完成", team: "一大队", completed: true },
@@ -130,7 +130,7 @@ test("shows unfinished today drivers before completed drivers", () => {
   );
   assert.deepEqual(
     results.map((driver) => driver.employeeId),
-    ["3", "2", "1"],
+    ["1", "3", "2"],
   );
 });
 

@@ -2,34 +2,16 @@
   "meta": {
     "schemaVersion": 1,
     "businessDate": "2026-09-16",
-    "syncedAt": "2026-09-16T19:03:37+08:00",
+    "syncedAt": "2026-09-16T19:10:58+08:00",
     "teamCount": 12,
-    "driverCount": 331,
+    "driverCount": 262,
     "completedCount": 2,
-    "unfinishedCount": 329
+    "unfinishedCount": 260
   },
   "drivers": [
     {
       "employeeId": "11294327",
       "name": "俄地特呷",
-      "team": "一大队",
-      "completed": false
-    },
-    {
-      "employeeId": "11153813",
-      "name": "刘五各",
-      "team": "一大队",
-      "completed": false
-    },
-    {
-      "employeeId": "11842395",
-      "name": "卢志国",
-      "team": "一大队",
-      "completed": false
-    },
-    {
-      "employeeId": "11357723",
-      "name": "吉克而近",
       "team": "一大队",
       "completed": false
     },
@@ -48,12 +30,6 @@
     {
       "employeeId": "11533190",
       "name": "廖江涛",
-      "team": "一大队",
-      "completed": false
-    },
-    {
-      "employeeId": "11112019",
-      "name": "张银",
       "team": "一大队",
       "completed": false
     },
@@ -166,24 +142,6 @@
       "completed": false
     },
     {
-      "employeeId": "11718818",
-      "name": "阿生尼呷",
-      "team": "一大队",
-      "completed": false
-    },
-    {
-      "employeeId": "329980",
-      "name": "陈伟",
-      "team": "一大队",
-      "completed": false
-    },
-    {
-      "employeeId": "11281385",
-      "name": "陈浩",
-      "team": "一大队",
-      "completed": false
-    },
-    {
       "employeeId": "230857",
       "name": "马衣布",
       "team": "一大队",
@@ -208,20 +166,8 @@
       "completed": false
     },
     {
-      "employeeId": "11127615",
-      "name": "刘鹏",
-      "team": "二大队",
-      "completed": false
-    },
-    {
       "employeeId": "132341",
       "name": "加拉翁日",
-      "team": "二大队",
-      "completed": false
-    },
-    {
-      "employeeId": "11359384",
-      "name": "周小龙",
       "team": "二大队",
       "completed": false
     },
@@ -316,26 +262,8 @@
       "completed": false
     },
     {
-      "employeeId": "11259421",
-      "name": "罗贵聪",
-      "team": "二大队",
-      "completed": false
-    },
-    {
-      "employeeId": "11733120",
-      "name": "范力",
-      "team": "二大队",
-      "completed": false
-    },
-    {
       "employeeId": "11418519",
       "name": "衣火以呷",
-      "team": "二大队",
-      "completed": false
-    },
-    {
-      "employeeId": "11901782",
-      "name": "衣火以布",
       "team": "二大队",
       "completed": false
     },
@@ -412,12 +340,6 @@
       "completed": false
     },
     {
-      "employeeId": "11126140",
-      "name": "朱木呷",
-      "team": "三大队",
-      "completed": false
-    },
-    {
       "employeeId": "11712072",
       "name": "朱柏韬",
       "team": "三大队",
@@ -454,38 +376,14 @@
       "completed": false
     },
     {
-      "employeeId": "11495026",
-      "name": "王凯",
-      "team": "三大队",
-      "completed": false
-    },
-    {
-      "employeeId": "11137605",
-      "name": "王忠红",
-      "team": "三大队",
-      "completed": false
-    },
-    {
       "employeeId": "11139361",
       "name": "王木呷",
       "team": "三大队",
       "completed": false
     },
     {
-      "employeeId": "11460479",
-      "name": "王腾",
-      "team": "三大队",
-      "completed": false
-    },
-    {
       "employeeId": "11450977",
       "name": "罗正华",
-      "team": "三大队",
-      "completed": false
-    },
-    {
-      "employeeId": "342626",
-      "name": "艾勇",
       "team": "三大队",
       "completed": false
     },
@@ -526,20 +424,8 @@
       "completed": false
     },
     {
-      "employeeId": "694686",
-      "name": "阿说里古",
-      "team": "三大队",
-      "completed": false
-    },
-    {
       "employeeId": "11541389",
       "name": "陈二放",
-      "team": "三大队",
-      "completed": false
-    },
-    {
-      "employeeId": "11715847",
-      "name": "韦永平",
       "team": "三大队",
       "completed": false
     },
@@ -604,12 +490,6 @@
       "completed": false
     },
     {
-      "employeeId": "11546014",
-      "name": "庞冉",
-      "team": "四大队",
-      "completed": false
-    },
-    {
       "employeeId": "11388277",
       "name": "张日古",
       "team": "四大队",
@@ -624,12 +504,6 @@
     {
       "employeeId": "11875104",
       "name": "欧其古也",
-      "team": "四大队",
-      "completed": false
-    },
-    {
-      "employeeId": "11288015",
-      "name": "王廷忠",
       "team": "四大队",
       "completed": false
     },
@@ -652,12 +526,6 @@
       "completed": false
     },
     {
-      "employeeId": "11454758",
-      "name": "薛娇",
-      "team": "四大队",
-      "completed": false
-    },
-    {
       "employeeId": "11609144",
       "name": "阿西小龙",
       "team": "四大队",
@@ -666,12 +534,6 @@
     {
       "employeeId": "11452450",
       "name": "阿说木散",
-      "team": "四大队",
-      "completed": false
-    },
-    {
-      "employeeId": "11872841",
-      "name": "阿都子史",
       "team": "四大队",
       "completed": false
     },
@@ -691,12 +553,6 @@
       "employeeId": "283247",
       "name": "陶智刚",
       "team": "四大队",
-      "completed": false
-    },
-    {
-      "employeeId": "11897933",
-      "name": "克日伍各",
-      "team": "五大队",
       "completed": false
     },
     {
@@ -724,20 +580,8 @@
       "completed": false
     },
     {
-      "employeeId": "11977557",
-      "name": "张贤兴",
-      "team": "五大队",
-      "completed": false
-    },
-    {
       "employeeId": "11942806",
       "name": "李森铭",
-      "team": "五大队",
-      "completed": false
-    },
-    {
-      "employeeId": "11240925",
-      "name": "杨勇",
       "team": "五大队",
       "completed": false
     },
@@ -748,26 +592,8 @@
       "completed": false
     },
     {
-      "employeeId": "11657036",
-      "name": "某色尾几",
-      "team": "五大队",
-      "completed": false
-    },
-    {
-      "employeeId": "11870475",
-      "name": "欧布布哈",
-      "team": "五大队",
-      "completed": false
-    },
-    {
       "employeeId": "11972584",
       "name": "王日古",
-      "team": "五大队",
-      "completed": false
-    },
-    {
-      "employeeId": "11548181",
-      "name": "王磊",
       "team": "五大队",
       "completed": false
     },
@@ -780,12 +606,6 @@
     {
       "employeeId": "11256332",
       "name": "瞿成祥",
-      "team": "五大队",
-      "completed": false
-    },
-    {
-      "employeeId": "11654001",
-      "name": "罗体补",
       "team": "五大队",
       "completed": false
     },
@@ -804,12 +624,6 @@
     {
       "employeeId": "11360586",
       "name": "蒋磊",
-      "team": "五大队",
-      "completed": false
-    },
-    {
-      "employeeId": "609950",
-      "name": "袁云伟",
       "team": "五大队",
       "completed": false
     },
@@ -856,12 +670,6 @@
       "completed": false
     },
     {
-      "employeeId": "316949",
-      "name": "余磊",
-      "team": "六大队",
-      "completed": false
-    },
-    {
       "employeeId": "11109048",
       "name": "吉觉木机",
       "team": "六大队",
@@ -894,12 +702,6 @@
     {
       "employeeId": "659259",
       "name": "曾发相",
-      "team": "六大队",
-      "completed": false
-    },
-    {
-      "employeeId": "11732422",
-      "name": "朱家有",
       "team": "六大队",
       "completed": false
     },
@@ -952,20 +754,8 @@
       "completed": false
     },
     {
-      "employeeId": "11512907",
-      "name": "胡东林",
-      "team": "六大队",
-      "completed": false
-    },
-    {
       "employeeId": "11339151",
       "name": "胡德忠",
-      "team": "六大队",
-      "completed": false
-    },
-    {
-      "employeeId": "247988",
-      "name": "葛家伦",
       "team": "六大队",
       "completed": false
     },
@@ -990,12 +780,6 @@
     {
       "employeeId": "11639697",
       "name": "阿卢曲者",
-      "team": "六大队",
-      "completed": false
-    },
-    {
-      "employeeId": "621782",
-      "name": "陈发斌",
       "team": "六大队",
       "completed": false
     },
@@ -1060,18 +844,6 @@
       "completed": false
     },
     {
-      "employeeId": "11899068",
-      "name": "吉觉克坡",
-      "team": "七大队",
-      "completed": false
-    },
-    {
-      "employeeId": "11398813",
-      "name": "吴嘉兴",
-      "team": "七大队",
-      "completed": false
-    },
-    {
       "employeeId": "893417",
       "name": "周川",
       "team": "七大队",
@@ -1080,12 +852,6 @@
     {
       "employeeId": "11678850",
       "name": "姚洋",
-      "team": "七大队",
-      "completed": false
-    },
-    {
-      "employeeId": "11682072",
-      "name": "曲木次色",
       "team": "七大队",
       "completed": false
     },
@@ -1108,20 +874,8 @@
       "completed": false
     },
     {
-      "employeeId": "11700376",
-      "name": "杨伍哈",
-      "team": "七大队",
-      "completed": false
-    },
-    {
       "employeeId": "11137565",
       "name": "杨芸",
-      "team": "七大队",
-      "completed": false
-    },
-    {
-      "employeeId": "11241090",
-      "name": "沙成林",
       "team": "七大队",
       "completed": false
     },
@@ -1138,26 +892,8 @@
       "completed": false
     },
     {
-      "employeeId": "11586110",
-      "name": "甲拉伍惹",
-      "team": "七大队",
-      "completed": false
-    },
-    {
       "employeeId": "11681274",
       "name": "胡大洋",
-      "team": "七大队",
-      "completed": false
-    },
-    {
-      "employeeId": "11362492",
-      "name": "苏光勇",
-      "team": "七大队",
-      "completed": false
-    },
-    {
-      "employeeId": "11382033",
-      "name": "赵松",
       "team": "七大队",
       "completed": false
     },
@@ -1228,12 +964,6 @@
       "completed": false
     },
     {
-      "employeeId": "11296211",
-      "name": "吉史尔古",
-      "team": "八大队",
-      "completed": false
-    },
-    {
       "employeeId": "11157748",
       "name": "吉足阿木",
       "team": "八大队",
@@ -1288,26 +1018,8 @@
       "completed": false
     },
     {
-      "employeeId": "11211025",
-      "name": "毛布吉",
-      "team": "八大队",
-      "completed": false
-    },
-    {
-      "employeeId": "11413135",
-      "name": "沈万辉",
-      "team": "八大队",
-      "completed": false
-    },
-    {
       "employeeId": "11870939",
       "name": "王发高",
-      "team": "八大队",
-      "completed": false
-    },
-    {
-      "employeeId": "11651768",
-      "name": "罗如均",
       "team": "八大队",
       "completed": false
     },
@@ -1338,12 +1050,6 @@
     {
       "employeeId": "446973",
       "name": "邱正贤",
-      "team": "八大队",
-      "completed": false
-    },
-    {
-      "employeeId": "11246180",
-      "name": "阿加呷呷",
       "team": "八大队",
       "completed": false
     },
@@ -1392,12 +1098,6 @@
     {
       "employeeId": "11231597",
       "name": "巫天祥",
-      "team": "九大队",
-      "completed": false
-    },
-    {
-      "employeeId": "11544240",
-      "name": "干成龙",
       "team": "九大队",
       "completed": false
     },
@@ -1480,20 +1180,8 @@
       "completed": false
     },
     {
-      "employeeId": "11689230",
-      "name": "闫肃",
-      "team": "九大队",
-      "completed": false
-    },
-    {
       "employeeId": "11380637",
       "name": "阿坡伍呷",
-      "team": "九大队",
-      "completed": false
-    },
-    {
-      "employeeId": "11751233",
-      "name": "阿尔木呷",
       "team": "九大队",
       "completed": false
     },
@@ -1540,12 +1228,6 @@
       "completed": false
     },
     {
-      "employeeId": "11630074",
-      "name": "周伟",
-      "team": "十大队",
-      "completed": false
-    },
-    {
       "employeeId": "11849366",
       "name": "周应花",
       "team": "十大队",
@@ -1564,12 +1246,6 @@
       "completed": false
     },
     {
-      "employeeId": "898269",
-      "name": "张宁",
-      "team": "十大队",
-      "completed": false
-    },
-    {
       "employeeId": "11337545",
       "name": "徐宗华",
       "team": "十大队",
@@ -1578,18 +1254,6 @@
     {
       "employeeId": "11553519",
       "name": "拉马老三",
-      "team": "十大队",
-      "completed": false
-    },
-    {
-      "employeeId": "11446203",
-      "name": "李佳新",
-      "team": "十大队",
-      "completed": false
-    },
-    {
-      "employeeId": "11669708",
-      "name": "李绍湘",
       "team": "十大队",
       "completed": false
     },
@@ -1618,18 +1282,6 @@
       "completed": false
     },
     {
-      "employeeId": "11906181",
-      "name": "王俊峰",
-      "team": "十大队",
-      "completed": false
-    },
-    {
-      "employeeId": "11615446",
-      "name": "祝尔古",
-      "team": "十大队",
-      "completed": false
-    },
-    {
       "employeeId": "11247947",
       "name": "罗华",
       "team": "十大队",
@@ -1648,12 +1300,6 @@
       "completed": false
     },
     {
-      "employeeId": "11172153",
-      "name": "董伟",
-      "team": "十大队",
-      "completed": false
-    },
-    {
       "employeeId": "11625869",
       "name": "董开勇",
       "team": "十大队",
@@ -1662,18 +1308,6 @@
     {
       "employeeId": "11660668",
       "name": "谢辉",
-      "team": "十大队",
-      "completed": false
-    },
-    {
-      "employeeId": "11891393",
-      "name": "赵洪学",
-      "team": "十大队",
-      "completed": false
-    },
-    {
-      "employeeId": "11626537",
-      "name": "边悟",
       "team": "十大队",
       "completed": false
     },
@@ -1714,12 +1348,6 @@
       "completed": false
     },
     {
-      "employeeId": "11250213",
-      "name": "冯太泉",
-      "team": "会理大队",
-      "completed": false
-    },
-    {
       "employeeId": "11571178",
       "name": "凌伟",
       "team": "会理大队",
@@ -1734,12 +1362,6 @@
     {
       "employeeId": "11255264",
       "name": "周在荣",
-      "team": "会理大队",
-      "completed": false
-    },
-    {
-      "employeeId": "11836205",
-      "name": "夏彪",
       "team": "会理大队",
       "completed": false
     },
@@ -1798,20 +1420,8 @@
       "completed": false
     },
     {
-      "employeeId": "11575926",
-      "name": "田国富",
-      "team": "会理大队",
-      "completed": false
-    },
-    {
       "employeeId": "11241735",
       "name": "申泽勇",
-      "team": "会理大队",
-      "completed": false
-    },
-    {
-      "employeeId": "11523875",
-      "name": "罗建仁",
       "team": "会理大队",
       "completed": false
     },
@@ -1830,18 +1440,6 @@
     {
       "employeeId": "11104228",
       "name": "胡天志",
-      "team": "会理大队",
-      "completed": false
-    },
-    {
-      "employeeId": "11533034",
-      "name": "艾国平",
-      "team": "会理大队",
-      "completed": false
-    },
-    {
-      "employeeId": "11357934",
-      "name": "艾国才",
       "team": "会理大队",
       "completed": false
     },
@@ -1890,12 +1488,6 @@
     {
       "employeeId": "11414363",
       "name": "宋仕凯",
-      "team": "德昌大队",
-      "completed": false
-    },
-    {
-      "employeeId": "339269",
-      "name": "宋治麟",
       "team": "德昌大队",
       "completed": false
     },
@@ -1962,12 +1554,6 @@
     {
       "employeeId": "11226862",
       "name": "袁涛",
-      "team": "德昌大队",
-      "completed": false
-    },
-    {
-      "employeeId": "11856878",
-      "name": "达超",
       "team": "德昌大队",
       "completed": false
     },
