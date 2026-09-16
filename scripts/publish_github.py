@@ -168,16 +168,14 @@ def ensure_pages(repository: str, branch: str) -> dict[str, Any]:
         "GET", f"repos/{repository}/pages", allow_not_found=True
     )
     if existing is None:
-        return run_gh(
+        created = run_gh(
             "POST",
             f"repos/{repository}/pages",
             {"source": source},
         )
-    return run_gh(
-        "PUT",
-        f"repos/{repository}/pages",
-        {"source": source},
-    )
+        return created or run_gh("GET", f"repos/{repository}/pages")
+    run_gh("PUT", f"repos/{repository}/pages", {"source": source})
+    return run_gh("GET", f"repos/{repository}/pages")
 
 
 def parse_args() -> argparse.Namespace:
