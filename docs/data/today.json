@@ -2,11 +2,11 @@
   "meta": {
     "schemaVersion": 1,
     "businessDate": "2026-09-16",
-    "syncedAt": "2026-09-16T19:10:58+08:00",
+    "syncedAt": "2026-09-16T19:21:42+08:00",
     "teamCount": 12,
     "driverCount": 262,
-    "completedCount": 2,
-    "unfinishedCount": 260
+    "completedCount": 4,
+    "unfinishedCount": 258
   },
   "drivers": [
     {
@@ -247,7 +247,7 @@
       "employeeId": "11977760",
       "name": "王锐",
       "team": "二大队",
-      "completed": false
+      "completed": true
     },
     {
       "employeeId": "11537079",
@@ -889,7 +889,7 @@
       "employeeId": "11586114",
       "name": "王军",
       "team": "七大队",
-      "completed": false
+      "completed": true
     },
     {
       "employeeId": "11681274",

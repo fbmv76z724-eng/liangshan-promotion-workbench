@@ -36,6 +36,15 @@ python3 scripts/sync_today.py
 
 脚本通过 ego-lite 直接读取钉钉推广网页，只保留本月真实转单不足 2 单的司机，按“姓名 + 队伍”匹配今日已完成状态，并生成 `docs/data/today.json`。今日已完成司机默认排在前面。推广日按当天 06:00 至次日 06:00 计算；状态未变化时不会重写快照。页面每 5 分钟重新读取一次，并显示数据更新时间和页面刷新时间；读取失败时继续显示上一次成功数据。
 
+定时任务使用单入口脚本完成同步、测试、发布、Pages 构建等待和线上校验：
+
+```bash
+/Users/fifidei/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 \
+  scripts/run_workbench.py
+```
+
+脚本只在数据变化时发布。发布中断会记录待发布状态，并在后续运行中继续；同一故障只提示一次，恢复时再提示。
+
 发布到 GitHub Pages：
 
 ```bash
