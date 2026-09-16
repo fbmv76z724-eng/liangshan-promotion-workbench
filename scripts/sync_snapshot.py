@@ -155,7 +155,6 @@ def summarize_ledger_rows(
     valid_ids: set[str],
 ) -> dict[str, dict[str, int]]:
     out_dates: dict[str, set[str]] = defaultdict(set)
-    miss_dates: dict[str, set[str]] = defaultdict(set)
 
     for row in rows:
         values = list(row)
@@ -170,14 +169,9 @@ def summarize_ledger_rows(
         ):
             continue
         out_dates[employee_id].add(date_value)
-        if normalize_name(values[4]) == "否":
-            miss_dates[employee_id].add(date_value)
 
     return {
-        employee_id: {
-            "outDays": len(dates),
-            "misses": len(miss_dates.get(employee_id, set())),
-        }
+        employee_id: {"outDays": len(dates)}
         for employee_id, dates in out_dates.items()
     }
 
@@ -309,7 +303,8 @@ def build_driver_rows(
     drivers = []
     for person in roster:
         employee_id = person["employeeId"]
-        ledger = ledger_metrics.get(employee_id, {"outDays": 0, "misses": 0})
+        ledger = ledger_metrics.get(employee_id, {"outDays": 0})
+        out_days = int(ledger["outDays"])
         total_promotions = submission_counts.get(person["name"], 0)
         real_transfers = int(transfer_counts.get(employee_id, 0))
         drivers.append(
@@ -317,11 +312,11 @@ def build_driver_rows(
                 "employeeId": employee_id,
                 "name": person["name"],
                 "team": person["team"],
-                "outDays": int(ledger["outDays"]),
+                "outDays": out_days,
                 "realTransfers": real_transfers,
                 "promotionCount": total_promotions,
                 "promotionCompleted": real_transfers >= 2,
-                "promotionDelta": total_promotions - int(ledger["misses"]),
+                "promotionDelta": total_promotions - out_days,
             }
         )
     return drivers
@@ -388,10 +383,7 @@ def read_bt5_metrics(daily_dir: Path) -> dict[tuple[str, str], dict[str, int]]:
                 continue
             name = normalize_name(parts[0])
             try:
-                metrics[(team, name)] = {
-                    "realTransfers": int(parts[2]),
-                    "promotionDelta": int(parts[4]),
-                }
+                metrics[(team, name)] = {"realTransfers": int(parts[2])}
             except ValueError as error:
                 raise SnapshotError(f"bt5 数值无效：{path} / {name}") from error
     return metrics
@@ -406,14 +398,10 @@ def validate_against_bt5(
         expected = bt5_metrics.get((driver["team"], driver["name"]))
         if not expected:
             continue
-        if (
-            driver["realTransfers"] > expected["realTransfers"]
-            or driver["promotionDelta"] != expected["promotionDelta"]
-        ):
+        if driver["realTransfers"] > expected["realTransfers"]:
             mismatches.append(
                 f'{driver["team"]}/{driver["name"]}: '
-                f'转单 {driver["realTransfers"]}!={expected["realTransfers"]}, '
-                f'差值 {driver["promotionDelta"]}!={expected["promotionDelta"]}'
+                f'转单 {driver["realTransfers"]}!={expected["realTransfers"]}'
             )
     if mismatches:
         sample = "；".join(mismatches[:5])
@@ -498,7 +486,7 @@ def build_snapshot(
 
     snapshot = {
         "meta": {
-            "schemaVersion": 2,
+            "schemaVersion": 3,
             "periodStart": period_start,
             "periodEnd": source_date,
             "sourceDate": source_date,

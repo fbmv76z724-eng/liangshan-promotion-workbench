@@ -40,7 +40,7 @@ class RosterTests(unittest.TestCase):
 
 
 class LedgerTests(unittest.TestCase):
-    def test_ledger_counts_unique_out_days_and_miss_days(self):
+    def test_ledger_counts_unique_out_days(self):
         rows = [
             ("2026-09-01", "一大队", "陈浩", "11281385", "否"),
             ("2026-09-01", "一大队", "陈浩", "11281385", "否"),
@@ -48,14 +48,14 @@ class LedgerTests(unittest.TestCase):
             ("2026-09-03", "六大队", "黄浩", "747433", "否"),
         ]
         metrics = sync.summarize_ledger_rows(rows, "2026-09", {"11281385"})
-        self.assertEqual(metrics["11281385"], {"outDays": 2, "misses": 1})
+        self.assertEqual(metrics["11281385"], {"outDays": 2})
 
 
 class DriverMetricTests(unittest.TestCase):
     def test_promotion_delta_can_be_negative(self):
         drivers = sync.build_driver_rows(
             [{"employeeId": "11281385", "name": "陈浩", "team": "一大队"}],
-            {"11281385": {"outDays": 3, "misses": 5}},
+            {"11281385": {"outDays": 3}},
             {"陈浩": 2},
             {"11281385": 4},
         )
@@ -69,7 +69,7 @@ class DriverMetricTests(unittest.TestCase):
                 "realTransfers": 4,
                 "promotionCount": 2,
                 "promotionCompleted": True,
-                "promotionDelta": -3,
+                "promotionDelta": -1,
             },
         )
 
@@ -80,8 +80,8 @@ class DriverMetricTests(unittest.TestCase):
                 {"employeeId": "2", "name": "已完成", "team": "一大队"},
             ],
             {
-                "1": {"outDays": 2, "misses": 0},
-                "2": {"outDays": 2, "misses": 0},
+                "1": {"outDays": 2},
+                "2": {"outDays": 2},
             },
             {"未完成": 4, "已完成": 1},
             {"1": 1, "2": 2},

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "periodStart": "2026-09-01",
     "periodEnd": "2026-09-15",
     "sourceDate": "2026-09-15",
@@ -18,7 +18,7 @@
       "realTransfers": 0,
       "promotionCount": 4,
       "promotionCompleted": false,
-      "promotionDelta": 3
+      "promotionDelta": 0
     },
     {
       "employeeId": "11153813",
@@ -28,7 +28,7 @@
       "realTransfers": 2,
       "promotionCount": 6,
       "promotionCompleted": true,
-      "promotionDelta": 4
+      "promotionDelta": -4
     },
     {
       "employeeId": "11842395",
@@ -38,7 +38,7 @@
       "realTransfers": 2,
       "promotionCount": 8,
       "promotionCompleted": true,
-      "promotionDelta": 4
+      "promotionDelta": -1
     },
     {
       "employeeId": "11357723",
@@ -48,7 +48,7 @@
       "realTransfers": 3,
       "promotionCount": 4,
       "promotionCompleted": true,
-      "promotionDelta": -2
+      "promotionDelta": -10
     },
     {
       "employeeId": "11341334",
@@ -88,7 +88,7 @@
       "realTransfers": 2,
       "promotionCount": 1,
       "promotionCompleted": true,
-      "promotionDelta": -4
+      "promotionDelta": -7
     },
     {
       "employeeId": "144653",
@@ -118,7 +118,7 @@
       "realTransfers": 1,
       "promotionCount": 4,
       "promotionCompleted": false,
-      "promotionDelta": 3
+      "promotionDelta": -1
     },
     {
       "employeeId": "11562564",
@@ -128,7 +128,7 @@
       "realTransfers": 1,
       "promotionCount": 5,
       "promotionCompleted": false,
-      "promotionDelta": -5
+      "promotionDelta": -8
     },
     {
       "employeeId": "11719216",
@@ -168,7 +168,7 @@
       "realTransfers": 0,
       "promotionCount": 6,
       "promotionCompleted": false,
-      "promotionDelta": -2
+      "promotionDelta": -8
     },
     {
       "employeeId": "11165495",
@@ -208,7 +208,7 @@
       "realTransfers": 1,
       "promotionCount": 3,
       "promotionCompleted": false,
-      "promotionDelta": -7
+      "promotionDelta": -10
     },
     {
       "employeeId": "11613012",
@@ -218,7 +218,7 @@
       "realTransfers": 1,
       "promotionCount": 1,
       "promotionCompleted": false,
-      "promotionDelta": -5
+      "promotionDelta": -6
     },
     {
       "employeeId": "11672974",
@@ -248,7 +248,7 @@
       "realTransfers": 0,
       "promotionCount": 12,
       "promotionCompleted": false,
-      "promotionDelta": 3
+      "promotionDelta": 2
     },
     {
       "employeeId": "11596221",
@@ -258,7 +258,7 @@
       "realTransfers": 0,
       "promotionCount": 8,
       "promotionCompleted": false,
-      "promotionDelta": 6
+      "promotionDelta": -2
     },
     {
       "employeeId": "11628210",
@@ -278,7 +278,7 @@
       "realTransfers": 2,
       "promotionCount": 3,
       "promotionCompleted": true,
-      "promotionDelta": -4
+      "promotionDelta": -11
     },
     {
       "employeeId": "329980",
@@ -288,7 +288,7 @@
       "realTransfers": 6,
       "promotionCount": 0,
       "promotionCompleted": true,
-      "promotionDelta": -2
+      "promotionDelta": -13
     },
     {
       "employeeId": "11281385",
@@ -298,7 +298,7 @@
       "realTransfers": 5,
       "promotionCount": 13,
       "promotionCompleted": true,
-      "promotionDelta": 12
+      "promotionDelta": -1
     },
     {
       "employeeId": "230857",
@@ -308,7 +308,7 @@
       "realTransfers": 0,
       "promotionCount": 11,
       "promotionCompleted": false,
-      "promotionDelta": 1
+      "promotionDelta": 0
     },
     {
       "employeeId": "11377946",
@@ -338,7 +338,7 @@
       "realTransfers": 0,
       "promotionCount": 3,
       "promotionCompleted": false,
-      "promotionDelta": -2
+      "promotionDelta": -4
     },
     {
       "employeeId": "11127615",
@@ -348,7 +348,7 @@
       "realTransfers": 3,
       "promotionCount": 0,
       "promotionCompleted": true,
-      "promotionDelta": -3
+      "promotionDelta": -13
     },
     {
       "employeeId": "132341",
@@ -358,7 +358,7 @@
       "realTransfers": 0,
       "promotionCount": 2,
       "promotionCompleted": false,
-      "promotionDelta": -8
+      "promotionDelta": -10
     },
     {
       "employeeId": "11359384",
@@ -368,7 +368,7 @@
       "realTransfers": 2,
       "promotionCount": 0,
       "promotionCompleted": true,
-      "promotionDelta": -4
+      "promotionDelta": -14
     },
     {
       "employeeId": "11163765",
@@ -398,7 +398,7 @@
       "realTransfers": 0,
       "promotionCount": 12,
       "promotionCompleted": false,
-      "promotionDelta": 11
+      "promotionDelta": 0
     },
     {
       "employeeId": "11571942",
@@ -408,7 +408,7 @@
       "realTransfers": 0,
       "promotionCount": 2,
       "promotionCompleted": false,
-      "promotionDelta": -4
+      "promotionDelta": -6
     },
     {
       "employeeId": "11189837",
@@ -448,7 +448,7 @@
       "realTransfers": 1,
       "promotionCount": 8,
       "promotionCompleted": false,
-      "promotionDelta": 2
+      "promotionDelta": -6
     },
     {
       "employeeId": "11333074",
@@ -528,7 +528,7 @@
       "realTransfers": 2,
       "promotionCount": 0,
       "promotionCompleted": true,
-      "promotionDelta": -4
+      "promotionDelta": -14
     },
     {
       "employeeId": "11733120",
@@ -538,7 +538,7 @@
       "realTransfers": 2,
       "promotionCount": 10,
       "promotionCompleted": true,
-      "promotionDelta": 9
+      "promotionDelta": 4
     },
     {
       "employeeId": "11418519",
@@ -558,7 +558,7 @@
       "realTransfers": 6,
       "promotionCount": 1,
       "promotionCompleted": true,
-      "promotionDelta": -6
+      "promotionDelta": -12
     },
     {
       "employeeId": "11137383",
@@ -568,7 +568,7 @@
       "realTransfers": 0,
       "promotionCount": 6,
       "promotionCompleted": false,
-      "promotionDelta": 0
+      "promotionDelta": -3
     },
     {
       "employeeId": "11355156",
@@ -618,7 +618,7 @@
       "realTransfers": 0,
       "promotionCount": 7,
       "promotionCompleted": false,
-      "promotionDelta": 4
+      "promotionDelta": -3
     },
     {
       "employeeId": "11815621",
@@ -638,7 +638,7 @@
       "realTransfers": 0,
       "promotionCount": 1,
       "promotionCompleted": false,
-      "promotionDelta": -2
+      "promotionDelta": -3
     },
     {
       "employeeId": "11859071",
@@ -678,7 +678,7 @@
       "realTransfers": 0,
       "promotionCount": 8,
       "promotionCompleted": false,
-      "promotionDelta": 0
+      "promotionDelta": -2
     },
     {
       "employeeId": "11126140",
@@ -688,7 +688,7 @@
       "realTransfers": 2,
       "promotionCount": 0,
       "promotionCompleted": true,
-      "promotionDelta": -3
+      "promotionDelta": -11
     },
     {
       "employeeId": "11712072",
@@ -758,7 +758,7 @@
       "realTransfers": 15,
       "promotionCount": 2,
       "promotionCompleted": true,
-      "promotionDelta": 1
+      "promotionDelta": -12
     },
     {
       "employeeId": "11137605",
@@ -768,7 +768,7 @@
       "realTransfers": 3,
       "promotionCount": 0,
       "promotionCompleted": true,
-      "promotionDelta": -3
+      "promotionDelta": -10
     },
     {
       "employeeId": "11139361",
@@ -788,7 +788,7 @@
       "realTransfers": 7,
       "promotionCount": 2,
       "promotionCompleted": true,
-      "promotionDelta": 2
+      "promotionDelta": -6
     },
     {
       "employeeId": "11450977",
@@ -798,7 +798,7 @@
       "realTransfers": 0,
       "promotionCount": 2,
       "promotionCompleted": false,
-      "promotionDelta": 1
+      "promotionDelta": 0
     },
     {
       "employeeId": "342626",
@@ -808,7 +808,7 @@
       "realTransfers": 2,
       "promotionCount": 10,
       "promotionCompleted": true,
-      "promotionDelta": 3
+      "promotionDelta": -2
     },
     {
       "employeeId": "11708178",
@@ -878,7 +878,7 @@
       "realTransfers": 3,
       "promotionCount": 5,
       "promotionCompleted": true,
-      "promotionDelta": 5
+      "promotionDelta": -9
     },
     {
       "employeeId": "11541389",
@@ -898,7 +898,7 @@
       "realTransfers": 2,
       "promotionCount": 0,
       "promotionCompleted": true,
-      "promotionDelta": -13
+      "promotionDelta": -14
     },
     {
       "employeeId": "11495097",
@@ -918,7 +918,7 @@
       "realTransfers": 1,
       "promotionCount": 13,
       "promotionCompleted": false,
-      "promotionDelta": 12
+      "promotionDelta": 0
     },
     {
       "employeeId": "11367526",
@@ -958,7 +958,7 @@
       "realTransfers": 1,
       "promotionCount": 3,
       "promotionCompleted": false,
-      "promotionDelta": -10
+      "promotionDelta": -11
     },
     {
       "employeeId": "11531631",
@@ -978,7 +978,7 @@
       "realTransfers": 0,
       "promotionCount": 6,
       "promotionCompleted": false,
-      "promotionDelta": -1
+      "promotionDelta": -7
     },
     {
       "employeeId": "11389093",
@@ -1008,7 +1008,7 @@
       "realTransfers": 4,
       "promotionCount": 0,
       "promotionCompleted": true,
-      "promotionDelta": -3
+      "promotionDelta": -10
     },
     {
       "employeeId": "11388277",
@@ -1048,7 +1048,7 @@
       "realTransfers": 2,
       "promotionCount": 0,
       "promotionCompleted": true,
-      "promotionDelta": -3
+      "promotionDelta": -6
     },
     {
       "employeeId": "617762",
@@ -1088,7 +1088,7 @@
       "realTransfers": 2,
       "promotionCount": 0,
       "promotionCompleted": true,
-      "promotionDelta": -7
+      "promotionDelta": -11
     },
     {
       "employeeId": "11609144",
@@ -1118,7 +1118,7 @@
       "realTransfers": 2,
       "promotionCount": 0,
       "promotionCompleted": true,
-      "promotionDelta": -6
+      "promotionDelta": -14
     },
     {
       "employeeId": "11216136",
@@ -1128,7 +1128,7 @@
       "realTransfers": 1,
       "promotionCount": 5,
       "promotionCompleted": false,
-      "promotionDelta": -3
+      "promotionDelta": -7
     },
     {
       "employeeId": "11242883",
@@ -1148,7 +1148,7 @@
       "realTransfers": 0,
       "promotionCount": 7,
       "promotionCompleted": false,
-      "promotionDelta": 0
+      "promotionDelta": -6
     },
     {
       "employeeId": "11897933",
@@ -1158,7 +1158,7 @@
       "realTransfers": 2,
       "promotionCount": 11,
       "promotionCompleted": true,
-      "promotionDelta": 9
+      "promotionDelta": -2
     },
     {
       "employeeId": "946042",
@@ -1208,7 +1208,7 @@
       "realTransfers": 3,
       "promotionCount": 0,
       "promotionCompleted": true,
-      "promotionDelta": -4
+      "promotionDelta": -14
     },
     {
       "employeeId": "11942806",
@@ -1218,7 +1218,7 @@
       "realTransfers": 0,
       "promotionCount": 3,
       "promotionCompleted": false,
-      "promotionDelta": -1
+      "promotionDelta": -3
     },
     {
       "employeeId": "11240925",
@@ -1228,7 +1228,7 @@
       "realTransfers": 4,
       "promotionCount": 0,
       "promotionCompleted": true,
-      "promotionDelta": -3
+      "promotionDelta": -14
     },
     {
       "employeeId": "11304322",
@@ -1238,7 +1238,7 @@
       "realTransfers": 0,
       "promotionCount": 8,
       "promotionCompleted": false,
-      "promotionDelta": 6
+      "promotionDelta": -2
     },
     {
       "employeeId": "11657036",
@@ -1248,7 +1248,7 @@
       "realTransfers": 2,
       "promotionCount": 2,
       "promotionCompleted": true,
-      "promotionDelta": -2
+      "promotionDelta": -8
     },
     {
       "employeeId": "11870475",
@@ -1258,7 +1258,7 @@
       "realTransfers": 5,
       "promotionCount": 3,
       "promotionCompleted": true,
-      "promotionDelta": -5
+      "promotionDelta": -10
     },
     {
       "employeeId": "11972584",
@@ -1268,7 +1268,7 @@
       "realTransfers": 1,
       "promotionCount": 3,
       "promotionCompleted": false,
-      "promotionDelta": -5
+      "promotionDelta": -7
     },
     {
       "employeeId": "11548181",
@@ -1278,7 +1278,7 @@
       "realTransfers": 5,
       "promotionCount": 1,
       "promotionCompleted": true,
-      "promotionDelta": -2
+      "promotionDelta": -12
     },
     {
       "employeeId": "11322063",
@@ -1308,7 +1308,7 @@
       "realTransfers": 2,
       "promotionCount": 0,
       "promotionCompleted": true,
-      "promotionDelta": -3
+      "promotionDelta": -12
     },
     {
       "employeeId": "11573197",
@@ -1348,7 +1348,7 @@
       "realTransfers": 3,
       "promotionCount": 0,
       "promotionCompleted": true,
-      "promotionDelta": -1
+      "promotionDelta": -9
     },
     {
       "employeeId": "11413155",
@@ -1358,7 +1358,7 @@
       "realTransfers": 0,
       "promotionCount": 2,
       "promotionCompleted": false,
-      "promotionDelta": 0
+      "promotionDelta": -2
     },
     {
       "employeeId": "11562903",
@@ -1378,7 +1378,7 @@
       "realTransfers": 1,
       "promotionCount": 3,
       "promotionCompleted": false,
-      "promotionDelta": -7
+      "promotionDelta": -9
     },
     {
       "employeeId": "11654011",
@@ -1398,7 +1398,7 @@
       "realTransfers": 1,
       "promotionCount": 9,
       "promotionCompleted": false,
-      "promotionDelta": 5
+      "promotionDelta": -4
     },
     {
       "employeeId": "11732513",
@@ -1428,7 +1428,7 @@
       "realTransfers": 2,
       "promotionCount": 9,
       "promotionCompleted": true,
-      "promotionDelta": 3
+      "promotionDelta": -1
     },
     {
       "employeeId": "11109048",
@@ -1438,7 +1438,7 @@
       "realTransfers": 0,
       "promotionCount": 8,
       "promotionCompleted": false,
-      "promotionDelta": -3
+      "promotionDelta": -5
     },
     {
       "employeeId": "11179353",
@@ -1458,7 +1458,7 @@
       "realTransfers": 0,
       "promotionCount": 8,
       "promotionCompleted": false,
-      "promotionDelta": 0
+      "promotionDelta": -5
     },
     {
       "employeeId": "11730570",
@@ -1488,7 +1488,7 @@
       "realTransfers": 0,
       "promotionCount": 2,
       "promotionCompleted": false,
-      "promotionDelta": -3
+      "promotionDelta": -5
     },
     {
       "employeeId": "11732422",
@@ -1498,7 +1498,7 @@
       "realTransfers": 2,
       "promotionCount": 1,
       "promotionCompleted": true,
-      "promotionDelta": -1
+      "promotionDelta": -13
     },
     {
       "employeeId": "730740",
@@ -1528,7 +1528,7 @@
       "realTransfers": 1,
       "promotionCount": 8,
       "promotionCompleted": false,
-      "promotionDelta": 1
+      "promotionDelta": -2
     },
     {
       "employeeId": "11401729",
@@ -1538,7 +1538,7 @@
       "realTransfers": 0,
       "promotionCount": 11,
       "promotionCompleted": false,
-      "promotionDelta": 1
+      "promotionDelta": -1
     },
     {
       "employeeId": "11867571",
@@ -1588,7 +1588,7 @@
       "realTransfers": 2,
       "promotionCount": 2,
       "promotionCompleted": true,
-      "promotionDelta": -6
+      "promotionDelta": -8
     },
     {
       "employeeId": "11339151",
@@ -1608,7 +1608,7 @@
       "realTransfers": 2,
       "promotionCount": 1,
       "promotionCompleted": true,
-      "promotionDelta": -2
+      "promotionDelta": -5
     },
     {
       "employeeId": "11694095",
@@ -1648,7 +1648,7 @@
       "realTransfers": 0,
       "promotionCount": 5,
       "promotionCompleted": false,
-      "promotionDelta": -1
+      "promotionDelta": -3
     },
     {
       "employeeId": "621782",
@@ -1658,7 +1658,7 @@
       "realTransfers": 5,
       "promotionCount": 1,
       "promotionCompleted": true,
-      "promotionDelta": -3
+      "promotionDelta": -13
     },
     {
       "employeeId": "11142953",
@@ -1758,7 +1758,7 @@
       "realTransfers": 1,
       "promotionCount": 5,
       "promotionCompleted": false,
-      "promotionDelta": -5
+      "promotionDelta": -7
     },
     {
       "employeeId": "11899068",
@@ -1768,7 +1768,7 @@
       "realTransfers": 2,
       "promotionCount": 2,
       "promotionCompleted": true,
-      "promotionDelta": -3
+      "promotionDelta": -10
     },
     {
       "employeeId": "11398813",
@@ -1778,7 +1778,7 @@
       "realTransfers": 2,
       "promotionCount": 4,
       "promotionCompleted": true,
-      "promotionDelta": -1
+      "promotionDelta": -9
     },
     {
       "employeeId": "893417",
@@ -1798,7 +1798,7 @@
       "realTransfers": 0,
       "promotionCount": 2,
       "promotionCompleted": false,
-      "promotionDelta": -6
+      "promotionDelta": -7
     },
     {
       "employeeId": "11682072",
@@ -1808,7 +1808,7 @@
       "realTransfers": 9,
       "promotionCount": 5,
       "promotionCompleted": true,
-      "promotionDelta": 3
+      "promotionDelta": -7
     },
     {
       "employeeId": "11614264",
@@ -1818,7 +1818,7 @@
       "realTransfers": 0,
       "promotionCount": 4,
       "promotionCompleted": false,
-      "promotionDelta": 0
+      "promotionDelta": -3
     },
     {
       "employeeId": "11846633",
@@ -1828,7 +1828,7 @@
       "realTransfers": 0,
       "promotionCount": 1,
       "promotionCompleted": false,
-      "promotionDelta": -2
+      "promotionDelta": -3
     },
     {
       "employeeId": "11636965",
@@ -1848,7 +1848,7 @@
       "realTransfers": 3,
       "promotionCount": 6,
       "promotionCompleted": true,
-      "promotionDelta": 5
+      "promotionDelta": -6
     },
     {
       "employeeId": "11137565",
@@ -1868,7 +1868,7 @@
       "realTransfers": 2,
       "promotionCount": 2,
       "promotionCompleted": true,
-      "promotionDelta": 0
+      "promotionDelta": -9
     },
     {
       "employeeId": "11170848",
@@ -1888,7 +1888,7 @@
       "realTransfers": 0,
       "promotionCount": 2,
       "promotionCompleted": false,
-      "promotionDelta": -4
+      "promotionDelta": -5
     },
     {
       "employeeId": "11586110",
@@ -1898,7 +1898,7 @@
       "realTransfers": 3,
       "promotionCount": 2,
       "promotionCompleted": true,
-      "promotionDelta": -3
+      "promotionDelta": -6
     },
     {
       "employeeId": "11681274",
@@ -1918,7 +1918,7 @@
       "realTransfers": 2,
       "promotionCount": 0,
       "promotionCompleted": true,
-      "promotionDelta": -3
+      "promotionDelta": -9
     },
     {
       "employeeId": "11382033",
@@ -1928,7 +1928,7 @@
       "realTransfers": 2,
       "promotionCount": 1,
       "promotionCompleted": true,
-      "promotionDelta": -3
+      "promotionDelta": -9
     },
     {
       "employeeId": "11793201",
@@ -1978,7 +1978,7 @@
       "realTransfers": 1,
       "promotionCount": 11,
       "promotionCompleted": false,
-      "promotionDelta": 7
+      "promotionDelta": -3
     },
     {
       "employeeId": "11393862",
@@ -1988,7 +1988,7 @@
       "realTransfers": 0,
       "promotionCount": 10,
       "promotionCompleted": false,
-      "promotionDelta": 10
+      "promotionDelta": 2
     },
     {
       "employeeId": "11464223",
@@ -1998,7 +1998,7 @@
       "realTransfers": 0,
       "promotionCount": 2,
       "promotionCompleted": false,
-      "promotionDelta": -3
+      "promotionDelta": -5
     },
     {
       "employeeId": "11233495",
@@ -2048,7 +2048,7 @@
       "realTransfers": 2,
       "promotionCount": 3,
       "promotionCompleted": true,
-      "promotionDelta": -2
+      "promotionDelta": -9
     },
     {
       "employeeId": "11157748",
@@ -2058,7 +2058,7 @@
       "realTransfers": 1,
       "promotionCount": 1,
       "promotionCompleted": false,
-      "promotionDelta": -5
+      "promotionDelta": -6
     },
     {
       "employeeId": "11188062",
@@ -2098,7 +2098,7 @@
       "realTransfers": 0,
       "promotionCount": 3,
       "promotionCompleted": false,
-      "promotionDelta": -4
+      "promotionDelta": -6
     },
     {
       "employeeId": "11695125",
@@ -2108,7 +2108,7 @@
       "realTransfers": 0,
       "promotionCount": 2,
       "promotionCompleted": false,
-      "promotionDelta": -1
+      "promotionDelta": -2
     },
     {
       "employeeId": "11876880",
@@ -2138,7 +2138,7 @@
       "realTransfers": 1,
       "promotionCount": 7,
       "promotionCompleted": false,
-      "promotionDelta": 4
+      "promotionDelta": -3
     },
     {
       "employeeId": "11211025",
@@ -2148,7 +2148,7 @@
       "realTransfers": 2,
       "promotionCount": 1,
       "promotionCompleted": true,
-      "promotionDelta": -7
+      "promotionDelta": -9
     },
     {
       "employeeId": "11413135",
@@ -2158,7 +2158,7 @@
       "realTransfers": 3,
       "promotionCount": 6,
       "promotionCompleted": true,
-      "promotionDelta": 4
+      "promotionDelta": -6
     },
     {
       "employeeId": "11870939",
@@ -2168,7 +2168,7 @@
       "realTransfers": 1,
       "promotionCount": 5,
       "promotionCompleted": false,
-      "promotionDelta": -3
+      "promotionDelta": -6
     },
     {
       "employeeId": "11651768",
@@ -2178,7 +2178,7 @@
       "realTransfers": 2,
       "promotionCount": 2,
       "promotionCompleted": true,
-      "promotionDelta": -4
+      "promotionDelta": -7
     },
     {
       "employeeId": "11466795",
@@ -2228,7 +2228,7 @@
       "realTransfers": 0,
       "promotionCount": 3,
       "promotionCompleted": false,
-      "promotionDelta": 2
+      "promotionDelta": -1
     },
     {
       "employeeId": "11246180",
@@ -2238,7 +2238,7 @@
       "realTransfers": 3,
       "promotionCount": 6,
       "promotionCompleted": true,
-      "promotionDelta": 4
+      "promotionDelta": -8
     },
     {
       "employeeId": "11492795",
@@ -2328,7 +2328,7 @@
       "realTransfers": 8,
       "promotionCount": 0,
       "promotionCompleted": true,
-      "promotionDelta": -2
+      "promotionDelta": -11
     },
     {
       "employeeId": "11855354",
@@ -2388,7 +2388,7 @@
       "realTransfers": 1,
       "promotionCount": 1,
       "promotionCompleted": false,
-      "promotionDelta": -12
+      "promotionDelta": -13
     },
     {
       "employeeId": "11386736",
@@ -2398,7 +2398,7 @@
       "realTransfers": 0,
       "promotionCount": 9,
       "promotionCompleted": false,
-      "promotionDelta": 6
+      "promotionDelta": -2
     },
     {
       "employeeId": "11579891",
@@ -2408,7 +2408,7 @@
       "realTransfers": 1,
       "promotionCount": 1,
       "promotionCompleted": false,
-      "promotionDelta": -9
+      "promotionDelta": -10
     },
     {
       "employeeId": "11583121",
@@ -2468,7 +2468,7 @@
       "realTransfers": 3,
       "promotionCount": 2,
       "promotionCompleted": true,
-      "promotionDelta": -1
+      "promotionDelta": -10
     },
     {
       "employeeId": "11380637",
@@ -2488,7 +2488,7 @@
       "realTransfers": 5,
       "promotionCount": 8,
       "promotionCompleted": true,
-      "promotionDelta": 7
+      "promotionDelta": -2
     },
     {
       "employeeId": "11594779",
@@ -2518,7 +2518,7 @@
       "realTransfers": 0,
       "promotionCount": 1,
       "promotionCompleted": false,
-      "promotionDelta": -5
+      "promotionDelta": -6
     },
     {
       "employeeId": "11575867",
@@ -2568,7 +2568,7 @@
       "realTransfers": 15,
       "promotionCount": 0,
       "promotionCompleted": true,
-      "promotionDelta": 0
+      "promotionDelta": -8
     },
     {
       "employeeId": "11849366",
@@ -2608,7 +2608,7 @@
       "realTransfers": 4,
       "promotionCount": 0,
       "promotionCompleted": true,
-      "promotionDelta": -3
+      "promotionDelta": -13
     },
     {
       "employeeId": "11337545",
@@ -2638,7 +2638,7 @@
       "realTransfers": 2,
       "promotionCount": 3,
       "promotionCompleted": true,
-      "promotionDelta": -1
+      "promotionDelta": -6
     },
     {
       "employeeId": "11669708",
@@ -2648,7 +2648,7 @@
       "realTransfers": 2,
       "promotionCount": 0,
       "promotionCompleted": true,
-      "promotionDelta": -9
+      "promotionDelta": -12
     },
     {
       "employeeId": "11256567",
@@ -2658,7 +2658,7 @@
       "realTransfers": 1,
       "promotionCount": 5,
       "promotionCompleted": false,
-      "promotionDelta": -3
+      "promotionDelta": -8
     },
     {
       "employeeId": "11312276",
@@ -2678,7 +2678,7 @@
       "realTransfers": 0,
       "promotionCount": 3,
       "promotionCompleted": false,
-      "promotionDelta": -1
+      "promotionDelta": -4
     },
     {
       "employeeId": "11382583",
@@ -2698,7 +2698,7 @@
       "realTransfers": 3,
       "promotionCount": 0,
       "promotionCompleted": true,
-      "promotionDelta": -3
+      "promotionDelta": -13
     },
     {
       "employeeId": "11615446",
@@ -2708,7 +2708,7 @@
       "realTransfers": 3,
       "promotionCount": 0,
       "promotionCompleted": true,
-      "promotionDelta": -5
+      "promotionDelta": -11
     },
     {
       "employeeId": "11247947",
@@ -2718,7 +2718,7 @@
       "realTransfers": 0,
       "promotionCount": 1,
       "promotionCompleted": false,
-      "promotionDelta": -1
+      "promotionDelta": -2
     },
     {
       "employeeId": "11645215",
@@ -2748,7 +2748,7 @@
       "realTransfers": 3,
       "promotionCount": 0,
       "promotionCompleted": true,
-      "promotionDelta": -2
+      "promotionDelta": -10
     },
     {
       "employeeId": "11625869",
@@ -2768,7 +2768,7 @@
       "realTransfers": 1,
       "promotionCount": 12,
       "promotionCompleted": false,
-      "promotionDelta": 7
+      "promotionDelta": -1
     },
     {
       "employeeId": "11891393",
@@ -2778,7 +2778,7 @@
       "realTransfers": 2,
       "promotionCount": 10,
       "promotionCompleted": true,
-      "promotionDelta": 7
+      "promotionDelta": -3
     },
     {
       "employeeId": "11626537",
@@ -2788,7 +2788,7 @@
       "realTransfers": 4,
       "promotionCount": 0,
       "promotionCompleted": true,
-      "promotionDelta": -8
+      "promotionDelta": -11
     },
     {
       "employeeId": "11371669",
@@ -2808,7 +2808,7 @@
       "realTransfers": 0,
       "promotionCount": 2,
       "promotionCompleted": false,
-      "promotionDelta": -5
+      "promotionDelta": -7
     },
     {
       "employeeId": "11741600",
@@ -2858,7 +2858,7 @@
       "realTransfers": 3,
       "promotionCount": 10,
       "promotionCompleted": true,
-      "promotionDelta": 10
+      "promotionDelta": -3
     },
     {
       "employeeId": "11571178",
@@ -2898,7 +2898,7 @@
       "realTransfers": 2,
       "promotionCount": 1,
       "promotionCompleted": true,
-      "promotionDelta": -4
+      "promotionDelta": -11
     },
     {
       "employeeId": "11133673",
@@ -2938,7 +2938,7 @@
       "realTransfers": 0,
       "promotionCount": 1,
       "promotionCompleted": false,
-      "promotionDelta": -9
+      "promotionDelta": -10
     },
     {
       "employeeId": "11336922",
@@ -2988,7 +2988,7 @@
       "realTransfers": 0,
       "promotionCount": 1,
       "promotionCompleted": false,
-      "promotionDelta": -5
+      "promotionDelta": -6
     },
     {
       "employeeId": "11575926",
@@ -2998,7 +2998,7 @@
       "realTransfers": 2,
       "promotionCount": 3,
       "promotionCompleted": true,
-      "promotionDelta": 2
+      "promotionDelta": -11
     },
     {
       "employeeId": "11241735",
@@ -3018,7 +3018,7 @@
       "realTransfers": 2,
       "promotionCount": 4,
       "promotionCompleted": true,
-      "promotionDelta": 0
+      "promotionDelta": -4
     },
     {
       "employeeId": "11369028",
@@ -3058,7 +3058,7 @@
       "realTransfers": 3,
       "promotionCount": 3,
       "promotionCompleted": true,
-      "promotionDelta": 0
+      "promotionDelta": -5
     },
     {
       "employeeId": "11357934",
@@ -3068,7 +3068,7 @@
       "realTransfers": 2,
       "promotionCount": 4,
       "promotionCompleted": true,
-      "promotionDelta": -1
+      "promotionDelta": -9
     },
     {
       "employeeId": "11487896",
@@ -3108,7 +3108,7 @@
       "realTransfers": 0,
       "promotionCount": 1,
       "promotionCompleted": false,
-      "promotionDelta": -11
+      "promotionDelta": -12
     },
     {
       "employeeId": "455022",
@@ -3138,7 +3138,7 @@
       "realTransfers": 0,
       "promotionCount": 5,
       "promotionCompleted": false,
-      "promotionDelta": 2
+      "promotionDelta": 0
     },
     {
       "employeeId": "11414363",
@@ -3148,7 +3148,7 @@
       "realTransfers": 0,
       "promotionCount": 5,
       "promotionCompleted": false,
-      "promotionDelta": -5
+      "promotionDelta": -9
     },
     {
       "employeeId": "339269",
@@ -3158,7 +3158,7 @@
       "realTransfers": 2,
       "promotionCount": 0,
       "promotionCompleted": true,
-      "promotionDelta": -3
+      "promotionDelta": -14
     },
     {
       "employeeId": "11684181",
@@ -3178,7 +3178,7 @@
       "realTransfers": 0,
       "promotionCount": 5,
       "promotionCompleted": false,
-      "promotionDelta": -1
+      "promotionDelta": -4
     },
     {
       "employeeId": "11212499",
@@ -3188,7 +3188,7 @@
       "realTransfers": 0,
       "promotionCount": 8,
       "promotionCompleted": false,
-      "promotionDelta": 4
+      "promotionDelta": -2
     },
     {
       "employeeId": "11917903",
@@ -3218,7 +3218,7 @@
       "realTransfers": 0,
       "promotionCount": 6,
       "promotionCompleted": false,
-      "promotionDelta": 6
+      "promotionDelta": 0
     },
     {
       "employeeId": "11125916",
@@ -3238,7 +3238,7 @@
       "realTransfers": 0,
       "promotionCount": 15,
       "promotionCompleted": false,
-      "promotionDelta": 15
+      "promotionDelta": 3
     },
     {
       "employeeId": "11331212",
@@ -3258,7 +3258,7 @@
       "realTransfers": 0,
       "promotionCount": 4,
       "promotionCompleted": false,
-      "promotionDelta": -4
+      "promotionDelta": -7
     },
     {
       "employeeId": "11226862",
@@ -3268,7 +3268,7 @@
       "realTransfers": 0,
       "promotionCount": 8,
       "promotionCompleted": false,
-      "promotionDelta": 1
+      "promotionDelta": -5
     },
     {
       "employeeId": "11856878",
@@ -3278,7 +3278,7 @@
       "realTransfers": 2,
       "promotionCount": 5,
       "promotionCompleted": true,
-      "promotionDelta": 4
+      "promotionDelta": -8
     },
     {
       "employeeId": "11393083",
