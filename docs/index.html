@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="theme-color" content="#f4f7fb">
+    <title>推广工作台</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script type="module" src="./app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">跳到主要内容</a>
+
+    <div class="app-shell">
+      <header class="app-header">
+        <div class="brand-block">
+          <div class="brand-mark" aria-hidden="true">推</div>
+          <div>
+            <p class="eyebrow">凉山运营数据</p>
+            <h1>推广工作台</h1>
+          </div>
+        </div>
+
+        <div class="sync-panel" aria-live="polite">
+          <span id="sync-label">正在读取数据...</span>
+          <span id="period-label"></span>
+        </div>
+      </header>
+
+      <nav class="tabs desktop-tabs" role="tablist" aria-label="工作台功能">
+        <button id="tab-teams" class="tab-button" type="button" role="tab" aria-selected="true" aria-controls="panel-teams" data-tab="teams">
+          队伍
+        </button>
+        <button id="tab-drivers" class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="panel-drivers" data-tab="drivers" tabindex="-1">
+          司机查询
+        </button>
+        <button id="tab-orders" class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="panel-orders" data-tab="orders" tabindex="-1">
+          工单查询
+        </button>
+      </nav>
+
+      <main id="main-content" tabindex="-1">
+        <div id="load-state" class="state-panel" role="status">
+          <strong>正在载入数据</strong>
+          <span>请稍候。</span>
+        </div>
+
+        <div id="app-content" hidden>
+          <section id="panel-teams" class="tab-panel" role="tabpanel" aria-labelledby="tab-teams">
+            <div class="section-intro">
+              <div>
+                <p class="section-kicker">本月累计</p>
+                <h2>队伍司机</h2>
+              </div>
+              <p>选择队伍后查看每名司机的出车天数、真实转单与推广差值。</p>
+            </div>
+
+            <div id="team-options" class="team-grid" role="group" aria-label="选择队伍"></div>
+
+            <div class="list-heading">
+              <h3 id="team-title">一大队</h3>
+              <span id="team-count" class="count-label"></span>
+            </div>
+            <div id="team-drivers" class="driver-list"></div>
+          </section>
+
+          <section id="panel-drivers" class="tab-panel" role="tabpanel" aria-labelledby="tab-drivers" hidden>
+            <div class="section-intro">
+              <div>
+                <p class="section-kicker">本月累计</p>
+                <h2>司机数据查询</h2>
+              </div>
+              <p>输入姓名进行包含查询，输入纯数字工号进行精确查询。</p>
+            </div>
+
+            <form id="driver-search-form" class="search-form" role="search">
+              <label for="driver-query">姓名或工号</label>
+              <div class="search-row">
+                <input id="driver-query" name="driver-query" type="search" autocomplete="off" enterkeyhint="search" placeholder="例：陈浩或11281385">
+                <button class="primary-button" type="submit">查询</button>
+              </div>
+            </form>
+
+            <p id="driver-search-status" class="result-status" aria-live="polite"></p>
+            <div id="driver-results" class="driver-list"></div>
+          </section>
+
+          <section id="panel-orders" class="tab-panel" role="tabpanel" aria-labelledby="tab-orders" hidden>
+            <div class="section-intro">
+              <div>
+                <p class="section-kicker">本月明细</p>
+                <h2>推广工单查询</h2>
+              </div>
+              <p>按推荐司机工号查询全部匹配订单及五个判定标记。</p>
+            </div>
+
+            <form id="order-search-form" class="search-form">
+              <label for="order-query">推荐司机工号</label>
+              <div class="search-row">
+                <input id="order-query" name="order-query" type="text" inputmode="numeric" pattern="[0-9]*" autocomplete="off" enterkeyhint="search" placeholder="例：11281385">
+                <button class="primary-button" type="submit">查询</button>
+              </div>
+            </form>
+
+            <p id="order-search-status" class="result-status" aria-live="polite"></p>
+            <div id="order-results"></div>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <nav class="tabs mobile-tabs" role="tablist" aria-label="工作台功能">
+      <button class="tab-button" type="button" role="tab" aria-selected="true" aria-controls="panel-teams" data-tab="teams">
+        <span class="tab-icon" aria-hidden="true">队</span>
+        <span>队伍</span>
+      </button>
+      <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="panel-drivers" data-tab="drivers" tabindex="-1">
+        <span class="tab-icon" aria-hidden="true">查</span>
+        <span>司机查询</span>
+      </button>
+      <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="panel-orders" data-tab="orders" tabindex="-1">
+        <span class="tab-icon" aria-hidden="true">单</span>
+        <span>工单查询</span>
+      </button>
+    </nav>
+  </body>
+</html>
+

@@ -1,0 +1,382 @@
+import {
+  TEAMS,
+  compareDrivers,
+  formatFlag,
+  flagTitle,
+  formatNumber,
+  normalizeId,
+  ordersForEmployee,
+  searchDrivers,
+} from "./logic.mjs";
+
+const TAB_NAMES = new Set(["teams", "drivers", "orders"]);
+const ORDER_FLAGS = [
+  "nonOffline",
+  "abnormalScan",
+  "burner",
+  "regularCustomer",
+  "cheating",
+];
+
+const elements = {
+  appContent: document.querySelector("#app-content"),
+  driverQuery: document.querySelector("#driver-query"),
+  driverResults: document.querySelector("#driver-results"),
+  driverSearchForm: document.querySelector("#driver-search-form"),
+  driverSearchStatus: document.querySelector("#driver-search-status"),
+  loadState: document.querySelector("#load-state"),
+  orderQuery: document.querySelector("#order-query"),
+  orderResults: document.querySelector("#order-results"),
+  orderSearchForm: document.querySelector("#order-search-form"),
+  orderSearchStatus: document.querySelector("#order-search-status"),
+  periodLabel: document.querySelector("#period-label"),
+  syncLabel: document.querySelector("#sync-label"),
+  teamCount: document.querySelector("#team-count"),
+  teamDrivers: document.querySelector("#team-drivers"),
+  teamOptions: document.querySelector("#team-options"),
+  teamTitle: document.querySelector("#team-title"),
+};
+
+let snapshot = null;
+let selectedTeam = TEAMS[0];
+
+function tabFromHash() {
+  const candidate = window.location.hash.replace(/^#/, "");
+  return TAB_NAMES.has(candidate) ? candidate : "teams";
+}
+
+function setActiveTab(tab, updateHash = true) {
+  const activeTab = TAB_NAMES.has(tab) ? tab : "teams";
+
+  document.querySelectorAll("[data-tab]").forEach((button) => {
+    const selected = button.dataset.tab === activeTab;
+    button.setAttribute("aria-selected", String(selected));
+    button.tabIndex = selected ? 0 : -1;
+  });
+
+  document.querySelectorAll("[role='tabpanel']").forEach((panel) => {
+    panel.hidden = panel.id !== `panel-${activeTab}`;
+  });
+
+  if (updateHash && window.location.hash !== `#${activeTab}`) {
+    window.history.pushState(null, "", `#${activeTab}`);
+  }
+}
+
+function createTextElement(tagName, className, text) {
+  const element = document.createElement(tagName);
+  if (className) {
+    element.className = className;
+  }
+  element.textContent = text;
+  return element;
+}
+
+function createStateMessage(title, detail) {
+  const wrapper = document.createElement("div");
+  wrapper.className = "empty-state";
+  wrapper.append(
+    createTextElement("strong", "", title),
+    createTextElement("span", "", detail),
+  );
+  return wrapper;
+}
+
+function createMetric(label, value, tone = "") {
+  const metric = document.createElement("div");
+  metric.className = `metric ${tone}`.trim();
+  metric.append(
+    createTextElement("span", "metric-label", label),
+    createTextElement("strong", "metric-value", value),
+  );
+  return metric;
+}
+
+function createDriverCard(driver) {
+  const card = document.createElement("article");
+  card.className = "driver-card";
+
+  const identity = document.createElement("div");
+  identity.className = "driver-identity";
+  const nameLine = document.createElement("div");
+  nameLine.className = "driver-name-line";
+  nameLine.append(
+    createTextElement("strong", "driver-name", driver.name),
+    createTextElement("span", "team-badge", driver.team),
+  );
+  identity.append(
+    nameLine,
+    createTextElement("span", "driver-id", `工号 ${normalizeId(driver.employeeId)}`),
+  );
+
+  const metrics = document.createElement("div");
+  metrics.className = "metric-grid";
+  metrics.append(
+    createMetric("出车天数", formatNumber(driver.outDays)),
+    createMetric("真实转单", formatNumber(driver.realTransfers), "metric-positive"),
+    createMetric(
+      "推广差值",
+      formatNumber(driver.promotionDelta),
+      Number(driver.promotionDelta) < 0 ? "metric-negative" : "metric-accent",
+    ),
+  );
+
+  card.append(identity, metrics);
+  return card;
+}
+
+function renderDriverCollection(container, drivers, emptyTitle, emptyDetail) {
+  container.replaceChildren();
+  if (!drivers.length) {
+    container.append(createStateMessage(emptyTitle, emptyDetail));
+    return;
+  }
+  const sortedDrivers = [...drivers].sort(compareDrivers);
+  container.append(...sortedDrivers.map(createDriverCard));
+}
+
+function renderTeamOptions() {
+  elements.teamOptions.replaceChildren();
+  TEAMS.forEach((team) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "team-option";
+    button.textContent = team;
+    button.setAttribute("aria-pressed", String(team === selectedTeam));
+    button.addEventListener("click", () => {
+      selectedTeam = team;
+      renderTeamOptions();
+      renderSelectedTeam();
+    });
+    elements.teamOptions.append(button);
+  });
+}
+
+function renderSelectedTeam() {
+  const drivers = snapshot.drivers.filter(
+    (driver) => driver.team === selectedTeam,
+  );
+  elements.teamTitle.textContent = selectedTeam;
+  elements.teamCount.textContent = `${drivers.length} 人`;
+  renderDriverCollection(
+    elements.teamDrivers,
+    drivers,
+    "该队伍暂无司机",
+    "请检查最近一次同步数据。",
+  );
+}
+
+function renderDriverSearch() {
+  const query = elements.driverQuery.value.trim();
+  if (!query) {
+    elements.driverSearchStatus.textContent = "请输入姓名或工号。";
+    elements.driverResults.replaceChildren();
+    return;
+  }
+
+  const results = searchDrivers(snapshot.drivers, query);
+  elements.driverSearchStatus.textContent = `找到 ${results.length} 位司机。`;
+  renderDriverCollection(
+    elements.driverResults,
+    results,
+    "没有找到对应司机",
+    "请检查姓名是否正确，或改用工号精确查询。",
+  );
+}
+
+function createOrderFlagRow(field, value) {
+  const row = document.createElement("div");
+  row.className = "flag-row";
+  row.append(
+    createTextElement("dt", "", flagTitle(field)),
+    createTextElement("dd", "", formatFlag(field, value)),
+  );
+  return row;
+}
+
+function createOrderCard(order) {
+  const card = document.createElement("article");
+  card.className = "order-card";
+  const heading = document.createElement("div");
+  heading.className = "order-card-heading";
+  heading.append(
+    createTextElement("strong", "", order.date),
+    createTextElement("span", "", `工号 ${normalizeId(order.employeeId)}`),
+  );
+  const flags = document.createElement("dl");
+  flags.className = "flag-list";
+  ORDER_FLAGS.forEach((field) => {
+    flags.append(createOrderFlagRow(field, order[field]));
+  });
+  card.append(heading, flags);
+  return card;
+}
+
+function createOrderTable(orders) {
+  const wrapper = document.createElement("div");
+  wrapper.className = "table-wrap";
+  const table = document.createElement("table");
+  table.className = "orders-table";
+
+  const thead = document.createElement("thead");
+  const headerRow = document.createElement("tr");
+  ["司机工号", "推广日期", ...ORDER_FLAGS.map(flagTitle)].forEach((label) => {
+    headerRow.append(createTextElement("th", "", label));
+  });
+  thead.append(headerRow);
+
+  const tbody = document.createElement("tbody");
+  orders.forEach((order) => {
+    const row = document.createElement("tr");
+    row.append(
+      createTextElement("td", "", normalizeId(order.employeeId)),
+      createTextElement("td", "", order.date),
+      ...ORDER_FLAGS.map((field) =>
+        createTextElement("td", "", formatFlag(field, order[field])),
+      ),
+    );
+    tbody.append(row);
+  });
+
+  table.append(thead, tbody);
+  wrapper.append(table);
+  return wrapper;
+}
+
+function renderOrders() {
+  const query = normalizeId(elements.orderQuery.value);
+  elements.orderResults.replaceChildren();
+
+  if (!query) {
+    elements.orderSearchStatus.textContent = "请输入推荐司机工号。";
+    return;
+  }
+  if (!/^\d+$/.test(query)) {
+    elements.orderSearchStatus.textContent = "工号只能包含数字。";
+    return;
+  }
+
+  const orders = ordersForEmployee(snapshot.orders, query);
+  elements.orderSearchStatus.textContent = `找到 ${orders.length} 条匹配订单。`;
+  if (!orders.length) {
+    elements.orderResults.append(
+      createStateMessage(
+        "该工号暂无推广工单",
+        "当前统计周期内没有匹配记录。",
+      ),
+    );
+    return;
+  }
+
+  const mobileList = document.createElement("div");
+  mobileList.className = "order-card-list";
+  mobileList.append(...orders.map(createOrderCard));
+  elements.orderResults.append(createOrderTable(orders), mobileList);
+}
+
+function formatDateRange(meta) {
+  const start = new Date(`${meta.periodStart}T00:00:00`);
+  const end = new Date(`${meta.periodEnd}T00:00:00`);
+  const formatter = new Intl.DateTimeFormat("zh-CN", {
+    month: "numeric",
+    day: "numeric",
+  });
+  return `${formatter.format(start)} 至 ${formatter.format(end)}`;
+}
+
+function formatSyncTime(value) {
+  const parsed = new Date(value);
+  if (Number.isNaN(parsed.getTime())) {
+    return value;
+  }
+  return new Intl.DateTimeFormat("zh-CN", {
+    month: "numeric",
+    day: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false,
+  }).format(parsed);
+}
+
+function renderMeta() {
+  elements.syncLabel.textContent = `最近同步 ${formatSyncTime(snapshot.meta.syncedAt)}`;
+  elements.periodLabel.textContent = `统计范围 ${formatDateRange(snapshot.meta)}`;
+}
+
+function bindTabNavigation() {
+  document.querySelectorAll("[data-tab]").forEach((button) => {
+    button.addEventListener("click", () => {
+      setActiveTab(button.dataset.tab);
+    });
+    button.addEventListener("keydown", (event) => {
+      if (!["ArrowLeft", "ArrowRight"].includes(event.key)) {
+        return;
+      }
+      event.preventDefault();
+      const tabs = [...document.querySelectorAll("[data-tab]")].filter(
+        (item) => item.closest("nav").classList.contains("desktop-tabs") ===
+          button.closest("nav").classList.contains("desktop-tabs"),
+      );
+      const currentIndex = tabs.indexOf(button);
+      const direction = event.key === "ArrowRight" ? 1 : -1;
+      const nextTab = tabs[(currentIndex + direction + tabs.length) % tabs.length];
+      nextTab.focus();
+      setActiveTab(nextTab.dataset.tab);
+    });
+  });
+
+  window.addEventListener("hashchange", () => setActiveTab(tabFromHash(), false));
+  window.addEventListener("popstate", () => setActiveTab(tabFromHash(), false));
+}
+
+function bindForms() {
+  elements.driverSearchForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    renderDriverSearch();
+  });
+  elements.driverQuery.addEventListener("input", renderDriverSearch);
+
+  elements.orderSearchForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    renderOrders();
+  });
+}
+
+async function loadSnapshot() {
+  const response = await fetch("./data/snapshot.json", { cache: "no-store" });
+  if (!response.ok) {
+    throw new Error(`快照读取失败：HTTP ${response.status}`);
+  }
+  const data = await response.json();
+  if (!Array.isArray(data.drivers) || !Array.isArray(data.orders)) {
+    throw new Error("快照格式不正确。");
+  }
+  return data;
+}
+
+async function start() {
+  try {
+    snapshot = await loadSnapshot();
+    renderMeta();
+    renderTeamOptions();
+    renderSelectedTeam();
+    bindTabNavigation();
+    bindForms();
+    elements.loadState.hidden = true;
+    elements.appContent.hidden = false;
+    setActiveTab(tabFromHash(), false);
+  } catch (error) {
+    elements.loadState.className = "state-panel state-panel-error";
+    elements.loadState.replaceChildren(
+      createTextElement("strong", "", "数据载入失败"),
+      createTextElement(
+        "span",
+        "",
+        error instanceof Error ? error.message : "请稍后重试。",
+      ),
+    );
+  }
+}
+
+start();
+

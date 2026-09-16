@@ -1,0 +1,10 @@
+{
+  "name": "liangshan-promotion-workbench",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "serve": "python3 -m http.server 4173 -d docs",
+    "test": "sh scripts/test_logic.sh"
+  }
+}
