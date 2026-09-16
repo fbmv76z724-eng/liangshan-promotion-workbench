@@ -450,6 +450,15 @@ main {
   margin-bottom: 12px;
 }
 
+.today-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+  margin: 0 0 18px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
 .transfer-summary {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -661,7 +670,7 @@ main {
   left: 0;
   z-index: 20;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   border-top: 1px solid var(--border);
   background: rgba(255, 255, 255, 0.97);
   padding: 6px 8px calc(6px + env(safe-area-inset-bottom));
@@ -746,8 +755,8 @@ main {
 
   .desktop-tabs {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    max-width: 540px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    max-width: 680px;
     margin-bottom: 6px;
     border: 1px solid var(--border);
     border-radius: 10px;

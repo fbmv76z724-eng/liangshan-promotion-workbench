@@ -1,6 +1,7 @@
 import {
   TEAMS,
   filterAndSortDrivers,
+  filterTodayDrivers,
   formatFlag,
   flagTitle,
   formatNumber,
@@ -8,9 +9,10 @@ import {
   ordersForEmployee,
   searchDrivers,
   summarizeTransfers,
+  summarizeToday,
 } from "./logic.mjs";
 
-const TAB_NAMES = new Set(["teams", "drivers", "orders"]);
+const TAB_NAMES = new Set(["teams", "drivers", "orders", "today"]);
 const ORDER_FLAGS = [
   "nonOffline",
   "abnormalScan",
@@ -40,13 +42,25 @@ const elements = {
   teamSortDirection: document.querySelector("#team-sort-direction"),
   teamTitle: document.querySelector("#team-title"),
   teamUpdated: document.querySelector("#team-updated"),
+  todayDrivers: document.querySelector("#today-drivers"),
+  todayQuery: document.querySelector("#today-query"),
+  todayRefreshed: document.querySelector("#today-refreshed"),
+  todaySearchForm: document.querySelector("#today-search-form"),
+  todaySearchStatus: document.querySelector("#today-search-status"),
+  todayTeamCount: document.querySelector("#today-team-count"),
+  todayTeamOptions: document.querySelector("#today-team-options"),
+  todayTeamTitle: document.querySelector("#today-team-title"),
+  todayUpdated: document.querySelector("#today-updated"),
 };
 
 let snapshot = null;
+let todaySnapshot = null;
 let selectedTeam = TEAMS[0];
+let selectedTodayTeam = TEAMS[0];
 let teamCompletionFilter = "all";
 let teamSortBy = "realTransfers";
 let teamSortDirection = "desc";
+let lastTodayFetchAt = 0;
 
 function tabFromHash() {
   const candidate = window.location.hash.replace(/^#/, "");
@@ -143,6 +157,32 @@ function createDriverCard(driver) {
   return card;
 }
 
+function createTodayDriverCard(driver) {
+  const card = document.createElement("article");
+  card.className = `driver-card today-driver-card ${driver.completed ? "is-completed" : "is-unfinished"}`;
+
+  const identity = document.createElement("div");
+  identity.className = "driver-identity";
+  const nameLine = document.createElement("div");
+  nameLine.className = "driver-name-line";
+  nameLine.append(
+    createTextElement("strong", "driver-name", driver.name),
+    createTextElement("span", "team-badge", driver.team),
+    createTextElement(
+      "span",
+      `completion-badge ${driver.completed ? "is-complete" : "is-incomplete"}`,
+      driver.completed ? "今日已完成" : "今日未完成",
+    ),
+  );
+  identity.append(
+    nameLine,
+    createTextElement("span", "driver-id", `工号 ${normalizeId(driver.employeeId)}`),
+  );
+
+  card.append(identity);
+  return card;
+}
+
 function renderDriverCollection(container, drivers, emptyTitle, emptyDetail) {
   container.replaceChildren();
   if (!drivers.length) {
@@ -204,6 +244,76 @@ function renderDriverSearch() {
     "没有找到对应司机",
     "请检查姓名是否正确，或改用工号精确查询。",
   );
+}
+
+function renderTodayTeamOptions() {
+  elements.todayTeamOptions.replaceChildren();
+  TEAMS.forEach((team) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "team-option";
+    button.textContent = team;
+    button.setAttribute("aria-pressed", String(team === selectedTodayTeam));
+    button.addEventListener("click", () => {
+      selectedTodayTeam = team;
+      elements.todayQuery.value = "";
+      renderTodayTeamOptions();
+      renderTodayDrivers();
+    });
+    elements.todayTeamOptions.append(button);
+  });
+}
+
+function renderTodayMeta(clientRefreshAt = "") {
+  if (!todaySnapshot) {
+    elements.todayUpdated.textContent = "今日数据暂不可用";
+    elements.todayRefreshed.textContent = "";
+    return;
+  }
+  elements.todayUpdated.textContent =
+    `数据更新 ${formatSyncTime(todaySnapshot.meta.syncedAt)}`;
+  elements.todayRefreshed.textContent = clientRefreshAt
+    ? `页面刷新 ${formatSyncTime(clientRefreshAt)}`
+    : "";
+}
+
+function renderTodayDrivers() {
+  if (!todaySnapshot) {
+    elements.todayTeamTitle.textContent = "今日推广";
+    elements.todayTeamCount.textContent = "";
+    elements.todaySearchStatus.textContent = "";
+    elements.todayDrivers.replaceChildren(
+      createStateMessage(
+        "今日数据暂不可用",
+        "页面会在下一次自动刷新时重试。",
+      ),
+    );
+    return;
+  }
+
+  const query = elements.todayQuery.value.trim();
+  const drivers = filterTodayDrivers(todaySnapshot.drivers, {
+    team: query ? "" : selectedTodayTeam,
+    query,
+  });
+  const summary = summarizeToday(drivers);
+  elements.todayTeamTitle.textContent = query ? "查询结果" : selectedTodayTeam;
+  elements.todayTeamCount.textContent =
+    `未完成 ${summary.unfinished} · 已完成 ${summary.completed}`;
+  elements.todaySearchStatus.textContent = query
+    ? `找到 ${summary.total} 位司机。`
+    : "";
+  elements.todayDrivers.replaceChildren();
+  if (!drivers.length) {
+    elements.todayDrivers.append(
+      createStateMessage(
+        query ? "没有找到对应司机" : "该队伍暂无司机",
+        query ? "请检查姓名或工号。" : "请检查今日同步数据。",
+      ),
+    );
+    return;
+  }
+  elements.todayDrivers.append(...drivers.map(createTodayDriverCard));
 }
 
 function createOrderFlagRow(field, value) {
@@ -430,6 +540,55 @@ async function loadSnapshot() {
   return data;
 }
 
+async function loadTodaySnapshot() {
+  const response = await fetch(`./data/today.json?t=${Date.now()}`, {
+    cache: "no-store",
+  });
+  if (!response.ok) {
+    throw new Error(`今日快照读取失败：HTTP ${response.status}`);
+  }
+  const data = await response.json();
+  if (!data.meta || !Array.isArray(data.drivers)) {
+    throw new Error("今日快照格式不正确。");
+  }
+  return data;
+}
+
+async function refreshTodayData() {
+  try {
+    todaySnapshot = await loadTodaySnapshot();
+    lastTodayFetchAt = Date.now();
+    renderTodayMeta(new Date(lastTodayFetchAt).toISOString());
+    renderTodayDrivers();
+  } catch (error) {
+    if (todaySnapshot) {
+      elements.todayRefreshed.textContent = "本次刷新失败，继续显示上次数据";
+      return;
+    }
+    todaySnapshot = null;
+    renderTodayMeta();
+    renderTodayDrivers();
+  }
+}
+
+function bindTodayControls() {
+  elements.todaySearchForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    renderTodayDrivers();
+  });
+  elements.todayQuery.addEventListener("input", renderTodayDrivers);
+
+  window.setInterval(refreshTodayData, 5 * 60 * 1000);
+  document.addEventListener("visibilitychange", () => {
+    if (
+      document.visibilityState === "visible"
+      && Date.now() - lastTodayFetchAt >= 60 * 1000
+    ) {
+      refreshTodayData();
+    }
+  });
+}
+
 async function start() {
   try {
     snapshot = await loadSnapshot();
@@ -439,6 +598,9 @@ async function start() {
     bindTabNavigation();
     bindForms();
     bindTeamControls();
+    await refreshTodayData();
+    renderTodayTeamOptions();
+    bindTodayControls();
     elements.loadState.hidden = true;
     elements.appContent.hidden = false;
     setActiveTab(tabFromHash(), false);

@@ -28,6 +28,14 @@ python3 scripts/sync_snapshot.py \
 
 生成结果写入 `docs/data/snapshot.json`。脚本会在写入前校验 12 个队伍、人员工号、订单日期，并与最新 `bt5_*.tsv` 对账。
 
+更新今日推广状态：
+
+```bash
+python3 scripts/sync_today.py
+```
+
+脚本通过 ego-lite 直接读取钉钉推广网页，按“姓名 + 队伍”匹配今日已完成司机，并生成 `docs/data/today.json`。推广日按当天 06:00 至次日 06:00 计算；状态未变化时不会重写快照。页面每 5 分钟重新读取一次，并显示数据更新时间和页面刷新时间；读取失败时继续显示上一次成功数据。
+
 发布到 GitHub Pages：
 
 ```bash

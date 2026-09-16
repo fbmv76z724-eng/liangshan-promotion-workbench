@@ -39,6 +39,9 @@
         <button id="tab-orders" class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="panel-orders" data-tab="orders" tabindex="-1">
           转单查询
         </button>
+        <button id="tab-today" class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="panel-today" data-tab="today" tabindex="-1">
+          今日推广
+        </button>
       </nav>
 
       <main id="main-content" tabindex="-1">
@@ -133,6 +136,38 @@
             <p id="order-search-status" class="result-status" aria-live="polite"></p>
             <div id="order-results"></div>
           </section>
+
+          <section id="panel-today" class="tab-panel" role="tabpanel" aria-labelledby="tab-today" hidden>
+            <div class="section-intro">
+              <div>
+                <p class="section-kicker">今日状态</p>
+                <h2>今日推广数据查询</h2>
+              </div>
+              <p>未完成司机排在前面，钉钉匹配到今日提交后自动显示已完成。</p>
+            </div>
+
+            <div id="today-team-options" class="team-grid" role="group" aria-label="选择今日队伍"></div>
+
+            <form id="today-search-form" class="search-form" role="search">
+              <label for="today-query">姓名或工号</label>
+              <div class="search-row">
+                <input id="today-query" name="today-query" type="search" autocomplete="off" enterkeyhint="search" placeholder="查询司机今日推广状态">
+                <button class="primary-button" type="submit">查询</button>
+              </div>
+            </form>
+
+            <div class="today-meta">
+              <span id="today-updated">正在读取今日数据...</span>
+              <span id="today-refreshed"></span>
+            </div>
+
+            <div class="list-heading">
+              <h3 id="today-team-title">一大队</h3>
+              <span id="today-team-count" class="count-label"></span>
+            </div>
+            <p id="today-search-status" class="result-status" aria-live="polite"></p>
+            <div id="today-drivers" class="driver-list"></div>
+          </section>
         </div>
       </main>
     </div>
@@ -149,6 +184,10 @@
       <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="panel-orders" data-tab="orders" tabindex="-1">
         <span class="tab-icon" aria-hidden="true">单</span>
         <span>转单查询</span>
+      </button>
+      <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="panel-today" data-tab="today" tabindex="-1">
+        <span class="tab-icon" aria-hidden="true">今</span>
+        <span>今日推广</span>
       </button>
     </nav>
   </body>

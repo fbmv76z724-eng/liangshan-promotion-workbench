@@ -124,6 +124,30 @@ export function summarizeTransfers(orders) {
   };
 }
 
+export function filterTodayDrivers(drivers, { team = "", query = "" } = {}) {
+  const teamDrivers = team
+    ? drivers.filter((driver) => driver.team === team)
+    : [...drivers];
+  const matches = query ? searchDrivers(teamDrivers, query) : teamDrivers;
+
+  return [...matches].sort((left, right) => {
+    const completionOrder =
+      Number(left.completed === true) - Number(right.completed === true);
+    return completionOrder !== 0
+      ? completionOrder
+      : compareDrivers(left, right);
+  });
+}
+
+export function summarizeToday(drivers) {
+  const completed = drivers.filter((driver) => driver.completed === true).length;
+  return {
+    total: drivers.length,
+    completed,
+    unfinished: drivers.length - completed,
+  };
+}
+
 export function formatFlag(field, value) {
   const numericValue = Number(value);
   const label = FLAG_LABELS[field]?.[numericValue];

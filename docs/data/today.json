@@ -1,0 +1,1999 @@
+{
+  "meta": {
+    "schemaVersion": 1,
+    "businessDate": "2026-09-16",
+    "syncedAt": "2026-09-16T19:03:37+08:00",
+    "teamCount": 12,
+    "driverCount": 331,
+    "completedCount": 2,
+    "unfinishedCount": 329
+  },
+  "drivers": [
+    {
+      "employeeId": "11294327",
+      "name": "俄地特呷",
+      "team": "一大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11153813",
+      "name": "刘五各",
+      "team": "一大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11842395",
+      "name": "卢志国",
+      "team": "一大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11357723",
+      "name": "吉克而近",
+      "team": "一大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11341334",
+      "name": "吕彬",
+      "team": "一大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11723254",
+      "name": "尼洛小林",
+      "team": "一大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11533190",
+      "name": "廖江涛",
+      "team": "一大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11112019",
+      "name": "张银",
+      "team": "一大队",
+      "completed": false
+    },
+    {
+      "employeeId": "144653",
+      "name": "李剑",
+      "team": "一大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11229096",
+      "name": "李小龙",
+      "team": "一大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11113640",
+      "name": "李鹏",
+      "team": "一大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11562564",
+      "name": "杨奎",
+      "team": "一大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11719216",
+      "name": "沙马伍各",
+      "team": "一大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11296278",
+      "name": "沙马子坡",
+      "team": "一大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11401701",
+      "name": "王杰",
+      "team": "一大队",
+      "completed": false
+    },
+    {
+      "employeeId": "395385",
+      "name": "肖勇",
+      "team": "一大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11165495",
+      "name": "肖灵",
+      "team": "一大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11763532",
+      "name": "苏呷只朵",
+      "team": "一大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11719038",
+      "name": "苦都格",
+      "team": "一大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11919332",
+      "name": "衣比尔格",
+      "team": "一大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11613012",
+      "name": "补约衣哈",
+      "team": "一大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11672974",
+      "name": "许浩",
+      "team": "一大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11354789",
+      "name": "谌江南",
+      "team": "一大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11982552",
+      "name": "谌立飞",
+      "team": "一大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11596221",
+      "name": "阿古尔达",
+      "team": "一大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11628210",
+      "name": "阿牛阿且",
+      "team": "一大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11718818",
+      "name": "阿生尼呷",
+      "team": "一大队",
+      "completed": false
+    },
+    {
+      "employeeId": "329980",
+      "name": "陈伟",
+      "team": "一大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11281385",
+      "name": "陈浩",
+      "team": "一大队",
+      "completed": false
+    },
+    {
+      "employeeId": "230857",
+      "name": "马衣布",
+      "team": "一大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11377946",
+      "name": "候啟虎",
+      "team": "二大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11533084",
+      "name": "冯伟",
+      "team": "二大队",
+      "completed": false
+    },
+    {
+      "employeeId": "886256",
+      "name": "刘永前",
+      "team": "二大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11127615",
+      "name": "刘鹏",
+      "team": "二大队",
+      "completed": false
+    },
+    {
+      "employeeId": "132341",
+      "name": "加拉翁日",
+      "team": "二大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11359384",
+      "name": "周小龙",
+      "team": "二大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11163765",
+      "name": "夏正坤",
+      "team": "二大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11415437",
+      "name": "姚程",
+      "team": "二大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11880125",
+      "name": "宾二龙",
+      "team": "二大队",
+      "completed": true
+    },
+    {
+      "employeeId": "11571942",
+      "name": "巫浪",
+      "team": "二大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11189837",
+      "name": "杨万科",
+      "team": "二大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11617910",
+      "name": "果基比布",
+      "team": "二大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11408997",
+      "name": "毛昊",
+      "team": "二大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11887036",
+      "name": "沙各子日",
+      "team": "二大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11333074",
+      "name": "海日木牛",
+      "team": "二大队",
+      "completed": false
+    },
+    {
+      "employeeId": "526476",
+      "name": "王伟",
+      "team": "二大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11726969",
+      "name": "王绍林",
+      "team": "二大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11996697",
+      "name": "王金建",
+      "team": "二大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11977760",
+      "name": "王锐",
+      "team": "二大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11537079",
+      "name": "罗国杰",
+      "team": "二大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11695136",
+      "name": "罗小强",
+      "team": "二大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11259421",
+      "name": "罗贵聪",
+      "team": "二大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11733120",
+      "name": "范力",
+      "team": "二大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11418519",
+      "name": "衣火以呷",
+      "team": "二大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11901782",
+      "name": "衣火以布",
+      "team": "二大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11137383",
+      "name": "阿尔木刚",
+      "team": "二大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11355156",
+      "name": "陈建锋",
+      "team": "二大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11165579",
+      "name": "马旭",
+      "team": "二大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11700223",
+      "name": "何光寿",
+      "team": "三大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11273471",
+      "name": "刘鹏",
+      "team": "三大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11250671",
+      "name": "卢吉嘉",
+      "team": "三大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11815621",
+      "name": "周云",
+      "team": "三大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11921920",
+      "name": "周飞",
+      "team": "三大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11859071",
+      "name": "孙里坡",
+      "team": "三大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11697887",
+      "name": "尔古科黑",
+      "team": "三大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11163051",
+      "name": "曾豪",
+      "team": "三大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11697012",
+      "name": "木可阿拉",
+      "team": "三大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11126140",
+      "name": "朱木呷",
+      "team": "三大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11712072",
+      "name": "朱柏韬",
+      "team": "三大队",
+      "completed": false
+    },
+    {
+      "employeeId": "878825",
+      "name": "李小平",
+      "team": "三大队",
+      "completed": false
+    },
+    {
+      "employeeId": "112449",
+      "name": "李文静",
+      "team": "三大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11704537",
+      "name": "林天遥",
+      "team": "三大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11253452",
+      "name": "沙呷体",
+      "team": "三大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11165500",
+      "name": "海来拉作",
+      "team": "三大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11495026",
+      "name": "王凯",
+      "team": "三大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11137605",
+      "name": "王忠红",
+      "team": "三大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11139361",
+      "name": "王木呷",
+      "team": "三大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11460479",
+      "name": "王腾",
+      "team": "三大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11450977",
+      "name": "罗正华",
+      "team": "三大队",
+      "completed": false
+    },
+    {
+      "employeeId": "342626",
+      "name": "艾勇",
+      "team": "三大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11708178",
+      "name": "蒋万发",
+      "team": "三大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11518167",
+      "name": "谌晶",
+      "team": "三大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11651883",
+      "name": "邱林",
+      "team": "三大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11979125",
+      "name": "阮家源",
+      "team": "三大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11700643",
+      "name": "阿尔尔古",
+      "team": "三大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11704213",
+      "name": "阿巴日呷",
+      "team": "三大队",
+      "completed": false
+    },
+    {
+      "employeeId": "694686",
+      "name": "阿说里古",
+      "team": "三大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11541389",
+      "name": "陈二放",
+      "team": "三大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11715847",
+      "name": "韦永平",
+      "team": "三大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11495097",
+      "name": "马海尔呷",
+      "team": "三大队",
+      "completed": false
+    },
+    {
+      "employeeId": "135343",
+      "name": "黄浩然",
+      "team": "三大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11367526",
+      "name": "依火布都日",
+      "team": "四大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11384098",
+      "name": "刘宗伟",
+      "team": "四大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11890614",
+      "name": "吉克尔古",
+      "team": "四大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11905880",
+      "name": "吉秋林",
+      "team": "四大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11531631",
+      "name": "吉黑伍甲",
+      "team": "四大队",
+      "completed": false
+    },
+    {
+      "employeeId": "790282",
+      "name": "喻忠波",
+      "team": "四大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11389093",
+      "name": "姜斯木加",
+      "team": "四大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11746138",
+      "name": "姜明",
+      "team": "四大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11546014",
+      "name": "庞冉",
+      "team": "四大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11388277",
+      "name": "张日古",
+      "team": "四大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11155330",
+      "name": "徐朝东",
+      "team": "四大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11875104",
+      "name": "欧其古也",
+      "team": "四大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11288015",
+      "name": "王廷忠",
+      "team": "四大队",
+      "completed": false
+    },
+    {
+      "employeeId": "617762",
+      "name": "罗日布",
+      "team": "四大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11656664",
+      "name": "胡东雨",
+      "team": "四大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11185271",
+      "name": "莫色牛牛",
+      "team": "四大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11454758",
+      "name": "薛娇",
+      "team": "四大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11609144",
+      "name": "阿西小龙",
+      "team": "四大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11452450",
+      "name": "阿说木散",
+      "team": "四大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11872841",
+      "name": "阿都子史",
+      "team": "四大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11216136",
+      "name": "陈发林",
+      "team": "四大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11242883",
+      "name": "陈良麒",
+      "team": "四大队",
+      "completed": false
+    },
+    {
+      "employeeId": "283247",
+      "name": "陶智刚",
+      "team": "四大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11897933",
+      "name": "克日伍各",
+      "team": "五大队",
+      "completed": false
+    },
+    {
+      "employeeId": "946042",
+      "name": "吕声国",
+      "team": "五大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11277985",
+      "name": "周应洪",
+      "team": "五大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11651730",
+      "name": "孟伍各",
+      "team": "五大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11689606",
+      "name": "张健",
+      "team": "五大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11977557",
+      "name": "张贤兴",
+      "team": "五大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11942806",
+      "name": "李森铭",
+      "team": "五大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11240925",
+      "name": "杨勇",
+      "team": "五大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11304322",
+      "name": "杨在平",
+      "team": "五大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11657036",
+      "name": "某色尾几",
+      "team": "五大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11870475",
+      "name": "欧布布哈",
+      "team": "五大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11972584",
+      "name": "王日古",
+      "team": "五大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11548181",
+      "name": "王磊",
+      "team": "五大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11322063",
+      "name": "的惹约呷",
+      "team": "五大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11256332",
+      "name": "瞿成祥",
+      "team": "五大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11654001",
+      "name": "罗体补",
+      "team": "五大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11573197",
+      "name": "罗依吉",
+      "team": "五大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11420101",
+      "name": "罗哈火",
+      "team": "五大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11360586",
+      "name": "蒋磊",
+      "team": "五大队",
+      "completed": false
+    },
+    {
+      "employeeId": "609950",
+      "name": "袁云伟",
+      "team": "五大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11413155",
+      "name": "赵浩杰",
+      "team": "五大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11562903",
+      "name": "郑志航",
+      "team": "五大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11130341",
+      "name": "郭朝贵",
+      "team": "五大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11654011",
+      "name": "马有且",
+      "team": "五大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11593301",
+      "name": "黄子仁",
+      "team": "五大队",
+      "completed": true
+    },
+    {
+      "employeeId": "11732513",
+      "name": "仁志豪",
+      "team": "六大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11873864",
+      "name": "何伍劣",
+      "team": "六大队",
+      "completed": false
+    },
+    {
+      "employeeId": "316949",
+      "name": "余磊",
+      "team": "六大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11109048",
+      "name": "吉觉木机",
+      "team": "六大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11179353",
+      "name": "吴孟林",
+      "team": "六大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11731937",
+      "name": "周志军",
+      "team": "六大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11730570",
+      "name": "周斌",
+      "team": "六大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11571715",
+      "name": "曲木阿呷",
+      "team": "六大队",
+      "completed": false
+    },
+    {
+      "employeeId": "659259",
+      "name": "曾发相",
+      "team": "六大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11732422",
+      "name": "朱家有",
+      "team": "六大队",
+      "completed": false
+    },
+    {
+      "employeeId": "730740",
+      "name": "李传波",
+      "team": "六大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11917728",
+      "name": "杨木果",
+      "team": "六大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11221708",
+      "name": "林天华",
+      "team": "六大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11401729",
+      "name": "果基吉哈",
+      "team": "六大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11867571",
+      "name": "柯贤申",
+      "team": "六大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11284042",
+      "name": "毛日补",
+      "team": "六大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11592528",
+      "name": "温凯华",
+      "team": "六大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11336636",
+      "name": "白里洗",
+      "team": "六大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11512907",
+      "name": "胡东林",
+      "team": "六大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11339151",
+      "name": "胡德忠",
+      "team": "六大队",
+      "completed": false
+    },
+    {
+      "employeeId": "247988",
+      "name": "葛家伦",
+      "team": "六大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11694095",
+      "name": "袁超",
+      "team": "六大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11731263",
+      "name": "邹连龙",
+      "team": "六大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11730578",
+      "name": "钟和林",
+      "team": "六大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11639697",
+      "name": "阿卢曲者",
+      "team": "六大队",
+      "completed": false
+    },
+    {
+      "employeeId": "621782",
+      "name": "陈发斌",
+      "team": "六大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11142953",
+      "name": "马海哈则",
+      "team": "六大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11998923",
+      "name": "马继",
+      "team": "六大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11274589",
+      "name": "鲁日且",
+      "team": "六大队",
+      "completed": false
+    },
+    {
+      "employeeId": "747433",
+      "name": "黄浩",
+      "team": "六大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11587082",
+      "name": "且沙木呷",
+      "team": "七大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11729539",
+      "name": "为色伍来",
+      "team": "七大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11623961",
+      "name": "代书祥",
+      "team": "七大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11151203",
+      "name": "冷文强",
+      "team": "七大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11727977",
+      "name": "勒尔呷日",
+      "team": "七大队",
+      "completed": false
+    },
+    {
+      "employeeId": "866157",
+      "name": "卿熊",
+      "team": "七大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11899068",
+      "name": "吉觉克坡",
+      "team": "七大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11398813",
+      "name": "吴嘉兴",
+      "team": "七大队",
+      "completed": false
+    },
+    {
+      "employeeId": "893417",
+      "name": "周川",
+      "team": "七大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11678850",
+      "name": "姚洋",
+      "team": "七大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11682072",
+      "name": "曲木次色",
+      "team": "七大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11614264",
+      "name": "曲比约布",
+      "team": "七大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11846633",
+      "name": "木洛尔布",
+      "team": "七大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11636965",
+      "name": "李文努",
+      "team": "七大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11700376",
+      "name": "杨伍哈",
+      "team": "七大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11137565",
+      "name": "杨芸",
+      "team": "七大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11241090",
+      "name": "沙成林",
+      "team": "七大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11170848",
+      "name": "沙杰",
+      "team": "七大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11586114",
+      "name": "王军",
+      "team": "七大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11586110",
+      "name": "甲拉伍惹",
+      "team": "七大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11681274",
+      "name": "胡大洋",
+      "team": "七大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11362492",
+      "name": "苏光勇",
+      "team": "七大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11382033",
+      "name": "赵松",
+      "team": "七大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11793201",
+      "name": "邓波",
+      "team": "七大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11724933",
+      "name": "马海小吾",
+      "team": "七大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11510476",
+      "name": "乃古成龙",
+      "team": "八大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11420613",
+      "name": "伍小刚",
+      "team": "八大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11758135",
+      "name": "余翔",
+      "team": "八大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11393862",
+      "name": "冯兴国",
+      "team": "八大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11464223",
+      "name": "冷则伍哈",
+      "team": "八大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11233495",
+      "name": "吉克日底",
+      "team": "八大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11736013",
+      "name": "吉列日聪",
+      "team": "八大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11624438",
+      "name": "吉勒木呷",
+      "team": "八大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11231948",
+      "name": "吉勒衣体",
+      "team": "八大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11296211",
+      "name": "吉史尔古",
+      "team": "八大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11157748",
+      "name": "吉足阿木",
+      "team": "八大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11188062",
+      "name": "周烨",
+      "team": "八大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11593319",
+      "name": "咹折阿迁",
+      "team": "八大队",
+      "completed": false
+    },
+    {
+      "employeeId": "410340",
+      "name": "唐博",
+      "team": "八大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11936553",
+      "name": "姜斯木机",
+      "team": "八大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11695125",
+      "name": "曲比木日",
+      "team": "八大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11876880",
+      "name": "李世刚",
+      "team": "八大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11418286",
+      "name": "李兴桂",
+      "team": "八大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11704426",
+      "name": "杨劲华",
+      "team": "八大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11211025",
+      "name": "毛布吉",
+      "team": "八大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11413135",
+      "name": "沈万辉",
+      "team": "八大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11870939",
+      "name": "王发高",
+      "team": "八大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11651768",
+      "name": "罗如均",
+      "team": "八大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11466795",
+      "name": "苦曲格",
+      "team": "八大队",
+      "completed": false
+    },
+    {
+      "employeeId": "745237",
+      "name": "范贵勇",
+      "team": "八大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11473473",
+      "name": "贾火里农",
+      "team": "八大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11234398",
+      "name": "邱木补吉子",
+      "team": "八大队",
+      "completed": false
+    },
+    {
+      "employeeId": "446973",
+      "name": "邱正贤",
+      "team": "八大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11246180",
+      "name": "阿加呷呷",
+      "team": "八大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11492795",
+      "name": "阿尔尔体",
+      "team": "八大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11969111",
+      "name": "马拉机",
+      "team": "八大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11363996",
+      "name": "刘佳恒",
+      "team": "九大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11679127",
+      "name": "加洛木果",
+      "team": "九大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11675128",
+      "name": "吉使小路",
+      "team": "九大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11657700",
+      "name": "吉后衣布",
+      "team": "九大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11592041",
+      "name": "安国全",
+      "team": "九大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11231597",
+      "name": "巫天祥",
+      "team": "九大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11544240",
+      "name": "干成龙",
+      "team": "九大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11855354",
+      "name": "徐显豪",
+      "team": "九大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11234343",
+      "name": "戴建波",
+      "team": "九大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11559475",
+      "name": "晏加文",
+      "team": "九大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11824542",
+      "name": "沙马木呷",
+      "team": "九大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11312293",
+      "name": "王勇",
+      "team": "九大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11292058",
+      "name": "王显莹",
+      "team": "九大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11386736",
+      "name": "王顺建",
+      "team": "九大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11579891",
+      "name": "罗阳",
+      "team": "九大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11583121",
+      "name": "肖凡",
+      "team": "九大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11499554",
+      "name": "肖大勇",
+      "team": "九大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11498066",
+      "name": "莫色尔朋",
+      "team": "九大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11272588",
+      "name": "邱文全",
+      "team": "九大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11644459",
+      "name": "郭龙飞",
+      "team": "九大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11689230",
+      "name": "闫肃",
+      "team": "九大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11380637",
+      "name": "阿坡伍呷",
+      "team": "九大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11751233",
+      "name": "阿尔木呷",
+      "team": "九大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11594779",
+      "name": "陈志祥",
+      "team": "九大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11676092",
+      "name": "马尔古",
+      "team": "九大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11722652",
+      "name": "马龙飞",
+      "team": "九大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11575867",
+      "name": "麻建聪",
+      "team": "九大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11345422",
+      "name": "黄涛涛",
+      "team": "九大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11579745",
+      "name": "何云彪",
+      "team": "十大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11558173",
+      "name": "吉布古作",
+      "team": "十大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11630074",
+      "name": "周伟",
+      "team": "十大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11849366",
+      "name": "周应花",
+      "team": "十大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11449634",
+      "name": "周正兵",
+      "team": "十大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11706728",
+      "name": "寸晓花",
+      "team": "十大队",
+      "completed": false
+    },
+    {
+      "employeeId": "898269",
+      "name": "张宁",
+      "team": "十大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11337545",
+      "name": "徐宗华",
+      "team": "十大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11553519",
+      "name": "拉马老三",
+      "team": "十大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11446203",
+      "name": "李佳新",
+      "team": "十大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11669708",
+      "name": "李绍湘",
+      "team": "十大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11256567",
+      "name": "汪泽军",
+      "team": "十大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11312276",
+      "name": "沈县医",
+      "team": "十大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11629571",
+      "name": "海来沙沙",
+      "team": "十大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11382583",
+      "name": "热吉日洛",
+      "team": "十大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11906181",
+      "name": "王俊峰",
+      "team": "十大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11615446",
+      "name": "祝尔古",
+      "team": "十大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11247947",
+      "name": "罗华",
+      "team": "十大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11645215",
+      "name": "耿昆",
+      "team": "十大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11250680",
+      "name": "苏春琳",
+      "team": "十大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11172153",
+      "name": "董伟",
+      "team": "十大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11625869",
+      "name": "董开勇",
+      "team": "十大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11660668",
+      "name": "谢辉",
+      "team": "十大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11891393",
+      "name": "赵洪学",
+      "team": "十大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11626537",
+      "name": "边悟",
+      "team": "十大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11371669",
+      "name": "邹贵阳",
+      "team": "十大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11448072",
+      "name": "阿新体火",
+      "team": "十大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11741600",
+      "name": "阿来伍来",
+      "team": "十大队",
+      "completed": false
+    },
+    {
+      "employeeId": "846319",
+      "name": "马添星",
+      "team": "十大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11553350",
+      "name": "马鸿程",
+      "team": "十大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11639426",
+      "name": "高建",
+      "team": "十大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11250213",
+      "name": "冯太泉",
+      "team": "会理大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11571178",
+      "name": "凌伟",
+      "team": "会理大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11863302",
+      "name": "刘朝熊",
+      "team": "会理大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11255264",
+      "name": "周在荣",
+      "team": "会理大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11836205",
+      "name": "夏彪",
+      "team": "会理大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11133673",
+      "name": "尹凯伦",
+      "team": "会理大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11177668",
+      "name": "张福平",
+      "team": "会理大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11186231",
+      "name": "张银勇",
+      "team": "会理大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11433614",
+      "name": "朱林",
+      "team": "会理大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11336922",
+      "name": "李忠荣",
+      "team": "会理大队",
+      "completed": false
+    },
+    {
+      "employeeId": "366283",
+      "name": "李树伟",
+      "team": "会理大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11918768",
+      "name": "杨玉杰",
+      "team": "会理大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11248892",
+      "name": "梁大富",
+      "team": "会理大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11278870",
+      "name": "王磊",
+      "team": "会理大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11575926",
+      "name": "田国富",
+      "team": "会理大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11241735",
+      "name": "申泽勇",
+      "team": "会理大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11523875",
+      "name": "罗建仁",
+      "team": "会理大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11369028",
+      "name": "罗才银",
+      "team": "会理大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11936575",
+      "name": "罗运忠",
+      "team": "会理大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11104228",
+      "name": "胡天志",
+      "team": "会理大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11533034",
+      "name": "艾国平",
+      "team": "会理大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11357934",
+      "name": "艾国才",
+      "team": "会理大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11487896",
+      "name": "董廷荣",
+      "team": "会理大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11474000",
+      "name": "谢桦耘",
+      "team": "会理大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11736360",
+      "name": "赵辉杰",
+      "team": "会理大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11586368",
+      "name": "陈朝虎",
+      "team": "会理大队",
+      "completed": false
+    },
+    {
+      "employeeId": "455022",
+      "name": "黄建军",
+      "team": "会理大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11654661",
+      "name": "刁志桥",
+      "team": "德昌大队",
+      "completed": false
+    },
+    {
+      "employeeId": "267884",
+      "name": "古小东",
+      "team": "德昌大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11414363",
+      "name": "宋仕凯",
+      "team": "德昌大队",
+      "completed": false
+    },
+    {
+      "employeeId": "339269",
+      "name": "宋治麟",
+      "team": "德昌大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11684181",
+      "name": "张恒",
+      "team": "德昌大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11325910",
+      "name": "张楚",
+      "team": "德昌大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11212499",
+      "name": "曾顺杰",
+      "team": "德昌大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11917903",
+      "name": "李杰",
+      "team": "德昌大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11233491",
+      "name": "李波",
+      "team": "德昌大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11404781",
+      "name": "梁涛",
+      "team": "德昌大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11125916",
+      "name": "毛榆凇",
+      "team": "德昌大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11537308",
+      "name": "王正才",
+      "team": "德昌大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11331212",
+      "name": "蒋升良",
+      "team": "德昌大队",
+      "completed": false
+    },
+    {
+      "employeeId": "270087",
+      "name": "蒋林",
+      "team": "德昌大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11226862",
+      "name": "袁涛",
+      "team": "德昌大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11856878",
+      "name": "达超",
+      "team": "德昌大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11393083",
+      "name": "郝小军",
+      "team": "德昌大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11328944",
+      "name": "陈田甜",
+      "team": "德昌大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11614818",
+      "name": "马晓阳",
+      "team": "德昌大队",
+      "completed": false
+    },
+    {
+      "employeeId": "11710743",
+      "name": "黑来以且",
+      "team": "德昌大队",
+      "completed": false
+    }
+  ]
+}

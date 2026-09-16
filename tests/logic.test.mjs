@@ -3,11 +3,13 @@ import test from "node:test";
 
 import {
   filterAndSortDrivers,
+  filterTodayDrivers,
   formatFlag,
   normalizeId,
   ordersForEmployee,
   searchDrivers,
   summarizeTransfers,
+  summarizeToday,
 } from "../docs/logic.mjs";
 
 const drivers = [
@@ -114,5 +116,45 @@ test("summarizes real and non-real transfers", () => {
       { isReal: true },
     ]),
     { total: 3, real: 2, notReal: 1 },
+  );
+});
+
+test("shows unfinished today drivers before completed drivers", () => {
+  const results = filterTodayDrivers(
+    [
+      { employeeId: "1", name: "已完成", team: "一大队", completed: true },
+      { employeeId: "2", name: "未完成乙", team: "一大队", completed: false },
+      { employeeId: "3", name: "未完成甲", team: "一大队", completed: false },
+    ],
+    { team: "一大队", query: "" },
+  );
+  assert.deepEqual(
+    results.map((driver) => driver.employeeId),
+    ["3", "2", "1"],
+  );
+});
+
+test("filters today drivers by employee id", () => {
+  const results = filterTodayDrivers(
+    [
+      { employeeId: "1", name: "张三", team: "一大队", completed: false },
+      { employeeId: "2", name: "李四", team: "二大队", completed: true },
+    ],
+    { team: "二大队", query: "2" },
+  );
+  assert.deepEqual(
+    results.map((driver) => driver.name),
+    ["李四"],
+  );
+});
+
+test("summarizes today completion", () => {
+  assert.deepEqual(
+    summarizeToday([
+      { completed: true },
+      { completed: false },
+      { completed: true },
+    ]),
+    { total: 3, completed: 2, unfinished: 1 },
   );
 });
