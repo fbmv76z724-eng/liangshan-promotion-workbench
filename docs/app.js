@@ -10,7 +10,7 @@ import {
   searchDrivers,
   summarizeTransfers,
   summarizeToday,
-} from "./logic.mjs?v=20260917-5";
+} from "./logic.mjs?v=20260917-6";
 
 const TAB_NAMES = new Set(["teams", "drivers", "orders", "today"]);
 const LOCAL_REFRESH_URL = "http://127.0.0.1:18765";
@@ -605,7 +605,7 @@ async function startLocalRefresh() {
       },
     });
   } catch (error) {
-    throw new LocalRefreshUnavailable("本机同步服务未启动") from error;
+    throw new LocalRefreshUnavailable("本机同步服务未启动", { cause: error });
   }
   if (!response.ok) {
     throw new LocalRefreshUnavailable(`本机同步服务返回 HTTP ${response.status}`);
@@ -623,7 +623,7 @@ async function waitForLocalRefresh() {
         cache: "no-store",
       });
     } catch (error) {
-      throw new LocalRefreshUnavailable("本机同步服务连接中断") from error;
+      throw new LocalRefreshUnavailable("本机同步服务连接中断", { cause: error });
     }
     if (!response.ok) {
       throw new LocalRefreshUnavailable(`本机同步服务返回 HTTP ${response.status}`);
