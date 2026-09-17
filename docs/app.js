@@ -43,7 +43,7 @@ const elements = {
   teamTitle: document.querySelector("#team-title"),
   teamUpdated: document.querySelector("#team-updated"),
   todayDrivers: document.querySelector("#today-drivers"),
-  todayHideCompleted: document.querySelector("#today-hide-completed"),
+  todayOnlyCompleted: document.querySelector("#today-only-completed"),
   todayQuery: document.querySelector("#today-query"),
   todayRefresh: document.querySelector("#today-refresh"),
   todayRefreshed: document.querySelector("#today-refreshed"),
@@ -63,7 +63,7 @@ let teamCompletionFilter = "all";
 let teamSortBy = "realTransfers";
 let teamSortDirection = "desc";
 let lastTodayFetchAt = 0;
-let todayHideCompleted = false;
+let todayOnlyCompleted = false;
 let todayRefreshInProgress = false;
 
 function tabFromHash() {
@@ -299,7 +299,7 @@ function renderTodayDrivers() {
   const drivers = filterTodayDrivers(todaySnapshot.drivers, {
     team: query ? "" : selectedTodayTeam,
     query,
-    hideCompleted: todayHideCompleted,
+    onlyCompleted: todayOnlyCompleted,
   });
   const summary = summarizeToday(drivers);
   elements.todayTeamTitle.textContent = query ? "查询结果" : selectedTodayTeam;
@@ -312,7 +312,11 @@ function renderTodayDrivers() {
   if (!drivers.length) {
     elements.todayDrivers.append(
       createStateMessage(
-        query ? "没有找到对应司机" : "该队伍暂无司机",
+        query
+          ? "没有找到对应司机"
+          : todayOnlyCompleted
+            ? "该队伍暂无已推广司机"
+            : "该队伍暂无司机",
         query ? "请检查姓名或工号。" : "请检查今日同步数据。",
       ),
     );
@@ -594,15 +598,15 @@ function bindTodayControls() {
     renderTodayDrivers();
   });
   elements.todayQuery.addEventListener("input", renderTodayDrivers);
-  elements.todayHideCompleted.addEventListener("click", () => {
-    todayHideCompleted = !todayHideCompleted;
-    elements.todayHideCompleted.setAttribute(
+  elements.todayOnlyCompleted.addEventListener("click", () => {
+    todayOnlyCompleted = !todayOnlyCompleted;
+    elements.todayOnlyCompleted.setAttribute(
       "aria-pressed",
-      String(todayHideCompleted),
+      String(todayOnlyCompleted),
     );
-    elements.todayHideCompleted.textContent = todayHideCompleted
+    elements.todayOnlyCompleted.textContent = todayOnlyCompleted
       ? "显示全部"
-      : "筛除已推广";
+      : "只看已推广";
     renderTodayDrivers();
   });
   elements.todayRefresh.addEventListener("click", () => {

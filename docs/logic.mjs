@@ -126,13 +126,13 @@ export function summarizeTransfers(orders) {
 
 export function filterTodayDrivers(
   drivers,
-  { team = "", query = "", hideCompleted = false } = {},
+  { team = "", query = "", onlyCompleted = false } = {},
 ) {
   const teamDrivers = team
     ? drivers.filter((driver) => driver.team === team)
     : [...drivers];
-  const visibleDrivers = hideCompleted
-    ? teamDrivers.filter((driver) => driver.completed !== true)
+  const visibleDrivers = onlyCompleted
+    ? teamDrivers.filter((driver) => driver.completed === true)
     : teamDrivers;
   const matches = query
     ? searchDrivers(visibleDrivers, query)
