@@ -43,7 +43,9 @@ const elements = {
   teamTitle: document.querySelector("#team-title"),
   teamUpdated: document.querySelector("#team-updated"),
   todayDrivers: document.querySelector("#today-drivers"),
+  todayHideCompleted: document.querySelector("#today-hide-completed"),
   todayQuery: document.querySelector("#today-query"),
+  todayRefresh: document.querySelector("#today-refresh"),
   todayRefreshed: document.querySelector("#today-refreshed"),
   todaySearchForm: document.querySelector("#today-search-form"),
   todaySearchStatus: document.querySelector("#today-search-status"),
@@ -61,6 +63,8 @@ let teamCompletionFilter = "all";
 let teamSortBy = "realTransfers";
 let teamSortDirection = "desc";
 let lastTodayFetchAt = 0;
+let todayHideCompleted = false;
+let todayRefreshInProgress = false;
 
 function tabFromHash() {
   const candidate = window.location.hash.replace(/^#/, "");
@@ -295,6 +299,7 @@ function renderTodayDrivers() {
   const drivers = filterTodayDrivers(todaySnapshot.drivers, {
     team: query ? "" : selectedTodayTeam,
     query,
+    hideCompleted: todayHideCompleted,
   });
   const summary = summarizeToday(drivers);
   elements.todayTeamTitle.textContent = query ? "查询结果" : selectedTodayTeam;
@@ -554,7 +559,15 @@ async function loadTodaySnapshot() {
   return data;
 }
 
-async function refreshTodayData() {
+async function refreshTodayData({ manual = false } = {}) {
+  if (todayRefreshInProgress) {
+    return;
+  }
+  todayRefreshInProgress = true;
+  if (manual) {
+    elements.todayRefresh.disabled = true;
+    elements.todayRefresh.textContent = "刷新中...";
+  }
   try {
     todaySnapshot = await loadTodaySnapshot();
     lastTodayFetchAt = Date.now();
@@ -568,6 +581,10 @@ async function refreshTodayData() {
     todaySnapshot = null;
     renderTodayMeta();
     renderTodayDrivers();
+  } finally {
+    todayRefreshInProgress = false;
+    elements.todayRefresh.disabled = false;
+    elements.todayRefresh.textContent = "刷新";
   }
 }
 
@@ -577,6 +594,20 @@ function bindTodayControls() {
     renderTodayDrivers();
   });
   elements.todayQuery.addEventListener("input", renderTodayDrivers);
+  elements.todayHideCompleted.addEventListener("click", () => {
+    todayHideCompleted = !todayHideCompleted;
+    elements.todayHideCompleted.setAttribute(
+      "aria-pressed",
+      String(todayHideCompleted),
+    );
+    elements.todayHideCompleted.textContent = todayHideCompleted
+      ? "显示全部"
+      : "筛除已推广";
+    renderTodayDrivers();
+  });
+  elements.todayRefresh.addEventListener("click", () => {
+    refreshTodayData({ manual: true });
+  });
 
   window.setInterval(refreshTodayData, 5 * 60 * 1000);
   document.addEventListener("visibilitychange", () => {

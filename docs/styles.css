@@ -445,6 +445,38 @@ main {
   background: var(--primary-strong);
 }
 
+.secondary-button {
+  min-height: 42px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--foreground);
+  padding: 8px 14px;
+  font-weight: 700;
+}
+
+.secondary-button:hover {
+  border-color: #8ba9d6;
+}
+
+.secondary-button[aria-pressed="true"] {
+  border-color: var(--primary);
+  background: var(--primary-soft);
+  color: var(--primary-strong);
+}
+
+.secondary-button:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+
+.today-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
 .result-status {
   min-height: 22px;
   margin-bottom: 12px;

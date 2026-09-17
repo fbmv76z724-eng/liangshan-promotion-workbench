@@ -45,6 +45,16 @@ python3 scripts/sync_today.py
 
 脚本只在数据变化时发布。发布中断会记录待发布状态，并在后续运行中继续；同一故障只提示一次，恢复时再提示。
 
+手动完整刷新（桌面快捷方式使用同一命令）：
+
+```bash
+/Users/fifidei/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 \
+  scripts/run_workbench.py --full
+```
+
+`--full` 会立即检查月度导出，并强制刷新今日推广更新时间。桌面快捷方式脚本位于
+`scripts/update_workbench.command`，安装后复制到桌面即可点击运行。
+
 发布到 GitHub Pages：
 
 ```bash

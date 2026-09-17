@@ -148,6 +148,21 @@ test("filters today drivers by employee id", () => {
   );
 });
 
+test("hides today drivers that already promoted", () => {
+  const results = filterTodayDrivers(
+    [
+      { employeeId: "1", name: "张三", team: "一大队", completed: false },
+      { employeeId: "2", name: "李四", team: "一大队", completed: true },
+      { employeeId: "3", name: "王五", team: "一大队", completed: false },
+    ],
+    { team: "一大队", hideCompleted: true },
+  );
+  assert.deepEqual(
+    results.map((driver) => driver.name),
+    ["王五", "张三"],
+  );
+});
+
 test("summarizes today completion", () => {
   assert.deepEqual(
     summarizeToday([

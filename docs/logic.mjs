@@ -124,11 +124,19 @@ export function summarizeTransfers(orders) {
   };
 }
 
-export function filterTodayDrivers(drivers, { team = "", query = "" } = {}) {
+export function filterTodayDrivers(
+  drivers,
+  { team = "", query = "", hideCompleted = false } = {},
+) {
   const teamDrivers = team
     ? drivers.filter((driver) => driver.team === team)
     : [...drivers];
-  const matches = query ? searchDrivers(teamDrivers, query) : teamDrivers;
+  const visibleDrivers = hideCompleted
+    ? teamDrivers.filter((driver) => driver.completed !== true)
+    : teamDrivers;
+  const matches = query
+    ? searchDrivers(visibleDrivers, query)
+    : visibleDrivers;
 
   return [...matches].sort((left, right) => {
     const completionOrder =
