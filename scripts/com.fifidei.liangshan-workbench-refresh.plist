@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.fifidei.liangshan-workbench-refresh</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Users/fifidei/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3</string>
+    <string>/Users/fifidei/Documents/Codex/liangshan-promotion-workbench/scripts/refresh_server.py</string>
+  </array>
+  <key>WorkingDirectory</key>
+  <string>/Users/fifidei/Documents/Codex/liangshan-promotion-workbench</string>
+  <key>RunAtLoad</key>
+  <true/>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/Users/fifidei/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+  </dict>
+  <key>KeepAlive</key>
+  <true/>
+  <key>ProcessType</key>
+  <string>Background</string>
+  <key>ThrottleInterval</key>
+  <integer>5</integer>
+  <key>StandardOutPath</key>
+  <string>/Users/fifidei/Documents/Codex/liangshan-promotion-workbench/work/refresh-server.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/fifidei/Documents/Codex/liangshan-promotion-workbench/work/refresh-server-error.log</string>
+</dict>
+</plist>

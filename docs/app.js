@@ -10,7 +10,7 @@ import {
   searchDrivers,
   summarizeTransfers,
   summarizeToday,
-} from "./logic.mjs?v=20260917-4";
+} from "./logic.mjs?v=20260917-5";
 
 const TAB_NAMES = new Set(["teams", "drivers", "orders", "today"]);
 const LOCAL_REFRESH_URL = "http://127.0.0.1:18765";
