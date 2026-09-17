@@ -23,5 +23,7 @@ else
   echo "更新失败，请查看上方提示。"
 fi
 
-echo
-read -r -k 1 "?按任意键关闭窗口..."
+if [[ -t 0 ]]; then
+  echo
+  read -r -k 1 "?按任意键关闭窗口..."
+fi
