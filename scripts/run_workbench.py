@@ -245,7 +245,7 @@ def verify_today(commit: str) -> None:
     for marker in ('id="today-only-completed"', 'id="today-refresh"'):
         if marker not in homepage:
             raise WorkbenchError("online_verify", f"线上今日板块缺少控件：{marker}")
-    if "todayOnlyCompleted" not in app_js:
+    if "todayOnlyCompleted" not in app_js or "refreshTodayManually" not in app_js:
         raise WorkbenchError("online_verify", "线上今日板块缺少筛除逻辑")
     expected = load_json(PROJECT_ROOT / "docs" / "data" / "today.json")
     try:

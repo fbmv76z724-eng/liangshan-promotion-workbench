@@ -10,9 +10,10 @@ import {
   searchDrivers,
   summarizeTransfers,
   summarizeToday,
-} from "./logic.mjs?v=20260917-3";
+} from "./logic.mjs?v=20260917-4";
 
 const TAB_NAMES = new Set(["teams", "drivers", "orders", "today"]);
+const LOCAL_REFRESH_URL = "http://127.0.0.1:18765";
 const ORDER_FLAGS = [
   "nonOffline",
   "abnormalScan",
@@ -65,6 +66,9 @@ let teamSortDirection = "desc";
 let lastTodayFetchAt = 0;
 let todayOnlyCompleted = false;
 let todayRefreshInProgress = false;
+
+class LocalRefreshUnavailable extends Error {}
+class LocalRefreshFailed extends Error {}
 
 function tabFromHash() {
   const candidate = window.location.hash.replace(/^#/, "");
@@ -563,20 +567,20 @@ async function loadTodaySnapshot() {
   return data;
 }
 
-async function refreshTodayData({ manual = false } = {}) {
+async function updateTodaySnapshotView() {
+  todaySnapshot = await loadTodaySnapshot();
+  lastTodayFetchAt = Date.now();
+  renderTodayMeta(new Date(lastTodayFetchAt).toISOString());
+  renderTodayDrivers();
+}
+
+async function refreshTodayData() {
   if (todayRefreshInProgress) {
     return;
   }
   todayRefreshInProgress = true;
-  if (manual) {
-    elements.todayRefresh.disabled = true;
-    elements.todayRefresh.textContent = "刷新中...";
-  }
   try {
-    todaySnapshot = await loadTodaySnapshot();
-    lastTodayFetchAt = Date.now();
-    renderTodayMeta(new Date(lastTodayFetchAt).toISOString());
-    renderTodayDrivers();
+    await updateTodaySnapshotView();
   } catch (error) {
     if (todaySnapshot) {
       elements.todayRefreshed.textContent = "本次刷新失败，继续显示上次数据";
@@ -585,6 +589,84 @@ async function refreshTodayData({ manual = false } = {}) {
     todaySnapshot = null;
     renderTodayMeta();
     renderTodayDrivers();
+  } finally {
+    todayRefreshInProgress = false;
+  }
+}
+
+async function startLocalRefresh() {
+  let response;
+  try {
+    response = await fetch(`${LOCAL_REFRESH_URL}/refresh`, {
+      method: "POST",
+      cache: "no-store",
+      headers: {
+        "X-Workbench-Refresh": "1",
+      },
+    });
+  } catch (error) {
+    throw new LocalRefreshUnavailable("本机同步服务未启动") from error;
+  }
+  if (!response.ok) {
+    throw new LocalRefreshUnavailable(`本机同步服务返回 HTTP ${response.status}`);
+  }
+  return response.json();
+}
+
+async function waitForLocalRefresh() {
+  const deadline = Date.now() + 5 * 60 * 1000;
+  while (Date.now() < deadline) {
+    await new Promise((resolve) => window.setTimeout(resolve, 2000));
+    let response;
+    try {
+      response = await fetch(`${LOCAL_REFRESH_URL}/status`, {
+        cache: "no-store",
+      });
+    } catch (error) {
+      throw new LocalRefreshUnavailable("本机同步服务连接中断") from error;
+    }
+    if (!response.ok) {
+      throw new LocalRefreshUnavailable(`本机同步服务返回 HTTP ${response.status}`);
+    }
+    const state = await response.json();
+    if (state.status === "success") {
+      return state;
+    }
+    if (state.status === "failure") {
+      throw new LocalRefreshFailed(state.message || "本机同步失败");
+    }
+  }
+  throw new LocalRefreshFailed("本机同步超时，请稍后重试");
+}
+
+async function refreshTodayManually() {
+  if (todayRefreshInProgress) {
+    return;
+  }
+  todayRefreshInProgress = true;
+  elements.todayRefresh.disabled = true;
+  elements.todayRefresh.textContent = "同步中...";
+  elements.todayRefreshed.textContent = "正在从钉钉同步今日数据...";
+  try {
+    await startLocalRefresh();
+    const state = await waitForLocalRefresh();
+    await updateTodaySnapshotView();
+    elements.todayRefreshed.textContent =
+      `手动刷新完成 ${formatSyncTime(state.finishedAt)}`;
+  } catch (error) {
+    if (error instanceof LocalRefreshUnavailable) {
+      try {
+        await updateTodaySnapshotView();
+        elements.todayRefreshed.textContent =
+          `${error.message}，已重新载入线上数据`;
+      } catch (reloadError) {
+        elements.todayRefreshed.textContent =
+          `刷新失败：${reloadError instanceof Error ? reloadError.message : "未知错误"}`;
+      }
+    } else {
+      elements.todayRefreshed.textContent =
+        `同步失败：${error instanceof Error ? error.message : "未知错误"}`;
+    }
   } finally {
     todayRefreshInProgress = false;
     elements.todayRefresh.disabled = false;
@@ -610,7 +692,7 @@ function bindTodayControls() {
     renderTodayDrivers();
   });
   elements.todayRefresh.addEventListener("click", () => {
-    refreshTodayData({ manual: true });
+    refreshTodayManually();
   });
 
   window.setInterval(refreshTodayData, 5 * 60 * 1000);
