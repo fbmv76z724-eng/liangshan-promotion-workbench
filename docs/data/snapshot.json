@@ -2,11 +2,11 @@
   "meta": {
     "schemaVersion": 3,
     "periodStart": "2026-09-01",
-    "periodEnd": "2026-09-15",
-    "sourceDate": "2026-09-15",
-    "syncedAt": "2026-09-16T17:04:31",
-    "driverCount": 331,
-    "orderCount": 437,
+    "periodEnd": "2026-09-16",
+    "sourceDate": "2026-09-16",
+    "syncedAt": "2026-09-17T14:45:19",
+    "driverCount": 297,
+    "orderCount": 454,
     "teamCount": 12
   },
   "drivers": [
@@ -31,44 +31,34 @@
       "promotionDelta": -4
     },
     {
+      "employeeId": "11762028",
+      "name": "加思五支",
+      "team": "一大队",
+      "outDays": 2,
+      "realTransfers": 0,
+      "promotionCount": 0,
+      "promotionCompleted": false,
+      "promotionDelta": -2
+    },
+    {
       "employeeId": "11842395",
       "name": "卢志国",
       "team": "一大队",
-      "outDays": 9,
+      "outDays": 10,
       "realTransfers": 2,
       "promotionCount": 8,
       "promotionCompleted": true,
-      "promotionDelta": -1
+      "promotionDelta": -2
     },
     {
       "employeeId": "11357723",
       "name": "吉克而近",
       "team": "一大队",
-      "outDays": 14,
+      "outDays": 15,
       "realTransfers": 3,
       "promotionCount": 4,
       "promotionCompleted": true,
-      "promotionDelta": -10
-    },
-    {
-      "employeeId": "11341334",
-      "name": "吕彬",
-      "team": "一大队",
-      "outDays": 0,
-      "realTransfers": 0,
-      "promotionCount": 0,
-      "promotionCompleted": false,
-      "promotionDelta": 0
-    },
-    {
-      "employeeId": "11723254",
-      "name": "尼洛小林",
-      "team": "一大队",
-      "outDays": 0,
-      "realTransfers": 0,
-      "promotionCount": 0,
-      "promotionCompleted": false,
-      "promotionDelta": 0
+      "promotionDelta": -11
     },
     {
       "employeeId": "11533190",
@@ -84,21 +74,21 @@
       "employeeId": "11112019",
       "name": "张银",
       "team": "一大队",
-      "outDays": 8,
+      "outDays": 9,
       "realTransfers": 2,
       "promotionCount": 1,
       "promotionCompleted": true,
-      "promotionDelta": -7
+      "promotionDelta": -8
     },
     {
-      "employeeId": "144653",
-      "name": "李剑",
+      "employeeId": "11765176",
+      "name": "彭宽",
       "team": "一大队",
-      "outDays": 0,
+      "outDays": 1,
       "realTransfers": 0,
       "promotionCount": 0,
       "promotionCompleted": false,
-      "promotionDelta": 0
+      "promotionDelta": -1
     },
     {
       "employeeId": "11229096",
@@ -109,6 +99,16 @@
       "promotionCount": 0,
       "promotionCompleted": false,
       "promotionDelta": -4
+    },
+    {
+      "employeeId": "11933114",
+      "name": "李荣顺",
+      "team": "一大队",
+      "outDays": 0,
+      "realTransfers": 0,
+      "promotionCount": 0,
+      "promotionCompleted": false,
+      "promotionDelta": 0
     },
     {
       "employeeId": "11113640",
@@ -124,11 +124,11 @@
       "employeeId": "11562564",
       "name": "杨奎",
       "team": "一大队",
-      "outDays": 13,
+      "outDays": 14,
       "realTransfers": 1,
       "promotionCount": 5,
       "promotionCompleted": false,
-      "promotionDelta": -8
+      "promotionDelta": -9
     },
     {
       "employeeId": "11719216",
@@ -144,91 +144,71 @@
       "employeeId": "11296278",
       "name": "沙马子坡",
       "team": "一大队",
-      "outDays": 10,
+      "outDays": 11,
       "realTransfers": 0,
       "promotionCount": 1,
       "promotionCompleted": false,
-      "promotionDelta": -9
+      "promotionDelta": -10
     },
     {
       "employeeId": "11401701",
       "name": "王杰",
       "team": "一大队",
-      "outDays": 7,
+      "outDays": 8,
       "realTransfers": 0,
       "promotionCount": 0,
       "promotionCompleted": false,
-      "promotionDelta": -7
+      "promotionDelta": -8
+    },
+    {
+      "employeeId": "11765169",
+      "name": "罗成",
+      "team": "一大队",
+      "outDays": 1,
+      "realTransfers": 0,
+      "promotionCount": 0,
+      "promotionCompleted": false,
+      "promotionDelta": -1
     },
     {
       "employeeId": "395385",
       "name": "肖勇",
       "team": "一大队",
-      "outDays": 14,
+      "outDays": 15,
       "realTransfers": 0,
       "promotionCount": 6,
       "promotionCompleted": false,
-      "promotionDelta": -8
+      "promotionDelta": -9
     },
     {
       "employeeId": "11165495",
       "name": "肖灵",
       "team": "一大队",
-      "outDays": 10,
+      "outDays": 11,
       "realTransfers": 0,
       "promotionCount": 0,
       "promotionCompleted": false,
-      "promotionDelta": -10
-    },
-    {
-      "employeeId": "11763532",
-      "name": "苏呷只朵",
-      "team": "一大队",
-      "outDays": 0,
-      "realTransfers": 0,
-      "promotionCount": 0,
-      "promotionCompleted": false,
-      "promotionDelta": 0
-    },
-    {
-      "employeeId": "11719038",
-      "name": "苦都格",
-      "team": "一大队",
-      "outDays": 0,
-      "realTransfers": 0,
-      "promotionCount": 0,
-      "promotionCompleted": false,
-      "promotionDelta": 0
+      "promotionDelta": -11
     },
     {
       "employeeId": "11919332",
       "name": "衣比尔格",
       "team": "一大队",
-      "outDays": 13,
+      "outDays": 14,
       "realTransfers": 1,
       "promotionCount": 3,
       "promotionCompleted": false,
-      "promotionDelta": -10
+      "promotionDelta": -11
     },
     {
       "employeeId": "11613012",
       "name": "补约衣哈",
       "team": "一大队",
-      "outDays": 7,
+      "outDays": 8,
       "realTransfers": 1,
       "promotionCount": 1,
       "promotionCompleted": false,
-      "promotionDelta": -6
-    },
-    {
-      "employeeId": "11672974",
-      "name": "许浩",
-      "team": "一大队",
-      "outDays": 0,
-      "realTransfers": 0,
-      "promotionCount": 0,
-      "promotionCompleted": false,
-      "promotionDelta": 0
+      "promotionDelta": -7
     },
     {
       "employeeId": "11354789",
@@ -241,24 +221,14 @@
       "promotionDelta": -8
     },
     {
-      "employeeId": "11982552",
-      "name": "谌立飞",
-      "team": "一大队",
-      "outDays": 10,
-      "realTransfers": 0,
-      "promotionCount": 12,
-      "promotionCompleted": false,
-      "promotionDelta": 2
-    },
-    {
       "employeeId": "11596221",
       "name": "阿古尔达",
       "team": "一大队",
-      "outDays": 10,
+      "outDays": 11,
       "realTransfers": 0,
       "promotionCount": 8,
       "promotionCompleted": false,
-      "promotionDelta": -2
+      "promotionDelta": -3
     },
     {
       "employeeId": "11628210",
@@ -274,41 +244,31 @@
       "employeeId": "11718818",
       "name": "阿生尼呷",
       "team": "一大队",
-      "outDays": 14,
+      "outDays": 15,
       "realTransfers": 2,
       "promotionCount": 3,
       "promotionCompleted": true,
-      "promotionDelta": -11
+      "promotionDelta": -12
     },
     {
       "employeeId": "329980",
       "name": "陈伟",
       "team": "一大队",
-      "outDays": 13,
-      "realTransfers": 6,
+      "outDays": 14,
+      "realTransfers": 7,
       "promotionCount": 0,
       "promotionCompleted": true,
-      "promotionDelta": -13
+      "promotionDelta": -14
     },
     {
       "employeeId": "11281385",
       "name": "陈浩",
       "team": "一大队",
-      "outDays": 14,
+      "outDays": 15,
       "realTransfers": 5,
-      "promotionCount": 13,
+      "promotionCount": 14,
       "promotionCompleted": true,
       "promotionDelta": -1
-    },
-    {
-      "employeeId": "230857",
-      "name": "马衣布",
-      "team": "一大队",
-      "outDays": 11,
-      "realTransfers": 0,
-      "promotionCount": 11,
-      "promotionCompleted": false,
-      "promotionDelta": 0
     },
     {
       "employeeId": "11377946",
@@ -321,82 +281,52 @@
       "promotionDelta": -10
     },
     {
-      "employeeId": "11533084",
-      "name": "冯伟",
-      "team": "二大队",
-      "outDays": 0,
-      "realTransfers": 0,
-      "promotionCount": 0,
-      "promotionCompleted": false,
-      "promotionDelta": 0
-    },
-    {
       "employeeId": "886256",
       "name": "刘永前",
       "team": "二大队",
-      "outDays": 7,
+      "outDays": 8,
       "realTransfers": 0,
       "promotionCount": 3,
       "promotionCompleted": false,
-      "promotionDelta": -4
+      "promotionDelta": -5
     },
     {
       "employeeId": "11127615",
       "name": "刘鹏",
       "team": "二大队",
-      "outDays": 13,
-      "realTransfers": 3,
-      "promotionCount": 0,
-      "promotionCompleted": true,
-      "promotionDelta": -13
-    },
-    {
-      "employeeId": "132341",
-      "name": "加拉翁日",
-      "team": "二大队",
-      "outDays": 12,
-      "realTransfers": 0,
-      "promotionCount": 2,
-      "promotionCompleted": false,
-      "promotionDelta": -10
-    },
-    {
-      "employeeId": "11359384",
-      "name": "周小龙",
-      "team": "二大队",
       "outDays": 14,
-      "realTransfers": 2,
+      "realTransfers": 3,
       "promotionCount": 0,
       "promotionCompleted": true,
       "promotionDelta": -14
     },
     {
-      "employeeId": "11163765",
-      "name": "夏正坤",
+      "employeeId": "132341",
+      "name": "加拉翁日",
       "team": "二大队",
-      "outDays": 10,
-      "realTransfers": 1,
-      "promotionCount": 0,
+      "outDays": 13,
+      "realTransfers": 0,
+      "promotionCount": 2,
       "promotionCompleted": false,
-      "promotionDelta": -10
+      "promotionDelta": -11
     },
     {
-      "employeeId": "11415437",
-      "name": "姚程",
+      "employeeId": "11359384",
+      "name": "周小龙",
       "team": "二大队",
-      "outDays": 0,
-      "realTransfers": 0,
+      "outDays": 15,
+      "realTransfers": 2,
       "promotionCount": 0,
-      "promotionCompleted": false,
-      "promotionDelta": 0
+      "promotionCompleted": true,
+      "promotionDelta": -15
     },
     {
       "employeeId": "11880125",
       "name": "宾二龙",
       "team": "二大队",
-      "outDays": 12,
+      "outDays": 13,
       "realTransfers": 0,
-      "promotionCount": 12,
+      "promotionCount": 13,
       "promotionCompleted": false,
       "promotionDelta": 0
     },
@@ -409,16 +339,6 @@
       "promotionCount": 2,
       "promotionCompleted": false,
       "promotionDelta": -6
-    },
-    {
-      "employeeId": "11189837",
-      "name": "杨万科",
-      "team": "二大队",
-      "outDays": 0,
-      "realTransfers": 0,
-      "promotionCount": 0,
-      "promotionCompleted": false,
-      "promotionDelta": 0
     },
     {
       "employeeId": "11617910",
@@ -434,19 +354,19 @@
       "employeeId": "11408997",
       "name": "毛昊",
       "team": "二大队",
-      "outDays": 12,
+      "outDays": 13,
       "realTransfers": 1,
       "promotionCount": 0,
       "promotionCompleted": false,
-      "promotionDelta": -12
+      "promotionDelta": -13
     },
     {
       "employeeId": "11887036",
       "name": "沙各子日",
       "team": "二大队",
-      "outDays": 14,
+      "outDays": 15,
       "realTransfers": 1,
-      "promotionCount": 8,
+      "promotionCount": 9,
       "promotionCompleted": false,
       "promotionDelta": -6
     },
@@ -474,11 +394,11 @@
       "employeeId": "11726969",
       "name": "王绍林",
       "team": "二大队",
-      "outDays": 9,
+      "outDays": 10,
       "realTransfers": 0,
       "promotionCount": 0,
       "promotionCompleted": false,
-      "promotionDelta": -9
+      "promotionDelta": -10
     },
     {
       "employeeId": "11996697",
@@ -494,21 +414,21 @@
       "employeeId": "11977760",
       "name": "王锐",
       "team": "二大队",
-      "outDays": 13,
+      "outDays": 14,
       "realTransfers": 0,
-      "promotionCount": 0,
+      "promotionCount": 5,
       "promotionCompleted": false,
-      "promotionDelta": -13
+      "promotionDelta": -9
     },
     {
       "employeeId": "11537079",
       "name": "罗国杰",
       "team": "二大队",
-      "outDays": 3,
+      "outDays": 4,
       "realTransfers": 0,
       "promotionCount": 0,
       "promotionCompleted": false,
-      "promotionDelta": -3
+      "promotionDelta": -4
     },
     {
       "employeeId": "11695136",
@@ -524,19 +444,29 @@
       "employeeId": "11259421",
       "name": "罗贵聪",
       "team": "二大队",
-      "outDays": 14,
+      "outDays": 15,
       "realTransfers": 2,
       "promotionCount": 0,
       "promotionCompleted": true,
-      "promotionDelta": -14
+      "promotionDelta": -15
+    },
+    {
+      "employeeId": "11965325",
+      "name": "翁古呷呷",
+      "team": "二大队",
+      "outDays": 13,
+      "realTransfers": 0,
+      "promotionCount": 0,
+      "promotionCompleted": false,
+      "promotionDelta": -13
     },
     {
       "employeeId": "11733120",
       "name": "范力",
       "team": "二大队",
-      "outDays": 6,
+      "outDays": 7,
       "realTransfers": 2,
-      "promotionCount": 10,
+      "promotionCount": 11,
       "promotionCompleted": true,
       "promotionDelta": 4
     },
@@ -544,11 +474,11 @@
       "employeeId": "11418519",
       "name": "衣火以呷",
       "team": "二大队",
-      "outDays": 9,
+      "outDays": 10,
       "realTransfers": 0,
       "promotionCount": 0,
       "promotionCompleted": false,
-      "promotionDelta": -9
+      "promotionDelta": -10
     },
     {
       "employeeId": "11901782",
@@ -564,11 +494,21 @@
       "employeeId": "11137383",
       "name": "阿尔木刚",
       "team": "二大队",
-      "outDays": 9,
+      "outDays": 10,
       "realTransfers": 0,
       "promotionCount": 6,
       "promotionCompleted": false,
-      "promotionDelta": -3
+      "promotionDelta": -4
+    },
+    {
+      "employeeId": "11759535",
+      "name": "阿育果古惹",
+      "team": "二大队",
+      "outDays": 4,
+      "realTransfers": 0,
+      "promotionCount": 0,
+      "promotionCompleted": false,
+      "promotionDelta": -4
     },
     {
       "employeeId": "11355156",
@@ -584,21 +524,31 @@
       "employeeId": "11165579",
       "name": "马旭",
       "team": "二大队",
-      "outDays": 4,
+      "outDays": 5,
       "realTransfers": 0,
       "promotionCount": 0,
       "promotionCompleted": false,
-      "promotionDelta": -4
+      "promotionDelta": -5
     },
     {
-      "employeeId": "11700223",
-      "name": "何光寿",
+      "employeeId": "11651774",
+      "name": "何正明",
       "team": "三大队",
-      "outDays": 0,
+      "outDays": 14,
+      "realTransfers": 14,
+      "promotionCount": 4,
+      "promotionCompleted": true,
+      "promotionDelta": -10
+    },
+    {
+      "employeeId": "11947553",
+      "name": "余木且",
+      "team": "三大队",
+      "outDays": 1,
       "realTransfers": 0,
       "promotionCount": 0,
       "promotionCompleted": false,
-      "promotionDelta": 0
+      "promotionDelta": -1
     },
     {
       "employeeId": "11273471",
@@ -616,59 +566,19 @@
       "team": "三大队",
       "outDays": 10,
       "realTransfers": 0,
-      "promotionCount": 7,
+      "promotionCount": 8,
       "promotionCompleted": false,
-      "promotionDelta": -3
-    },
-    {
-      "employeeId": "11815621",
-      "name": "周云",
-      "team": "三大队",
-      "outDays": 7,
-      "realTransfers": 0,
-      "promotionCount": 0,
-      "promotionCompleted": false,
-      "promotionDelta": -7
-    },
-    {
-      "employeeId": "11921920",
-      "name": "周飞",
-      "team": "三大队",
-      "outDays": 4,
-      "realTransfers": 0,
-      "promotionCount": 1,
-      "promotionCompleted": false,
-      "promotionDelta": -3
+      "promotionDelta": -2
     },
     {
       "employeeId": "11859071",
       "name": "孙里坡",
       "team": "三大队",
-      "outDays": 11,
+      "outDays": 12,
       "realTransfers": 0,
       "promotionCount": 0,
       "promotionCompleted": false,
-      "promotionDelta": -11
-    },
-    {
-      "employeeId": "11697887",
-      "name": "尔古科黑",
-      "team": "三大队",
-      "outDays": 7,
-      "realTransfers": 0,
-      "promotionCount": 0,
-      "promotionCompleted": false,
-      "promotionDelta": -7
-    },
-    {
-      "employeeId": "11163051",
-      "name": "曾豪",
-      "team": "三大队",
-      "outDays": 0,
-      "realTransfers": 0,
-      "promotionCount": 0,
-      "promotionCompleted": false,
-      "promotionDelta": 0
+      "promotionDelta": -12
     },
     {
       "employeeId": "11697012",
@@ -684,81 +594,51 @@
       "employeeId": "11126140",
       "name": "朱木呷",
       "team": "三大队",
-      "outDays": 11,
+      "outDays": 12,
       "realTransfers": 2,
       "promotionCount": 0,
       "promotionCompleted": true,
-      "promotionDelta": -11
-    },
-    {
-      "employeeId": "11712072",
-      "name": "朱柏韬",
-      "team": "三大队",
-      "outDays": 0,
-      "realTransfers": 0,
-      "promotionCount": 0,
-      "promotionCompleted": false,
-      "promotionDelta": 0
+      "promotionDelta": -12
     },
     {
       "employeeId": "878825",
       "name": "李小平",
       "team": "三大队",
-      "outDays": 12,
+      "outDays": 13,
       "realTransfers": 0,
       "promotionCount": 0,
       "promotionCompleted": false,
-      "promotionDelta": -12
+      "promotionDelta": -13
     },
     {
       "employeeId": "112449",
       "name": "李文静",
       "team": "三大队",
-      "outDays": 3,
+      "outDays": 4,
       "realTransfers": 1,
       "promotionCount": 0,
       "promotionCompleted": false,
-      "promotionDelta": -3
-    },
-    {
-      "employeeId": "11704537",
-      "name": "林天遥",
-      "team": "三大队",
-      "outDays": 0,
-      "realTransfers": 0,
-      "promotionCount": 0,
-      "promotionCompleted": false,
-      "promotionDelta": 0
+      "promotionDelta": -4
     },
     {
       "employeeId": "11253452",
       "name": "沙呷体",
       "team": "三大队",
-      "outDays": 7,
+      "outDays": 8,
       "realTransfers": 0,
       "promotionCount": 1,
       "promotionCompleted": false,
-      "promotionDelta": -6
-    },
-    {
-      "employeeId": "11165500",
-      "name": "海来拉作",
-      "team": "三大队",
-      "outDays": 9,
-      "realTransfers": 0,
-      "promotionCount": 0,
-      "promotionCompleted": false,
-      "promotionDelta": -9
+      "promotionDelta": -7
     },
     {
       "employeeId": "11495026",
       "name": "王凯",
       "team": "三大队",
-      "outDays": 14,
+      "outDays": 15,
       "realTransfers": 15,
       "promotionCount": 2,
       "promotionCompleted": true,
-      "promotionDelta": -12
+      "promotionDelta": -13
     },
     {
       "employeeId": "11137605",
@@ -791,34 +671,24 @@
       "promotionDelta": -6
     },
     {
-      "employeeId": "11450977",
-      "name": "罗正华",
-      "team": "三大队",
-      "outDays": 2,
-      "realTransfers": 0,
-      "promotionCount": 2,
-      "promotionCompleted": false,
-      "promotionDelta": 0
-    },
-    {
       "employeeId": "342626",
       "name": "艾勇",
       "team": "三大队",
-      "outDays": 12,
+      "outDays": 13,
       "realTransfers": 2,
       "promotionCount": 10,
       "promotionCompleted": true,
-      "promotionDelta": -2
+      "promotionDelta": -3
     },
     {
       "employeeId": "11708178",
       "name": "蒋万发",
       "team": "三大队",
-      "outDays": 7,
+      "outDays": 8,
       "realTransfers": 0,
       "promotionCount": 0,
       "promotionCompleted": false,
-      "promotionDelta": -7
+      "promotionDelta": -8
     },
     {
       "employeeId": "11518167",
@@ -861,64 +731,54 @@
       "promotionDelta": -1
     },
     {
-      "employeeId": "11704213",
-      "name": "阿巴日呷",
-      "team": "三大队",
-      "outDays": 0,
-      "realTransfers": 0,
-      "promotionCount": 0,
-      "promotionCompleted": false,
-      "promotionDelta": 0
-    },
-    {
       "employeeId": "694686",
       "name": "阿说里古",
       "team": "三大队",
-      "outDays": 14,
+      "outDays": 15,
       "realTransfers": 3,
       "promotionCount": 5,
       "promotionCompleted": true,
-      "promotionDelta": -9
+      "promotionDelta": -10
     },
     {
       "employeeId": "11541389",
       "name": "陈二放",
       "team": "三大队",
-      "outDays": 1,
+      "outDays": 2,
       "realTransfers": 0,
       "promotionCount": 0,
       "promotionCompleted": false,
-      "promotionDelta": -1
+      "promotionDelta": -2
     },
     {
       "employeeId": "11715847",
       "name": "韦永平",
       "team": "三大队",
-      "outDays": 14,
+      "outDays": 15,
       "realTransfers": 2,
       "promotionCount": 0,
       "promotionCompleted": true,
-      "promotionDelta": -14
-    },
-    {
-      "employeeId": "11495097",
-      "name": "马海尔呷",
-      "team": "三大队",
-      "outDays": 0,
-      "realTransfers": 0,
-      "promotionCount": 0,
-      "promotionCompleted": false,
-      "promotionDelta": 0
+      "promotionDelta": -15
     },
     {
       "employeeId": "135343",
       "name": "黄浩然",
       "team": "三大队",
-      "outDays": 13,
+      "outDays": 14,
       "realTransfers": 1,
-      "promotionCount": 13,
+      "promotionCount": 14,
       "promotionCompleted": false,
       "promotionDelta": 0
+    },
+    {
+      "employeeId": "11752707",
+      "name": "任威",
+      "team": "四大队",
+      "outDays": 3,
+      "realTransfers": 1,
+      "promotionCount": 0,
+      "promotionCompleted": false,
+      "promotionDelta": -3
     },
     {
       "employeeId": "11367526",
@@ -941,6 +801,16 @@
       "promotionDelta": -6
     },
     {
+      "employeeId": "11759431",
+      "name": "叶伍枝",
+      "team": "四大队",
+      "outDays": 2,
+      "realTransfers": 0,
+      "promotionCount": 0,
+      "promotionCompleted": false,
+      "promotionDelta": -2
+    },
+    {
       "employeeId": "11890614",
       "name": "吉克尔古",
       "team": "四大队",
@@ -954,29 +824,49 @@
       "employeeId": "11905880",
       "name": "吉秋林",
       "team": "四大队",
-      "outDays": 14,
+      "outDays": 15,
       "realTransfers": 1,
       "promotionCount": 3,
       "promotionCompleted": false,
-      "promotionDelta": -11
+      "promotionDelta": -12
     },
     {
       "employeeId": "11531631",
       "name": "吉黑伍甲",
       "team": "四大队",
-      "outDays": 6,
+      "outDays": 7,
       "realTransfers": 0,
       "promotionCount": 0,
       "promotionCompleted": false,
-      "promotionDelta": -6
+      "promotionDelta": -7
+    },
+    {
+      "employeeId": "11827714",
+      "name": "周东",
+      "team": "四大队",
+      "outDays": 4,
+      "realTransfers": 0,
+      "promotionCount": 5,
+      "promotionCompleted": false,
+      "promotionDelta": 1
+    },
+    {
+      "employeeId": "11884136",
+      "name": "周勇",
+      "team": "四大队",
+      "outDays": 0,
+      "realTransfers": 0,
+      "promotionCount": 0,
+      "promotionCompleted": false,
+      "promotionDelta": 0
     },
     {
       "employeeId": "790282",
       "name": "喻忠波",
       "team": "四大队",
-      "outDays": 13,
+      "outDays": 14,
       "realTransfers": 0,
-      "promotionCount": 6,
+      "promotionCount": 7,
       "promotionCompleted": false,
       "promotionDelta": -7
     },
@@ -994,6 +884,36 @@
       "employeeId": "11746138",
       "name": "姜明",
       "team": "四大队",
+      "outDays": 4,
+      "realTransfers": 0,
+      "promotionCount": 0,
+      "promotionCompleted": false,
+      "promotionDelta": -4
+    },
+    {
+      "employeeId": "11546014",
+      "name": "庞冉",
+      "team": "四大队",
+      "outDays": 11,
+      "realTransfers": 4,
+      "promotionCount": 0,
+      "promotionCompleted": true,
+      "promotionDelta": -11
+    },
+    {
+      "employeeId": "11388277",
+      "name": "张日古",
+      "team": "四大队",
+      "outDays": 15,
+      "realTransfers": 1,
+      "promotionCount": 0,
+      "promotionCompleted": false,
+      "promotionDelta": -15
+    },
+    {
+      "employeeId": "11824354",
+      "name": "拉马日拉",
+      "team": "四大队",
       "outDays": 3,
       "realTransfers": 0,
       "promotionCount": 0,
@@ -1001,38 +921,18 @@
       "promotionDelta": -3
     },
     {
-      "employeeId": "11546014",
-      "name": "庞冉",
+      "employeeId": "11743143",
+      "name": "杨木呷",
       "team": "四大队",
-      "outDays": 10,
-      "realTransfers": 4,
-      "promotionCount": 0,
-      "promotionCompleted": true,
-      "promotionDelta": -10
-    },
-    {
-      "employeeId": "11388277",
-      "name": "张日古",
-      "team": "四大队",
-      "outDays": 14,
-      "realTransfers": 1,
-      "promotionCount": 0,
-      "promotionCompleted": false,
-      "promotionDelta": -14
-    },
-    {
-      "employeeId": "11155330",
-      "name": "徐朝东",
-      "team": "四大队",
-      "outDays": 5,
+      "outDays": 0,
       "realTransfers": 0,
       "promotionCount": 0,
       "promotionCompleted": false,
-      "promotionDelta": -5
+      "promotionDelta": 0
     },
     {
-      "employeeId": "11875104",
-      "name": "欧其古也",
+      "employeeId": "11744057",
+      "name": "毛光顺",
       "team": "四大队",
       "outDays": 0,
       "realTransfers": 0,
@@ -1054,11 +954,11 @@
       "employeeId": "617762",
       "name": "罗日布",
       "team": "四大队",
-      "outDays": 11,
+      "outDays": 12,
       "realTransfers": 0,
       "promotionCount": 0,
       "promotionCompleted": false,
-      "promotionDelta": -11
+      "promotionDelta": -12
     },
     {
       "employeeId": "11656664",
@@ -1069,6 +969,16 @@
       "promotionCount": 0,
       "promotionCompleted": false,
       "promotionDelta": -5
+    },
+    {
+      "employeeId": "11751281",
+      "name": "莫尔呷",
+      "team": "四大队",
+      "outDays": 4,
+      "realTransfers": 0,
+      "promotionCount": 0,
+      "promotionCompleted": false,
+      "promotionDelta": -4
     },
     {
       "employeeId": "11185271",
@@ -1084,61 +994,61 @@
       "employeeId": "11454758",
       "name": "薛娇",
       "team": "四大队",
-      "outDays": 11,
+      "outDays": 12,
       "realTransfers": 2,
       "promotionCount": 0,
       "promotionCompleted": true,
-      "promotionDelta": -11
+      "promotionDelta": -12
+    },
+    {
+      "employeeId": "11440104",
+      "name": "赵凯",
+      "team": "四大队",
+      "outDays": 1,
+      "realTransfers": 0,
+      "promotionCount": 0,
+      "promotionCompleted": false,
+      "promotionDelta": -1
     },
     {
       "employeeId": "11609144",
       "name": "阿西小龙",
       "team": "四大队",
-      "outDays": 8,
+      "outDays": 9,
       "realTransfers": 0,
       "promotionCount": 0,
       "promotionCompleted": false,
-      "promotionDelta": -8
+      "promotionDelta": -9
     },
     {
       "employeeId": "11452450",
       "name": "阿说木散",
       "team": "四大队",
-      "outDays": 11,
-      "realTransfers": 1,
+      "outDays": 12,
+      "realTransfers": 2,
       "promotionCount": 1,
-      "promotionCompleted": false,
-      "promotionDelta": -10
+      "promotionCompleted": true,
+      "promotionDelta": -11
     },
     {
       "employeeId": "11872841",
       "name": "阿都子史",
       "team": "四大队",
-      "outDays": 14,
+      "outDays": 15,
       "realTransfers": 2,
       "promotionCount": 0,
       "promotionCompleted": true,
-      "promotionDelta": -14
+      "promotionDelta": -15
     },
     {
       "employeeId": "11216136",
       "name": "陈发林",
       "team": "四大队",
-      "outDays": 12,
+      "outDays": 13,
       "realTransfers": 1,
       "promotionCount": 5,
       "promotionCompleted": false,
-      "promotionDelta": -7
-    },
-    {
-      "employeeId": "11242883",
-      "name": "陈良麒",
-      "team": "四大队",
-      "outDays": 5,
-      "realTransfers": 0,
-      "promotionCount": 0,
-      "promotionCompleted": false,
-      "promotionDelta": -5
+      "promotionDelta": -8
     },
     {
       "employeeId": "283247",
@@ -1151,24 +1061,34 @@
       "promotionDelta": -6
     },
     {
+      "employeeId": "11768714",
+      "name": "付仕琦",
+      "team": "五大队",
+      "outDays": 0,
+      "realTransfers": 0,
+      "promotionCount": 0,
+      "promotionCompleted": false,
+      "promotionDelta": 0
+    },
+    {
       "employeeId": "11897933",
       "name": "克日伍各",
       "team": "五大队",
-      "outDays": 13,
+      "outDays": 14,
       "realTransfers": 2,
       "promotionCount": 11,
       "promotionCompleted": true,
-      "promotionDelta": -2
+      "promotionDelta": -3
     },
     {
       "employeeId": "946042",
       "name": "吕声国",
       "team": "五大队",
-      "outDays": 5,
+      "outDays": 6,
       "realTransfers": 0,
       "promotionCount": 0,
       "promotionCompleted": false,
-      "promotionDelta": -5
+      "promotionDelta": -6
     },
     {
       "employeeId": "11277985",
@@ -1191,8 +1111,28 @@
       "promotionDelta": -6
     },
     {
-      "employeeId": "11689606",
-      "name": "张健",
+      "employeeId": "11977557",
+      "name": "张贤兴",
+      "team": "五大队",
+      "outDays": 15,
+      "realTransfers": 3,
+      "promotionCount": 0,
+      "promotionCompleted": true,
+      "promotionDelta": -15
+    },
+    {
+      "employeeId": "11662342",
+      "name": "徐显翔",
+      "team": "五大队",
+      "outDays": 8,
+      "realTransfers": 0,
+      "promotionCount": 1,
+      "promotionCompleted": false,
+      "promotionDelta": -7
+    },
+    {
+      "employeeId": "11742866",
+      "name": "李昂",
       "team": "五大队",
       "outDays": 0,
       "realTransfers": 0,
@@ -1201,24 +1141,14 @@
       "promotionDelta": 0
     },
     {
-      "employeeId": "11977557",
-      "name": "张贤兴",
-      "team": "五大队",
-      "outDays": 14,
-      "realTransfers": 3,
-      "promotionCount": 0,
-      "promotionCompleted": true,
-      "promotionDelta": -14
-    },
-    {
       "employeeId": "11942806",
       "name": "李森铭",
       "team": "五大队",
-      "outDays": 6,
+      "outDays": 7,
       "realTransfers": 0,
-      "promotionCount": 3,
+      "promotionCount": 5,
       "promotionCompleted": false,
-      "promotionDelta": -3
+      "promotionDelta": -2
     },
     {
       "employeeId": "11240925",
@@ -1234,9 +1164,9 @@
       "employeeId": "11304322",
       "name": "杨在平",
       "team": "五大队",
-      "outDays": 10,
+      "outDays": 11,
       "realTransfers": 0,
-      "promotionCount": 8,
+      "promotionCount": 9,
       "promotionCompleted": false,
       "promotionDelta": -2
     },
@@ -1254,31 +1184,31 @@
       "employeeId": "11870475",
       "name": "欧布布哈",
       "team": "五大队",
-      "outDays": 13,
+      "outDays": 14,
       "realTransfers": 5,
       "promotionCount": 3,
       "promotionCompleted": true,
-      "promotionDelta": -10
+      "promotionDelta": -11
     },
     {
-      "employeeId": "11972584",
-      "name": "王日古",
+      "employeeId": "11742923",
+      "name": "沙马阿牛",
       "team": "五大队",
       "outDays": 10,
-      "realTransfers": 1,
-      "promotionCount": 3,
+      "realTransfers": 0,
+      "promotionCount": 5,
       "promotionCompleted": false,
-      "promotionDelta": -7
+      "promotionDelta": -5
     },
     {
       "employeeId": "11548181",
       "name": "王磊",
       "team": "五大队",
-      "outDays": 13,
+      "outDays": 14,
       "realTransfers": 5,
       "promotionCount": 1,
       "promotionCompleted": true,
-      "promotionDelta": -12
+      "promotionDelta": -13
     },
     {
       "employeeId": "11322063",
@@ -1304,11 +1234,11 @@
       "employeeId": "11654001",
       "name": "罗体补",
       "team": "五大队",
-      "outDays": 12,
+      "outDays": 13,
       "realTransfers": 2,
       "promotionCount": 0,
       "promotionCompleted": true,
-      "promotionDelta": -12
+      "promotionDelta": -13
     },
     {
       "employeeId": "11573197",
@@ -1321,34 +1251,44 @@
       "promotionDelta": -9
     },
     {
-      "employeeId": "11420101",
-      "name": "罗哈火",
+      "employeeId": "11885238",
+      "name": "罗德超",
       "team": "五大队",
-      "outDays": 0,
+      "outDays": 1,
       "realTransfers": 0,
       "promotionCount": 0,
       "promotionCompleted": false,
-      "promotionDelta": 0
+      "promotionDelta": -1
     },
     {
       "employeeId": "11360586",
       "name": "蒋磊",
       "team": "五大队",
-      "outDays": 7,
+      "outDays": 8,
       "realTransfers": 0,
       "promotionCount": 0,
       "promotionCompleted": false,
-      "promotionDelta": -7
+      "promotionDelta": -8
+    },
+    {
+      "employeeId": "11758929",
+      "name": "衣火拉哈",
+      "team": "五大队",
+      "outDays": 3,
+      "realTransfers": 0,
+      "promotionCount": 0,
+      "promotionCompleted": false,
+      "promotionDelta": -3
     },
     {
       "employeeId": "609950",
       "name": "袁云伟",
       "team": "五大队",
-      "outDays": 9,
+      "outDays": 10,
       "realTransfers": 3,
       "promotionCount": 0,
       "promotionCompleted": true,
-      "promotionDelta": -9
+      "promotionDelta": -10
     },
     {
       "employeeId": "11413155",
@@ -1374,51 +1314,41 @@
       "employeeId": "11130341",
       "name": "郭朝贵",
       "team": "五大队",
-      "outDays": 12,
+      "outDays": 13,
       "realTransfers": 1,
       "promotionCount": 3,
       "promotionCompleted": false,
-      "promotionDelta": -9
+      "promotionDelta": -10
     },
     {
-      "employeeId": "11654011",
-      "name": "马有且",
+      "employeeId": "11742877",
+      "name": "阿说洋芋",
       "team": "五大队",
-      "outDays": 0,
+      "outDays": 7,
       "realTransfers": 0,
-      "promotionCount": 0,
+      "promotionCount": 6,
       "promotionCompleted": false,
-      "promotionDelta": 0
+      "promotionDelta": -1
     },
     {
       "employeeId": "11593301",
       "name": "黄子仁",
       "team": "五大队",
-      "outDays": 13,
+      "outDays": 14,
       "realTransfers": 1,
-      "promotionCount": 9,
+      "promotionCount": 10,
       "promotionCompleted": false,
       "promotionDelta": -4
-    },
-    {
-      "employeeId": "11732513",
-      "name": "仁志豪",
-      "team": "六大队",
-      "outDays": 0,
-      "realTransfers": 0,
-      "promotionCount": 0,
-      "promotionCompleted": false,
-      "promotionDelta": 0
     },
     {
       "employeeId": "11873864",
       "name": "何伍劣",
       "team": "六大队",
-      "outDays": 1,
+      "outDays": 2,
       "realTransfers": 0,
       "promotionCount": 0,
       "promotionCompleted": false,
-      "promotionDelta": -1
+      "promotionDelta": -2
     },
     {
       "employeeId": "316949",
@@ -1434,71 +1364,41 @@
       "employeeId": "11109048",
       "name": "吉觉木机",
       "team": "六大队",
-      "outDays": 13,
+      "outDays": 14,
       "realTransfers": 0,
       "promotionCount": 8,
       "promotionCompleted": false,
-      "promotionDelta": -5
-    },
-    {
-      "employeeId": "11179353",
-      "name": "吴孟林",
-      "team": "六大队",
-      "outDays": 0,
-      "realTransfers": 0,
-      "promotionCount": 0,
-      "promotionCompleted": false,
-      "promotionDelta": 0
-    },
-    {
-      "employeeId": "11731937",
-      "name": "周志军",
-      "team": "六大队",
-      "outDays": 13,
-      "realTransfers": 0,
-      "promotionCount": 8,
-      "promotionCompleted": false,
-      "promotionDelta": -5
-    },
-    {
-      "employeeId": "11730570",
-      "name": "周斌",
-      "team": "六大队",
-      "outDays": 8,
-      "realTransfers": 0,
-      "promotionCount": 0,
-      "promotionCompleted": false,
-      "promotionDelta": -8
+      "promotionDelta": -6
     },
     {
       "employeeId": "11571715",
       "name": "曲木阿呷",
       "team": "六大队",
-      "outDays": 6,
+      "outDays": 7,
       "realTransfers": 0,
       "promotionCount": 9,
       "promotionCompleted": false,
-      "promotionDelta": 3
+      "promotionDelta": 2
     },
     {
       "employeeId": "659259",
       "name": "曾发相",
       "team": "六大队",
-      "outDays": 7,
+      "outDays": 8,
       "realTransfers": 0,
       "promotionCount": 2,
       "promotionCompleted": false,
-      "promotionDelta": -5
+      "promotionDelta": -6
     },
     {
       "employeeId": "11732422",
       "name": "朱家有",
       "team": "六大队",
-      "outDays": 14,
+      "outDays": 15,
       "realTransfers": 2,
       "promotionCount": 1,
       "promotionCompleted": true,
-      "promotionDelta": -13
+      "promotionDelta": -14
     },
     {
       "employeeId": "730740",
@@ -1506,16 +1406,6 @@
       "team": "六大队",
       "outDays": 6,
       "realTransfers": 1,
-      "promotionCount": 0,
-      "promotionCompleted": false,
-      "promotionDelta": -6
-    },
-    {
-      "employeeId": "11917728",
-      "name": "杨木果",
-      "team": "六大队",
-      "outDays": 6,
-      "realTransfers": 0,
       "promotionCount": 0,
       "promotionCompleted": false,
       "promotionDelta": -6
@@ -1534,31 +1424,21 @@
       "employeeId": "11401729",
       "name": "果基吉哈",
       "team": "六大队",
-      "outDays": 12,
+      "outDays": 13,
       "realTransfers": 0,
-      "promotionCount": 11,
+      "promotionCount": 12,
       "promotionCompleted": false,
       "promotionDelta": -1
-    },
-    {
-      "employeeId": "11867571",
-      "name": "柯贤申",
-      "team": "六大队",
-      "outDays": 3,
-      "realTransfers": 0,
-      "promotionCount": 1,
-      "promotionCompleted": false,
-      "promotionDelta": -2
     },
     {
       "employeeId": "11284042",
       "name": "毛日补",
       "team": "六大队",
-      "outDays": 12,
+      "outDays": 13,
       "realTransfers": 1,
       "promotionCount": 0,
       "promotionCompleted": false,
-      "promotionDelta": -12
+      "promotionDelta": -13
     },
     {
       "employeeId": "11592528",
@@ -1591,26 +1471,6 @@
       "promotionDelta": -8
     },
     {
-      "employeeId": "11339151",
-      "name": "胡德忠",
-      "team": "六大队",
-      "outDays": 0,
-      "realTransfers": 0,
-      "promotionCount": 0,
-      "promotionCompleted": false,
-      "promotionDelta": 0
-    },
-    {
-      "employeeId": "247988",
-      "name": "葛家伦",
-      "team": "六大队",
-      "outDays": 6,
-      "realTransfers": 2,
-      "promotionCount": 1,
-      "promotionCompleted": true,
-      "promotionDelta": -5
-    },
-    {
       "employeeId": "11694095",
       "name": "袁超",
       "team": "六大队",
@@ -1619,16 +1479,6 @@
       "promotionCount": 0,
       "promotionCompleted": false,
       "promotionDelta": -7
-    },
-    {
-      "employeeId": "11731263",
-      "name": "邹连龙",
-      "team": "六大队",
-      "outDays": 6,
-      "realTransfers": 0,
-      "promotionCount": 0,
-      "promotionCompleted": false,
-      "promotionDelta": -6
     },
     {
       "employeeId": "11730578",
@@ -1654,51 +1504,11 @@
       "employeeId": "621782",
       "name": "陈发斌",
       "team": "六大队",
-      "outDays": 14,
-      "realTransfers": 5,
+      "outDays": 15,
+      "realTransfers": 6,
       "promotionCount": 1,
       "promotionCompleted": true,
-      "promotionDelta": -13
-    },
-    {
-      "employeeId": "11142953",
-      "name": "马海哈则",
-      "team": "六大队",
-      "outDays": 9,
-      "realTransfers": 0,
-      "promotionCount": 0,
-      "promotionCompleted": false,
-      "promotionDelta": -9
-    },
-    {
-      "employeeId": "11998923",
-      "name": "马继",
-      "team": "六大队",
-      "outDays": 7,
-      "realTransfers": 0,
-      "promotionCount": 0,
-      "promotionCompleted": false,
-      "promotionDelta": -7
-    },
-    {
-      "employeeId": "11274589",
-      "name": "鲁日且",
-      "team": "六大队",
-      "outDays": 0,
-      "realTransfers": 0,
-      "promotionCount": 0,
-      "promotionCompleted": false,
-      "promotionDelta": 0
-    },
-    {
-      "employeeId": "747433",
-      "name": "黄浩",
-      "team": "六大队",
-      "outDays": 10,
-      "realTransfers": 1,
-      "promotionCount": 10,
-      "promotionCompleted": false,
-      "promotionDelta": 0
+      "promotionDelta": -14
     },
     {
       "employeeId": "11587082",
@@ -1709,16 +1519,6 @@
       "promotionCount": 0,
       "promotionCompleted": false,
       "promotionDelta": -2
-    },
-    {
-      "employeeId": "11729539",
-      "name": "为色伍来",
-      "team": "七大队",
-      "outDays": 6,
-      "realTransfers": 0,
-      "promotionCount": 0,
-      "promotionCompleted": false,
-      "promotionDelta": -6
     },
     {
       "employeeId": "11623961",
@@ -1734,11 +1534,11 @@
       "employeeId": "11151203",
       "name": "冷文强",
       "team": "七大队",
-      "outDays": 13,
+      "outDays": 14,
       "realTransfers": 0,
       "promotionCount": 0,
       "promotionCompleted": false,
-      "promotionDelta": -13
+      "promotionDelta": -14
     },
     {
       "employeeId": "11727977",
@@ -1774,21 +1574,31 @@
       "employeeId": "11398813",
       "name": "吴嘉兴",
       "team": "七大队",
-      "outDays": 13,
+      "outDays": 14,
       "realTransfers": 2,
       "promotionCount": 4,
       "promotionCompleted": true,
-      "promotionDelta": -9
+      "promotionDelta": -10
     },
     {
       "employeeId": "893417",
       "name": "周川",
       "team": "七大队",
-      "outDays": 14,
+      "outDays": 15,
       "realTransfers": 1,
       "promotionCount": 0,
       "promotionCompleted": false,
-      "promotionDelta": -14
+      "promotionDelta": -15
+    },
+    {
+      "employeeId": "11754009",
+      "name": "土比子且",
+      "team": "七大队",
+      "outDays": 3,
+      "realTransfers": 0,
+      "promotionCount": 0,
+      "promotionCompleted": false,
+      "promotionDelta": -3
     },
     {
       "employeeId": "11678850",
@@ -1801,24 +1611,34 @@
       "promotionDelta": -7
     },
     {
+      "employeeId": "11756273",
+      "name": "展仕才",
+      "team": "七大队",
+      "outDays": 0,
+      "realTransfers": 0,
+      "promotionCount": 0,
+      "promotionCompleted": false,
+      "promotionDelta": 0
+    },
+    {
       "employeeId": "11682072",
       "name": "曲木次色",
       "team": "七大队",
-      "outDays": 12,
+      "outDays": 13,
       "realTransfers": 9,
       "promotionCount": 5,
       "promotionCompleted": true,
-      "promotionDelta": -7
+      "promotionDelta": -8
     },
     {
       "employeeId": "11614264",
       "name": "曲比约布",
       "team": "七大队",
-      "outDays": 7,
+      "outDays": 8,
       "realTransfers": 0,
       "promotionCount": 4,
       "promotionCompleted": false,
-      "promotionDelta": -3
+      "promotionDelta": -4
     },
     {
       "employeeId": "11846633",
@@ -1844,51 +1664,41 @@
       "employeeId": "11700376",
       "name": "杨伍哈",
       "team": "七大队",
-      "outDays": 12,
+      "outDays": 13,
       "realTransfers": 3,
       "promotionCount": 6,
       "promotionCompleted": true,
-      "promotionDelta": -6
+      "promotionDelta": -7
     },
     {
-      "employeeId": "11137565",
-      "name": "杨芸",
+      "employeeId": "11947530",
+      "name": "沙开伟",
       "team": "七大队",
-      "outDays": 0,
+      "outDays": 1,
       "realTransfers": 0,
       "promotionCount": 0,
       "promotionCompleted": false,
-      "promotionDelta": 0
+      "promotionDelta": -1
     },
     {
       "employeeId": "11241090",
       "name": "沙成林",
       "team": "七大队",
-      "outDays": 11,
+      "outDays": 12,
       "realTransfers": 2,
       "promotionCount": 2,
       "promotionCompleted": true,
-      "promotionDelta": -9
-    },
-    {
-      "employeeId": "11170848",
-      "name": "沙杰",
-      "team": "七大队",
-      "outDays": 2,
-      "realTransfers": 0,
-      "promotionCount": 0,
-      "promotionCompleted": false,
-      "promotionDelta": -2
+      "promotionDelta": -10
     },
     {
       "employeeId": "11586114",
       "name": "王军",
       "team": "七大队",
-      "outDays": 7,
+      "outDays": 8,
       "realTransfers": 0,
-      "promotionCount": 2,
+      "promotionCount": 5,
       "promotionCompleted": false,
-      "promotionDelta": -5
+      "promotionDelta": -3
     },
     {
       "employeeId": "11586110",
@@ -1901,24 +1711,14 @@
       "promotionDelta": -6
     },
     {
-      "employeeId": "11681274",
-      "name": "胡大洋",
-      "team": "七大队",
-      "outDays": 7,
-      "realTransfers": 0,
-      "promotionCount": 0,
-      "promotionCompleted": false,
-      "promotionDelta": -7
-    },
-    {
       "employeeId": "11362492",
       "name": "苏光勇",
       "team": "七大队",
-      "outDays": 9,
+      "outDays": 10,
       "realTransfers": 2,
       "promotionCount": 0,
       "promotionCompleted": true,
-      "promotionDelta": -9
+      "promotionDelta": -10
     },
     {
       "employeeId": "11382033",
@@ -1941,6 +1741,16 @@
       "promotionDelta": -10
     },
     {
+      "employeeId": "11957686",
+      "name": "阿俄比古",
+      "team": "七大队",
+      "outDays": 5,
+      "realTransfers": 2,
+      "promotionCount": 10,
+      "promotionCompleted": true,
+      "promotionDelta": 5
+    },
+    {
       "employeeId": "11724933",
       "name": "马海小吾",
       "team": "七大队",
@@ -1951,32 +1761,12 @@
       "promotionDelta": -4
     },
     {
-      "employeeId": "11510476",
-      "name": "乃古成龙",
-      "team": "八大队",
-      "outDays": 0,
-      "realTransfers": 0,
-      "promotionCount": 0,
-      "promotionCompleted": false,
-      "promotionDelta": 0
-    },
-    {
-      "employeeId": "11420613",
-      "name": "伍小刚",
-      "team": "八大队",
-      "outDays": 0,
-      "realTransfers": 0,
-      "promotionCount": 0,
-      "promotionCompleted": false,
-      "promotionDelta": 0
-    },
-    {
       "employeeId": "11758135",
       "name": "余翔",
       "team": "八大队",
-      "outDays": 14,
+      "outDays": 15,
       "realTransfers": 1,
-      "promotionCount": 11,
+      "promotionCount": 12,
       "promotionCompleted": false,
       "promotionDelta": -3
     },
@@ -1994,11 +1784,11 @@
       "employeeId": "11464223",
       "name": "冷则伍哈",
       "team": "八大队",
-      "outDays": 7,
+      "outDays": 8,
       "realTransfers": 0,
       "promotionCount": 2,
       "promotionCompleted": false,
-      "promotionDelta": -5
+      "promotionDelta": -6
     },
     {
       "employeeId": "11233495",
@@ -2021,54 +1811,24 @@
       "promotionDelta": -4
     },
     {
-      "employeeId": "11624438",
-      "name": "吉勒木呷",
-      "team": "八大队",
-      "outDays": 0,
-      "realTransfers": 0,
-      "promotionCount": 0,
-      "promotionCompleted": false,
-      "promotionDelta": 0
-    },
-    {
-      "employeeId": "11231948",
-      "name": "吉勒衣体",
-      "team": "八大队",
-      "outDays": 0,
-      "realTransfers": 0,
-      "promotionCount": 0,
-      "promotionCompleted": false,
-      "promotionDelta": 0
-    },
-    {
       "employeeId": "11296211",
       "name": "吉史尔古",
       "team": "八大队",
-      "outDays": 12,
+      "outDays": 13,
       "realTransfers": 2,
       "promotionCount": 3,
       "promotionCompleted": true,
-      "promotionDelta": -9
+      "promotionDelta": -10
     },
     {
       "employeeId": "11157748",
       "name": "吉足阿木",
       "team": "八大队",
-      "outDays": 7,
+      "outDays": 8,
       "realTransfers": 1,
       "promotionCount": 1,
       "promotionCompleted": false,
-      "promotionDelta": -6
-    },
-    {
-      "employeeId": "11188062",
-      "name": "周烨",
-      "team": "八大队",
-      "outDays": 11,
-      "realTransfers": 0,
-      "promotionCount": 1,
-      "promotionCompleted": false,
-      "promotionDelta": -10
+      "promotionDelta": -7
     },
     {
       "employeeId": "11593319",
@@ -2079,16 +1839,6 @@
       "promotionCount": 0,
       "promotionCompleted": false,
       "promotionDelta": -5
-    },
-    {
-      "employeeId": "410340",
-      "name": "唐博",
-      "team": "八大队",
-      "outDays": 0,
-      "realTransfers": 0,
-      "promotionCount": 0,
-      "promotionCompleted": false,
-      "promotionDelta": 0
     },
     {
       "employeeId": "11936553",
@@ -2134,9 +1884,9 @@
       "employeeId": "11704426",
       "name": "杨劲华",
       "team": "八大队",
-      "outDays": 10,
+      "outDays": 11,
       "realTransfers": 1,
-      "promotionCount": 7,
+      "promotionCount": 8,
       "promotionCompleted": false,
       "promotionDelta": -3
     },
@@ -2144,51 +1894,51 @@
       "employeeId": "11211025",
       "name": "毛布吉",
       "team": "八大队",
-      "outDays": 10,
+      "outDays": 11,
       "realTransfers": 2,
       "promotionCount": 1,
       "promotionCompleted": true,
-      "promotionDelta": -9
+      "promotionDelta": -10
+    },
+    {
+      "employeeId": "11338371",
+      "name": "江涛",
+      "team": "八大队",
+      "outDays": 14,
+      "realTransfers": 0,
+      "promotionCount": 1,
+      "promotionCompleted": false,
+      "promotionDelta": -13
     },
     {
       "employeeId": "11413135",
       "name": "沈万辉",
       "team": "八大队",
-      "outDays": 12,
+      "outDays": 13,
       "realTransfers": 3,
       "promotionCount": 6,
       "promotionCompleted": true,
-      "promotionDelta": -6
+      "promotionDelta": -7
     },
     {
       "employeeId": "11870939",
       "name": "王发高",
       "team": "八大队",
-      "outDays": 11,
+      "outDays": 12,
       "realTransfers": 1,
       "promotionCount": 5,
       "promotionCompleted": false,
-      "promotionDelta": -6
+      "promotionDelta": -7
     },
     {
       "employeeId": "11651768",
       "name": "罗如均",
       "team": "八大队",
-      "outDays": 9,
+      "outDays": 10,
       "realTransfers": 2,
       "promotionCount": 2,
       "promotionCompleted": true,
-      "promotionDelta": -7
-    },
-    {
-      "employeeId": "11466795",
-      "name": "苦曲格",
-      "team": "八大队",
-      "outDays": 0,
-      "realTransfers": 0,
-      "promotionCount": 0,
-      "promotionCompleted": false,
-      "promotionDelta": 0
+      "promotionDelta": -8
     },
     {
       "employeeId": "745237",
@@ -2211,16 +1961,6 @@
       "promotionDelta": -2
     },
     {
-      "employeeId": "11234398",
-      "name": "邱木补吉子",
-      "team": "八大队",
-      "outDays": 0,
-      "realTransfers": 0,
-      "promotionCount": 0,
-      "promotionCompleted": false,
-      "promotionDelta": 0
-    },
-    {
       "employeeId": "446973",
       "name": "邱正贤",
       "team": "八大队",
@@ -2234,21 +1974,31 @@
       "employeeId": "11246180",
       "name": "阿加呷呷",
       "team": "八大队",
-      "outDays": 14,
+      "outDays": 15,
       "realTransfers": 3,
       "promotionCount": 6,
       "promotionCompleted": true,
-      "promotionDelta": -8
+      "promotionDelta": -9
+    },
+    {
+      "employeeId": "11738651",
+      "name": "阿子史沙",
+      "team": "八大队",
+      "outDays": 5,
+      "realTransfers": 0,
+      "promotionCount": 8,
+      "promotionCompleted": false,
+      "promotionDelta": 3
     },
     {
       "employeeId": "11492795",
       "name": "阿尔尔体",
       "team": "八大队",
-      "outDays": 1,
+      "outDays": 2,
       "realTransfers": 0,
       "promotionCount": 0,
       "promotionCompleted": false,
-      "promotionDelta": -1
+      "promotionDelta": -2
     },
     {
       "employeeId": "11969111",
@@ -2284,11 +2034,11 @@
       "employeeId": "11675128",
       "name": "吉使小路",
       "team": "九大队",
-      "outDays": 10,
+      "outDays": 11,
       "realTransfers": 1,
       "promotionCount": 0,
       "promotionCompleted": false,
-      "promotionDelta": -10
+      "promotionDelta": -11
     },
     {
       "employeeId": "11657700",
@@ -2304,11 +2054,11 @@
       "employeeId": "11592041",
       "name": "安国全",
       "team": "九大队",
-      "outDays": 11,
+      "outDays": 12,
       "realTransfers": 0,
       "promotionCount": 0,
       "promotionCompleted": false,
-      "promotionDelta": -11
+      "promotionDelta": -12
     },
     {
       "employeeId": "11231597",
@@ -2334,11 +2084,21 @@
       "employeeId": "11855354",
       "name": "徐显豪",
       "team": "九大队",
-      "outDays": 8,
+      "outDays": 9,
       "realTransfers": 0,
       "promotionCount": 0,
       "promotionCompleted": false,
-      "promotionDelta": -8
+      "promotionDelta": -9
+    },
+    {
+      "employeeId": "11748318",
+      "name": "徐永权",
+      "team": "九大队",
+      "outDays": 7,
+      "realTransfers": 0,
+      "promotionCount": 0,
+      "promotionCompleted": false,
+      "promotionDelta": -7
     },
     {
       "employeeId": "11234343",
@@ -2354,21 +2114,21 @@
       "employeeId": "11559475",
       "name": "晏加文",
       "team": "九大队",
-      "outDays": 14,
+      "outDays": 15,
       "realTransfers": 0,
       "promotionCount": 0,
       "promotionCompleted": false,
-      "promotionDelta": -14
+      "promotionDelta": -15
     },
     {
       "employeeId": "11824542",
       "name": "沙马木呷",
       "team": "九大队",
-      "outDays": 13,
+      "outDays": 14,
       "realTransfers": 0,
       "promotionCount": 0,
       "promotionCompleted": false,
-      "promotionDelta": -13
+      "promotionDelta": -14
     },
     {
       "employeeId": "11312293",
@@ -2384,30 +2144,40 @@
       "employeeId": "11292058",
       "name": "王显莹",
       "team": "九大队",
-      "outDays": 14,
+      "outDays": 15,
       "realTransfers": 1,
       "promotionCount": 1,
       "promotionCompleted": false,
-      "promotionDelta": -13
+      "promotionDelta": -14
     },
     {
       "employeeId": "11386736",
       "name": "王顺建",
       "team": "九大队",
-      "outDays": 11,
+      "outDays": 12,
       "realTransfers": 0,
       "promotionCount": 9,
       "promotionCompleted": false,
-      "promotionDelta": -2
+      "promotionDelta": -3
+    },
+    {
+      "employeeId": "11748582",
+      "name": "石磊",
+      "team": "九大队",
+      "outDays": 4,
+      "realTransfers": 0,
+      "promotionCount": 0,
+      "promotionCompleted": false,
+      "promotionDelta": -4
     },
     {
       "employeeId": "11579891",
       "name": "罗阳",
       "team": "九大队",
       "outDays": 11,
-      "realTransfers": 1,
+      "realTransfers": 2,
       "promotionCount": 1,
-      "promotionCompleted": false,
+      "promotionCompleted": true,
       "promotionDelta": -10
     },
     {
@@ -2421,74 +2191,44 @@
       "promotionDelta": -1
     },
     {
-      "employeeId": "11499554",
-      "name": "肖大勇",
+      "employeeId": "11748325",
+      "name": "邓俊虚",
       "team": "九大队",
-      "outDays": 0,
+      "outDays": 8,
       "realTransfers": 0,
       "promotionCount": 0,
       "promotionCompleted": false,
-      "promotionDelta": 0
-    },
-    {
-      "employeeId": "11498066",
-      "name": "莫色尔朋",
-      "team": "九大队",
-      "outDays": 0,
-      "realTransfers": 0,
-      "promotionCount": 0,
-      "promotionCompleted": false,
-      "promotionDelta": 0
-    },
-    {
-      "employeeId": "11272588",
-      "name": "邱文全",
-      "team": "九大队",
-      "outDays": 0,
-      "realTransfers": 0,
-      "promotionCount": 0,
-      "promotionCompleted": false,
-      "promotionDelta": 0
+      "promotionDelta": -8
     },
     {
       "employeeId": "11644459",
       "name": "郭龙飞",
       "team": "九大队",
-      "outDays": 11,
+      "outDays": 12,
       "realTransfers": 0,
       "promotionCount": 0,
       "promotionCompleted": false,
-      "promotionDelta": -11
+      "promotionDelta": -12
     },
     {
       "employeeId": "11689230",
       "name": "闫肃",
       "team": "九大队",
-      "outDays": 12,
+      "outDays": 13,
       "realTransfers": 3,
       "promotionCount": 2,
       "promotionCompleted": true,
-      "promotionDelta": -10
-    },
-    {
-      "employeeId": "11380637",
-      "name": "阿坡伍呷",
-      "team": "九大队",
-      "outDays": 0,
-      "realTransfers": 0,
-      "promotionCount": 0,
-      "promotionCompleted": false,
-      "promotionDelta": 0
+      "promotionDelta": -11
     },
     {
       "employeeId": "11751233",
       "name": "阿尔木呷",
       "team": "九大队",
-      "outDays": 10,
+      "outDays": 11,
       "realTransfers": 5,
       "promotionCount": 8,
       "promotionCompleted": true,
-      "promotionDelta": -2
+      "promotionDelta": -3
     },
     {
       "employeeId": "11594779",
@@ -2514,21 +2254,21 @@
       "employeeId": "11722652",
       "name": "马龙飞",
       "team": "九大队",
-      "outDays": 7,
+      "outDays": 8,
       "realTransfers": 0,
       "promotionCount": 1,
       "promotionCompleted": false,
-      "promotionDelta": -6
+      "promotionDelta": -7
     },
     {
       "employeeId": "11575867",
       "name": "麻建聪",
       "team": "九大队",
-      "outDays": 13,
+      "outDays": 14,
       "realTransfers": 1,
       "promotionCount": 0,
       "promotionCompleted": false,
-      "promotionDelta": -13
+      "promotionDelta": -14
     },
     {
       "employeeId": "11345422",
@@ -2539,16 +2279,6 @@
       "promotionCount": 0,
       "promotionCompleted": false,
       "promotionDelta": -5
-    },
-    {
-      "employeeId": "11579745",
-      "name": "何云彪",
-      "team": "十大队",
-      "outDays": 0,
-      "realTransfers": 0,
-      "promotionCount": 0,
-      "promotionCompleted": false,
-      "promotionDelta": 0
     },
     {
       "employeeId": "11558173",
@@ -2564,35 +2294,25 @@
       "employeeId": "11630074",
       "name": "周伟",
       "team": "十大队",
-      "outDays": 8,
-      "realTransfers": 15,
+      "outDays": 9,
+      "realTransfers": 17,
       "promotionCount": 0,
       "promotionCompleted": true,
-      "promotionDelta": -8
+      "promotionDelta": -9
     },
     {
       "employeeId": "11849366",
       "name": "周应花",
       "team": "十大队",
-      "outDays": 6,
+      "outDays": 7,
       "realTransfers": 0,
       "promotionCount": 0,
       "promotionCompleted": false,
-      "promotionDelta": -6
+      "promotionDelta": -7
     },
     {
       "employeeId": "11449634",
       "name": "周正兵",
-      "team": "十大队",
-      "outDays": 8,
-      "realTransfers": 0,
-      "promotionCount": 0,
-      "promotionCompleted": false,
-      "promotionDelta": -8
-    },
-    {
-      "employeeId": "11706728",
-      "name": "寸晓花",
       "team": "十大队",
       "outDays": 9,
       "realTransfers": 0,
@@ -2601,14 +2321,34 @@
       "promotionDelta": -9
     },
     {
+      "employeeId": "11745354",
+      "name": "安子日达",
+      "team": "十大队",
+      "outDays": 10,
+      "realTransfers": 0,
+      "promotionCount": 0,
+      "promotionCompleted": false,
+      "promotionDelta": -10
+    },
+    {
+      "employeeId": "11706728",
+      "name": "寸晓花",
+      "team": "十大队",
+      "outDays": 10,
+      "realTransfers": 0,
+      "promotionCount": 0,
+      "promotionCompleted": false,
+      "promotionDelta": -10
+    },
+    {
       "employeeId": "898269",
       "name": "张宁",
       "team": "十大队",
-      "outDays": 13,
+      "outDays": 14,
       "realTransfers": 4,
       "promotionCount": 0,
       "promotionCompleted": true,
-      "promotionDelta": -13
+      "promotionDelta": -14
     },
     {
       "employeeId": "11337545",
@@ -2634,31 +2374,31 @@
       "employeeId": "11446203",
       "name": "李佳新",
       "team": "十大队",
-      "outDays": 9,
+      "outDays": 10,
       "realTransfers": 2,
       "promotionCount": 3,
       "promotionCompleted": true,
-      "promotionDelta": -6
+      "promotionDelta": -7
     },
     {
       "employeeId": "11669708",
       "name": "李绍湘",
       "team": "十大队",
-      "outDays": 12,
+      "outDays": 13,
       "realTransfers": 2,
       "promotionCount": 0,
       "promotionCompleted": true,
-      "promotionDelta": -12
+      "promotionDelta": -13
     },
     {
       "employeeId": "11256567",
       "name": "汪泽军",
       "team": "十大队",
-      "outDays": 13,
+      "outDays": 14,
       "realTransfers": 1,
       "promotionCount": 5,
       "promotionCompleted": false,
-      "promotionDelta": -8
+      "promotionDelta": -9
     },
     {
       "employeeId": "11312276",
@@ -2694,21 +2434,21 @@
       "employeeId": "11906181",
       "name": "王俊峰",
       "team": "十大队",
-      "outDays": 13,
+      "outDays": 14,
       "realTransfers": 3,
       "promotionCount": 0,
       "promotionCompleted": true,
-      "promotionDelta": -13
+      "promotionDelta": -14
     },
     {
       "employeeId": "11615446",
       "name": "祝尔古",
       "team": "十大队",
-      "outDays": 11,
+      "outDays": 12,
       "realTransfers": 3,
       "promotionCount": 0,
       "promotionCompleted": true,
-      "promotionDelta": -11
+      "promotionDelta": -12
     },
     {
       "employeeId": "11247947",
@@ -2721,84 +2461,64 @@
       "promotionDelta": -2
     },
     {
-      "employeeId": "11645215",
-      "name": "耿昆",
-      "team": "十大队",
-      "outDays": 11,
-      "realTransfers": 0,
-      "promotionCount": 1,
-      "promotionCompleted": false,
-      "promotionDelta": -10
-    },
-    {
       "employeeId": "11250680",
       "name": "苏春琳",
       "team": "十大队",
-      "outDays": 14,
+      "outDays": 15,
       "realTransfers": 1,
       "promotionCount": 0,
       "promotionCompleted": false,
-      "promotionDelta": -14
+      "promotionDelta": -15
     },
     {
       "employeeId": "11172153",
       "name": "董伟",
       "team": "十大队",
-      "outDays": 10,
-      "realTransfers": 3,
-      "promotionCount": 0,
-      "promotionCompleted": true,
-      "promotionDelta": -10
-    },
-    {
-      "employeeId": "11625869",
-      "name": "董开勇",
-      "team": "十大队",
-      "outDays": 5,
-      "realTransfers": 0,
-      "promotionCount": 0,
-      "promotionCompleted": false,
-      "promotionDelta": -5
-    },
-    {
-      "employeeId": "11660668",
-      "name": "谢辉",
-      "team": "十大队",
-      "outDays": 13,
-      "realTransfers": 1,
-      "promotionCount": 12,
-      "promotionCompleted": false,
-      "promotionDelta": -1
-    },
-    {
-      "employeeId": "11891393",
-      "name": "赵洪学",
-      "team": "十大队",
-      "outDays": 13,
-      "realTransfers": 2,
-      "promotionCount": 10,
-      "promotionCompleted": true,
-      "promotionDelta": -3
-    },
-    {
-      "employeeId": "11626537",
-      "name": "边悟",
-      "team": "十大队",
       "outDays": 11,
-      "realTransfers": 4,
+      "realTransfers": 3,
       "promotionCount": 0,
       "promotionCompleted": true,
       "promotionDelta": -11
     },
     {
-      "employeeId": "11371669",
-      "name": "邹贵阳",
+      "employeeId": "11625869",
+      "name": "董开勇",
       "team": "十大队",
-      "outDays": 0,
+      "outDays": 6,
       "realTransfers": 0,
       "promotionCount": 0,
       "promotionCompleted": false,
-      "promotionDelta": 0
+      "promotionDelta": -6
+    },
+    {
+      "employeeId": "11660668",
+      "name": "谢辉",
+      "team": "十大队",
+      "outDays": 14,
+      "realTransfers": 1,
+      "promotionCount": 12,
+      "promotionCompleted": false,
+      "promotionDelta": -2
+    },
+    {
+      "employeeId": "11891393",
+      "name": "赵洪学",
+      "team": "十大队",
+      "outDays": 14,
+      "realTransfers": 2,
+      "promotionCount": 10,
+      "promotionCompleted": true,
+      "promotionDelta": -4
+    },
+    {
+      "employeeId": "11626537",
+      "name": "边悟",
+      "team": "十大队",
+      "outDays": 12,
+      "realTransfers": 4,
+      "promotionCount": 0,
+      "promotionCompleted": true,
+      "promotionDelta": -12
     },
     {
       "employeeId": "11448072",
@@ -2814,28 +2534,8 @@
       "employeeId": "11741600",
       "name": "阿来伍来",
       "team": "十大队",
-      "outDays": 10,
-      "realTransfers": 1,
-      "promotionCount": 0,
-      "promotionCompleted": false,
-      "promotionDelta": -10
-    },
-    {
-      "employeeId": "846319",
-      "name": "马添星",
-      "team": "十大队",
-      "outDays": 0,
-      "realTransfers": 0,
-      "promotionCount": 0,
-      "promotionCompleted": false,
-      "promotionDelta": 0
-    },
-    {
-      "employeeId": "11553350",
-      "name": "马鸿程",
-      "team": "十大队",
       "outDays": 11,
-      "realTransfers": 0,
+      "realTransfers": 1,
       "promotionCount": 0,
       "promotionCompleted": false,
       "promotionDelta": -11
@@ -2854,31 +2554,21 @@
       "employeeId": "11250213",
       "name": "冯太泉",
       "team": "会理大队",
-      "outDays": 13,
+      "outDays": 14,
       "realTransfers": 3,
       "promotionCount": 10,
       "promotionCompleted": true,
-      "promotionDelta": -3
+      "promotionDelta": -4
     },
     {
       "employeeId": "11571178",
       "name": "凌伟",
       "team": "会理大队",
-      "outDays": 13,
+      "outDays": 14,
       "realTransfers": 0,
       "promotionCount": 0,
       "promotionCompleted": false,
-      "promotionDelta": -13
-    },
-    {
-      "employeeId": "11863302",
-      "name": "刘朝熊",
-      "team": "会理大队",
-      "outDays": 0,
-      "realTransfers": 0,
-      "promotionCount": 0,
-      "promotionCompleted": false,
-      "promotionDelta": 0
+      "promotionDelta": -14
     },
     {
       "employeeId": "11255264",
@@ -2894,11 +2584,11 @@
       "employeeId": "11836205",
       "name": "夏彪",
       "team": "会理大队",
-      "outDays": 12,
+      "outDays": 13,
       "realTransfers": 2,
       "promotionCount": 1,
       "promotionCompleted": true,
-      "promotionDelta": -11
+      "promotionDelta": -12
     },
     {
       "employeeId": "11133673",
@@ -2911,44 +2601,44 @@
       "promotionDelta": -2
     },
     {
-      "employeeId": "11177668",
-      "name": "张福平",
+      "employeeId": "11596658",
+      "name": "张正荣",
       "team": "会理大队",
-      "outDays": 8,
-      "realTransfers": 1,
-      "promotionCount": 0,
-      "promotionCompleted": false,
-      "promotionDelta": -8
-    },
-    {
-      "employeeId": "11186231",
-      "name": "张银勇",
-      "team": "会理大队",
-      "outDays": 0,
+      "outDays": 4,
       "realTransfers": 0,
       "promotionCount": 0,
       "promotionCompleted": false,
-      "promotionDelta": 0
+      "promotionDelta": -4
+    },
+    {
+      "employeeId": "11177668",
+      "name": "张福平",
+      "team": "会理大队",
+      "outDays": 9,
+      "realTransfers": 1,
+      "promotionCount": 0,
+      "promotionCompleted": false,
+      "promotionDelta": -9
     },
     {
       "employeeId": "11433614",
       "name": "朱林",
       "team": "会理大队",
-      "outDays": 11,
+      "outDays": 12,
       "realTransfers": 0,
       "promotionCount": 1,
       "promotionCompleted": false,
-      "promotionDelta": -10
+      "promotionDelta": -11
     },
     {
       "employeeId": "11336922",
       "name": "李忠荣",
       "team": "会理大队",
-      "outDays": 7,
+      "outDays": 8,
       "realTransfers": 0,
       "promotionCount": 0,
       "promotionCompleted": false,
-      "promotionDelta": -7
+      "promotionDelta": -8
     },
     {
       "employeeId": "366283",
@@ -2984,21 +2674,21 @@
       "employeeId": "11278870",
       "name": "王磊",
       "team": "会理大队",
-      "outDays": 7,
+      "outDays": 8,
       "realTransfers": 0,
       "promotionCount": 1,
       "promotionCompleted": false,
-      "promotionDelta": -6
+      "promotionDelta": -7
     },
     {
       "employeeId": "11575926",
       "name": "田国富",
       "team": "会理大队",
-      "outDays": 14,
+      "outDays": 15,
       "realTransfers": 2,
       "promotionCount": 3,
       "promotionCompleted": true,
-      "promotionDelta": -11
+      "promotionDelta": -12
     },
     {
       "employeeId": "11241735",
@@ -3031,54 +2721,44 @@
       "promotionDelta": -2
     },
     {
-      "employeeId": "11936575",
-      "name": "罗运忠",
-      "team": "会理大队",
-      "outDays": 0,
-      "realTransfers": 0,
-      "promotionCount": 0,
-      "promotionCompleted": false,
-      "promotionDelta": 0
-    },
-    {
       "employeeId": "11104228",
       "name": "胡天志",
       "team": "会理大队",
-      "outDays": 6,
+      "outDays": 7,
       "realTransfers": 0,
       "promotionCount": 1,
       "promotionCompleted": false,
-      "promotionDelta": -5
+      "promotionDelta": -6
     },
     {
       "employeeId": "11533034",
       "name": "艾国平",
       "team": "会理大队",
-      "outDays": 8,
+      "outDays": 9,
       "realTransfers": 3,
       "promotionCount": 3,
       "promotionCompleted": true,
-      "promotionDelta": -5
+      "promotionDelta": -6
     },
     {
       "employeeId": "11357934",
       "name": "艾国才",
       "team": "会理大队",
-      "outDays": 13,
+      "outDays": 14,
       "realTransfers": 2,
       "promotionCount": 4,
       "promotionCompleted": true,
-      "promotionDelta": -9
+      "promotionDelta": -10
     },
     {
       "employeeId": "11487896",
       "name": "董廷荣",
       "team": "会理大队",
-      "outDays": 4,
+      "outDays": 5,
       "realTransfers": 0,
       "promotionCount": 0,
       "promotionCompleted": false,
-      "promotionDelta": -4
+      "promotionDelta": -5
     },
     {
       "employeeId": "11474000",
@@ -3094,41 +2774,31 @@
       "employeeId": "11736360",
       "name": "赵辉杰",
       "team": "会理大队",
-      "outDays": 14,
+      "outDays": 15,
       "realTransfers": 0,
       "promotionCount": 0,
       "promotionCompleted": false,
-      "promotionDelta": -14
+      "promotionDelta": -15
     },
     {
       "employeeId": "11586368",
       "name": "陈朝虎",
       "team": "会理大队",
-      "outDays": 13,
+      "outDays": 14,
       "realTransfers": 0,
       "promotionCount": 1,
       "promotionCompleted": false,
-      "promotionDelta": -12
+      "promotionDelta": -13
     },
     {
       "employeeId": "455022",
       "name": "黄建军",
       "team": "会理大队",
-      "outDays": 13,
+      "outDays": 14,
       "realTransfers": 0,
       "promotionCount": 0,
       "promotionCompleted": false,
-      "promotionDelta": -13
-    },
-    {
-      "employeeId": "11654661",
-      "name": "刁志桥",
-      "team": "德昌大队",
-      "outDays": 0,
-      "realTransfers": 0,
-      "promotionCount": 0,
-      "promotionCompleted": false,
-      "promotionDelta": 0
+      "promotionDelta": -14
     },
     {
       "employeeId": "267884",
@@ -3144,21 +2814,21 @@
       "employeeId": "11414363",
       "name": "宋仕凯",
       "team": "德昌大队",
-      "outDays": 14,
+      "outDays": 15,
       "realTransfers": 0,
       "promotionCount": 5,
       "promotionCompleted": false,
-      "promotionDelta": -9
+      "promotionDelta": -10
     },
     {
       "employeeId": "339269",
       "name": "宋治麟",
       "team": "德昌大队",
-      "outDays": 14,
+      "outDays": 15,
       "realTransfers": 2,
       "promotionCount": 0,
       "promotionCompleted": true,
-      "promotionDelta": -14
+      "promotionDelta": -15
     },
     {
       "employeeId": "11684181",
@@ -3171,24 +2841,14 @@
       "promotionDelta": -6
     },
     {
-      "employeeId": "11325910",
-      "name": "张楚",
-      "team": "德昌大队",
-      "outDays": 9,
-      "realTransfers": 0,
-      "promotionCount": 5,
-      "promotionCompleted": false,
-      "promotionDelta": -4
-    },
-    {
       "employeeId": "11212499",
       "name": "曾顺杰",
       "team": "德昌大队",
-      "outDays": 10,
+      "outDays": 11,
       "realTransfers": 0,
       "promotionCount": 8,
       "promotionCompleted": false,
-      "promotionDelta": -2
+      "promotionDelta": -3
     },
     {
       "employeeId": "11917903",
@@ -3201,22 +2861,12 @@
       "promotionDelta": -2
     },
     {
-      "employeeId": "11233491",
-      "name": "李波",
-      "team": "德昌大队",
-      "outDays": 0,
-      "realTransfers": 0,
-      "promotionCount": 0,
-      "promotionCompleted": false,
-      "promotionDelta": 0
-    },
-    {
       "employeeId": "11404781",
       "name": "梁涛",
       "team": "德昌大队",
-      "outDays": 6,
+      "outDays": 7,
       "realTransfers": 0,
-      "promotionCount": 6,
+      "promotionCount": 7,
       "promotionCompleted": false,
       "promotionDelta": 0
     },
@@ -3234,11 +2884,11 @@
       "employeeId": "11537308",
       "name": "王正才",
       "team": "德昌大队",
-      "outDays": 12,
+      "outDays": 13,
       "realTransfers": 0,
-      "promotionCount": 15,
+      "promotionCount": 17,
       "promotionCompleted": false,
-      "promotionDelta": 3
+      "promotionDelta": 4
     },
     {
       "employeeId": "11331212",
@@ -3254,31 +2904,41 @@
       "employeeId": "270087",
       "name": "蒋林",
       "team": "德昌大队",
-      "outDays": 11,
+      "outDays": 12,
       "realTransfers": 0,
       "promotionCount": 4,
       "promotionCompleted": false,
-      "promotionDelta": -7
+      "promotionDelta": -8
     },
     {
       "employeeId": "11226862",
       "name": "袁涛",
       "team": "德昌大队",
-      "outDays": 13,
+      "outDays": 14,
       "realTransfers": 0,
       "promotionCount": 8,
       "promotionCompleted": false,
-      "promotionDelta": -5
+      "promotionDelta": -6
     },
     {
       "employeeId": "11856878",
       "name": "达超",
       "team": "德昌大队",
-      "outDays": 13,
+      "outDays": 14,
       "realTransfers": 2,
       "promotionCount": 5,
       "promotionCompleted": true,
-      "promotionDelta": -8
+      "promotionDelta": -9
+    },
+    {
+      "employeeId": "11812971",
+      "name": "郑红",
+      "team": "德昌大队",
+      "outDays": 0,
+      "realTransfers": 0,
+      "promotionCount": 0,
+      "promotionCompleted": false,
+      "promotionDelta": 0
     },
     {
       "employeeId": "11393083",
@@ -3322,6 +2982,176 @@
     }
   ],
   "orders": [
+    {
+      "employeeId": "621782",
+      "date": "2026-09-16",
+      "isReal": true,
+      "nonOffline": 0,
+      "abnormalScan": 0,
+      "burner": 0,
+      "regularCustomer": 0,
+      "cheating": 0
+    },
+    {
+      "employeeId": "621782",
+      "date": "2026-09-16",
+      "isReal": false,
+      "nonOffline": 1,
+      "abnormalScan": 1,
+      "burner": 1,
+      "regularCustomer": 0,
+      "cheating": 0
+    },
+    {
+      "employeeId": "617762",
+      "date": "2026-09-16",
+      "isReal": false,
+      "nonOffline": 1,
+      "abnormalScan": 0,
+      "burner": 1,
+      "regularCustomer": 0,
+      "cheating": 0
+    },
+    {
+      "employeeId": "561051",
+      "date": "2026-09-16",
+      "isReal": false,
+      "nonOffline": 1,
+      "abnormalScan": 1,
+      "burner": 1,
+      "regularCustomer": 1,
+      "cheating": 0
+    },
+    {
+      "employeeId": "329980",
+      "date": "2026-09-16",
+      "isReal": true,
+      "nonOffline": 0,
+      "abnormalScan": 0,
+      "burner": 0,
+      "regularCustomer": 0,
+      "cheating": 0
+    },
+    {
+      "employeeId": "11936553",
+      "date": "2026-09-16",
+      "isReal": false,
+      "nonOffline": 1,
+      "abnormalScan": 1,
+      "burner": 0,
+      "regularCustomer": 0,
+      "cheating": 0
+    },
+    {
+      "employeeId": "11867571",
+      "date": "2026-09-16",
+      "isReal": true,
+      "nonOffline": 0,
+      "abnormalScan": 0,
+      "burner": 0,
+      "regularCustomer": 0,
+      "cheating": 0
+    },
+    {
+      "employeeId": "11651774",
+      "date": "2026-09-16",
+      "isReal": true,
+      "nonOffline": 0,
+      "abnormalScan": 0,
+      "burner": 0,
+      "regularCustomer": 0,
+      "cheating": 0
+    },
+    {
+      "employeeId": "11651774",
+      "date": "2026-09-16",
+      "isReal": true,
+      "nonOffline": 0,
+      "abnormalScan": 0,
+      "burner": 0,
+      "regularCustomer": 0,
+      "cheating": 0
+    },
+    {
+      "employeeId": "11651774",
+      "date": "2026-09-16",
+      "isReal": true,
+      "nonOffline": 0,
+      "abnormalScan": 0,
+      "burner": 0,
+      "regularCustomer": 0,
+      "cheating": 0
+    },
+    {
+      "employeeId": "11635393",
+      "date": "2026-09-16",
+      "isReal": true,
+      "nonOffline": 0,
+      "abnormalScan": 0,
+      "burner": 0,
+      "regularCustomer": 0,
+      "cheating": 0
+    },
+    {
+      "employeeId": "11630074",
+      "date": "2026-09-16",
+      "isReal": true,
+      "nonOffline": 0,
+      "abnormalScan": 0,
+      "burner": 0,
+      "regularCustomer": 0,
+      "cheating": 0
+    },
+    {
+      "employeeId": "11630074",
+      "date": "2026-09-16",
+      "isReal": true,
+      "nonOffline": 0,
+      "abnormalScan": 0,
+      "burner": 0,
+      "regularCustomer": 0,
+      "cheating": 0
+    },
+    {
+      "employeeId": "11579891",
+      "date": "2026-09-16",
+      "isReal": true,
+      "nonOffline": 0,
+      "abnormalScan": 0,
+      "burner": 0,
+      "regularCustomer": 0,
+      "cheating": 0
+    },
+    {
+      "employeeId": "11452450",
+      "date": "2026-09-16",
+      "isReal": true,
+      "nonOffline": 0,
+      "abnormalScan": 0,
+      "burner": 0,
+      "regularCustomer": 0,
+      "cheating": 0
+    },
+    {
+      "employeeId": "11436309",
+      "date": "2026-09-16",
+      "isReal": true,
+      "nonOffline": 0,
+      "abnormalScan": 0,
+      "burner": 0,
+      "regularCustomer": 0,
+      "cheating": 0
+    },
+    {
+      "employeeId": "11142953",
+      "date": "2026-09-16",
+      "isReal": false,
+      "nonOffline": 1,
+      "abnormalScan": 1,
+      "burner": 1,
+      "regularCustomer": 1,
+      "cheating": 1
+    },
     {
       "employeeId": "985431",
       "date": "2026-09-15",
